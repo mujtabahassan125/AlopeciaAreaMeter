@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F7113C92BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
+		5F7113CA2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
+		5F7113CB2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
 		5F9977EB2BA560840085309B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9977EA2BA560840085309B /* AppDelegate.swift */; };
 		5F9977ED2BA560840085309B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9977EC2BA560840085309B /* SceneDelegate.swift */; };
 		5F9977EF2BA560840085309B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9977EE2BA560840085309B /* ViewController.swift */; };
@@ -17,6 +20,39 @@
 		5F9978052BA560860085309B /* AlopeciaAreaMeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9978042BA560860085309B /* AlopeciaAreaMeterTests.swift */; };
 		5F99780F2BA560860085309B /* AlopeciaAreaMeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99780E2BA560860085309B /* AlopeciaAreaMeterUITests.swift */; };
 		5F9978112BA560860085309B /* AlopeciaAreaMeterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9978102BA560860085309B /* AlopeciaAreaMeterUITestsLaunchTests.swift */; };
+		5F9978242BA6F7ED0085309B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9978232BA6F7ED0085309B /* Utilities.swift */; };
+		5F9978252BA6F7ED0085309B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9978232BA6F7ED0085309B /* Utilities.swift */; };
+		5F9978262BA6F7ED0085309B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9978232BA6F7ED0085309B /* Utilities.swift */; };
+		5F9978282BA718040085309B /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9978272BA718040085309B /* Auth.storyboard */; };
+		5F9978292BA718040085309B /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9978272BA718040085309B /* Auth.storyboard */; };
+		5F99782A2BA718040085309B /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9978272BA718040085309B /* Auth.storyboard */; };
+		5F9978302BA719560085309B /* MainBtnViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99782E2BA719560085309B /* MainBtnViewCell.swift */; };
+		5F9978312BA719560085309B /* MainBtnViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99782E2BA719560085309B /* MainBtnViewCell.swift */; };
+		5F9978322BA719560085309B /* MainBtnViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99782E2BA719560085309B /* MainBtnViewCell.swift */; };
+		5F9978332BA719560085309B /* MainBtnViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F99782F2BA719560085309B /* MainBtnViewCell.xib */; };
+		5F9978342BA719560085309B /* MainBtnViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F99782F2BA719560085309B /* MainBtnViewCell.xib */; };
+		5F9978352BA719560085309B /* MainBtnViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F99782F2BA719560085309B /* MainBtnViewCell.xib */; };
+		5F9978392BA71CB00085309B /* SF Pro Text in Resources */ = {isa = PBXBuildFile; fileRef = 5F9978382BA71CB00085309B /* SF Pro Text */; };
+		5F99783A2BA71CB00085309B /* SF Pro Text in Resources */ = {isa = PBXBuildFile; fileRef = 5F9978382BA71CB00085309B /* SF Pro Text */; };
+		5F99783B2BA71CB00085309B /* SF Pro Text in Resources */ = {isa = PBXBuildFile; fileRef = 5F9978382BA71CB00085309B /* SF Pro Text */; };
+		5F99783E2BA720300085309B /* AuthTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99783C2BA720300085309B /* AuthTextViewCell.swift */; };
+		5F99783F2BA720300085309B /* AuthTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99783C2BA720300085309B /* AuthTextViewCell.swift */; };
+		5F9978402BA720300085309B /* AuthTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99783C2BA720300085309B /* AuthTextViewCell.swift */; };
+		5F9978412BA720300085309B /* AuthTextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F99783D2BA720300085309B /* AuthTextViewCell.xib */; };
+		5F9978422BA720300085309B /* AuthTextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F99783D2BA720300085309B /* AuthTextViewCell.xib */; };
+		5F9978432BA720300085309B /* AuthTextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F99783D2BA720300085309B /* AuthTextViewCell.xib */; };
+		5F9978472BA8195D0085309B /* AuthHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9978452BA8195D0085309B /* AuthHeaderViewCell.swift */; };
+		5F9978482BA8195D0085309B /* AuthHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9978452BA8195D0085309B /* AuthHeaderViewCell.swift */; };
+		5F9978492BA8195D0085309B /* AuthHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9978452BA8195D0085309B /* AuthHeaderViewCell.swift */; };
+		5F99784A2BA8195D0085309B /* AuthHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9978462BA8195D0085309B /* AuthHeaderViewCell.xib */; };
+		5F99784B2BA8195D0085309B /* AuthHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9978462BA8195D0085309B /* AuthHeaderViewCell.xib */; };
+		5F99784C2BA8195D0085309B /* AuthHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9978462BA8195D0085309B /* AuthHeaderViewCell.xib */; };
+		5F99784E2BA81D210085309B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99784D2BA81D210085309B /* LoginVC.swift */; };
+		5F99784F2BA81D210085309B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99784D2BA81D210085309B /* LoginVC.swift */; };
+		5F9978502BA81D210085309B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99784D2BA81D210085309B /* LoginVC.swift */; };
+		5F9978532BA824D20085309B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9978522BA824D20085309B /* Observable.swift */; };
+		5F9978542BA824D20085309B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9978522BA824D20085309B /* Observable.swift */; };
+		5F9978552BA824D20085309B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9978522BA824D20085309B /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +73,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewControllerExtension.swift; sourceTree = "<group>"; };
 		5F9977E72BA560840085309B /* AlopeciaAreaMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlopeciaAreaMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9977EA2BA560840085309B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F9977EC2BA560840085309B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +88,17 @@
 		5F99780A2BA560860085309B /* AlopeciaAreaMeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlopeciaAreaMeterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F99780E2BA560860085309B /* AlopeciaAreaMeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlopeciaAreaMeterUITests.swift; sourceTree = "<group>"; };
 		5F9978102BA560860085309B /* AlopeciaAreaMeterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlopeciaAreaMeterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5F9978232BA6F7ED0085309B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		5F9978272BA718040085309B /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		5F99782E2BA719560085309B /* MainBtnViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBtnViewCell.swift; sourceTree = "<group>"; };
+		5F99782F2BA719560085309B /* MainBtnViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainBtnViewCell.xib; sourceTree = "<group>"; };
+		5F9978382BA71CB00085309B /* SF Pro Text */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SF Pro Text"; sourceTree = "<group>"; };
+		5F99783C2BA720300085309B /* AuthTextViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextViewCell.swift; sourceTree = "<group>"; };
+		5F99783D2BA720300085309B /* AuthTextViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthTextViewCell.xib; sourceTree = "<group>"; };
+		5F9978452BA8195D0085309B /* AuthHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderViewCell.swift; sourceTree = "<group>"; };
+		5F9978462BA8195D0085309B /* AuthHeaderViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthHeaderViewCell.xib; sourceTree = "<group>"; };
+		5F99784D2BA81D210085309B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		5F9978522BA824D20085309B /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +149,14 @@
 		5F9977E92BA560840085309B /* AlopeciaAreaMeter */ = {
 			isa = PBXGroup;
 			children = (
-				5F9977EA2BA560840085309B /* AppDelegate.swift */,
-				5F9977EC2BA560840085309B /* SceneDelegate.swift */,
-				5F9977EE2BA560840085309B /* ViewController.swift */,
-				5F9977F02BA560840085309B /* Main.storyboard */,
-				5F9977F62BA560850085309B /* Assets.xcassets */,
+				5F9978512BA824BE0085309B /* Utils */,
+				5F9978362BA71C3C0085309B /* Resources */,
+				5F9978222BA6F7350085309B /* Views */,
+				5F9978212BA6F6FF0085309B /* ViewModels */,
+				5F9978202BA6F6CD0085309B /* ApiService */,
+				5F99781F2BA6F6990085309B /* Controllers  */,
+				5F99781E2BA643CF0085309B /* Helper */,
+				5F99781D2BA560C50085309B /* Application */,
 				5F9977F82BA560860085309B /* LaunchScreen.storyboard */,
 				5F9977FB2BA560860085309B /* Info.plist */,
 				5F9977F32BA560840085309B /* AlopeciaAreaMeter.xcdatamodeld */,
@@ -128,6 +179,119 @@
 				5F9978102BA560860085309B /* AlopeciaAreaMeterUITestsLaunchTests.swift */,
 			);
 			path = AlopeciaAreaMeterUITests;
+			sourceTree = "<group>";
+		};
+		5F99781D2BA560C50085309B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5F9977EA2BA560840085309B /* AppDelegate.swift */,
+				5F9977EC2BA560840085309B /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5F99781E2BA643CF0085309B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5F9978232BA6F7ED0085309B /* Utilities.swift */,
+				5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5F99781F2BA6F6990085309B /* Controllers  */ = {
+			isa = PBXGroup;
+			children = (
+				5F9977EE2BA560840085309B /* ViewController.swift */,
+				5F99784D2BA81D210085309B /* LoginVC.swift */,
+			);
+			path = "Controllers ";
+			sourceTree = "<group>";
+		};
+		5F9978202BA6F6CD0085309B /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ApiService;
+			sourceTree = "<group>";
+		};
+		5F9978212BA6F6FF0085309B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5F9978222BA6F7350085309B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F99782D2BA719090085309B /* Common */,
+				5F99782C2BA718F50085309B /* Auth */,
+				5F99782B2BA7180B0085309B /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5F99782B2BA7180B0085309B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5F9977F02BA560840085309B /* Main.storyboard */,
+				5F9978272BA718040085309B /* Auth.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5F99782C2BA718F50085309B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				5F9978442BA720360085309B /* Cells */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		5F99782D2BA719090085309B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5F99782E2BA719560085309B /* MainBtnViewCell.swift */,
+				5F99782F2BA719560085309B /* MainBtnViewCell.xib */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5F9978362BA71C3C0085309B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F9978372BA71C5B0085309B /* Fonts */,
+				5F9977F62BA560850085309B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5F9978372BA71C5B0085309B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5F9978382BA71CB00085309B /* SF Pro Text */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5F9978442BA720360085309B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5F99783C2BA720300085309B /* AuthTextViewCell.swift */,
+				5F99783D2BA720300085309B /* AuthTextViewCell.xib */,
+				5F9978452BA8195D0085309B /* AuthHeaderViewCell.swift */,
+				5F9978462BA8195D0085309B /* AuthHeaderViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5F9978512BA824BE0085309B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5F9978522BA824D20085309B /* Observable.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,8 +398,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9978412BA720300085309B /* AuthTextViewCell.xib in Resources */,
+				5F9978282BA718040085309B /* Auth.storyboard in Resources */,
 				5F9977FA2BA560860085309B /* LaunchScreen.storyboard in Resources */,
 				5F9977F72BA560850085309B /* Assets.xcassets in Resources */,
+				5F9978332BA719560085309B /* MainBtnViewCell.xib in Resources */,
+				5F99784A2BA8195D0085309B /* AuthHeaderViewCell.xib in Resources */,
+				5F9978392BA71CB00085309B /* SF Pro Text in Resources */,
 				5F9977F22BA560840085309B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +413,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F99784B2BA8195D0085309B /* AuthHeaderViewCell.xib in Resources */,
+				5F9978342BA719560085309B /* MainBtnViewCell.xib in Resources */,
+				5F99783A2BA71CB00085309B /* SF Pro Text in Resources */,
+				5F9978422BA720300085309B /* AuthTextViewCell.xib in Resources */,
+				5F9978292BA718040085309B /* Auth.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +425,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F99784C2BA8195D0085309B /* AuthHeaderViewCell.xib in Resources */,
+				5F9978352BA719560085309B /* MainBtnViewCell.xib in Resources */,
+				5F99783B2BA71CB00085309B /* SF Pro Text in Resources */,
+				5F9978432BA720300085309B /* AuthTextViewCell.xib in Resources */,
+				5F99782A2BA718040085309B /* Auth.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +441,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F9977EF2BA560840085309B /* ViewController.swift in Sources */,
+				5F9978472BA8195D0085309B /* AuthHeaderViewCell.swift in Sources */,
+				5F99783E2BA720300085309B /* AuthTextViewCell.swift in Sources */,
 				5F9977EB2BA560840085309B /* AppDelegate.swift in Sources */,
+				5F7113C92BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */,
+				5F9978302BA719560085309B /* MainBtnViewCell.swift in Sources */,
+				5F99784E2BA81D210085309B /* LoginVC.swift in Sources */,
+				5F9978532BA824D20085309B /* Observable.swift in Sources */,
 				5F9977F52BA560840085309B /* AlopeciaAreaMeter.xcdatamodeld in Sources */,
+				5F9978242BA6F7ED0085309B /* Utilities.swift in Sources */,
 				5F9977ED2BA560840085309B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +458,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9978252BA6F7ED0085309B /* Utilities.swift in Sources */,
+				5F9978482BA8195D0085309B /* AuthHeaderViewCell.swift in Sources */,
+				5F99784F2BA81D210085309B /* LoginVC.swift in Sources */,
+				5F9978542BA824D20085309B /* Observable.swift in Sources */,
+				5F7113CA2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */,
 				5F9978052BA560860085309B /* AlopeciaAreaMeterTests.swift in Sources */,
+				5F99783F2BA720300085309B /* AuthTextViewCell.swift in Sources */,
+				5F9978312BA719560085309B /* MainBtnViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +473,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9978552BA824D20085309B /* Observable.swift in Sources */,
+				5F9978322BA719560085309B /* MainBtnViewCell.swift in Sources */,
+				5F9978262BA6F7ED0085309B /* Utilities.swift in Sources */,
+				5F7113CB2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */,
+				5F9978502BA81D210085309B /* LoginVC.swift in Sources */,
 				5F99780F2BA560860085309B /* AlopeciaAreaMeterUITests.swift in Sources */,
+				5F9978492BA8195D0085309B /* AuthHeaderViewCell.swift in Sources */,
 				5F9978112BA560860085309B /* AlopeciaAreaMeterUITestsLaunchTests.swift in Sources */,
+				5F9978402BA720300085309B /* AuthTextViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,10 +645,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AlopeciaAreaMeter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Auth.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,10 +674,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AlopeciaAreaMeter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Auth.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

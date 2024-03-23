@@ -7,9 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B2538A9262A9399C7D4338C /* Pods_AlopeciaAreaMeterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA6AAC740992BB894059524 /* Pods_AlopeciaAreaMeterTests.framework */; };
 		5F7113C92BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
 		5F7113CA2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
 		5F7113CB2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
+		5F7113E32BAA33110006C667 /* sf-pro-display-cufonfonts in Resources */ = {isa = PBXBuildFile; fileRef = 5F7113E22BAA33100006C667 /* sf-pro-display-cufonfonts */; };
+		5F7113E52BAA3B400006C667 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113E42BAA3B400006C667 /* SignUpVC.swift */; };
+		5F7113E72BAA3BBF0006C667 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113E62BAA3BBF0006C667 /* LoginVM.swift */; };
+		5F7113E92BAA3C030006C667 /* SignUpVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113E82BAA3C030006C667 /* SignUpVM.swift */; };
+		5F7113EA2BAA3C030006C667 /* SignUpVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113E82BAA3C030006C667 /* SignUpVM.swift */; };
+		5F7113EB2BAA3C030006C667 /* SignUpVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113E82BAA3C030006C667 /* SignUpVM.swift */; };
+		5F7113ED2BAA3D860006C667 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113EC2BAA3D860006C667 /* BaseViewModel.swift */; };
+		5F7113EE2BAA3D860006C667 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113EC2BAA3D860006C667 /* BaseViewModel.swift */; };
+		5F7113EF2BAA3D860006C667 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113EC2BAA3D860006C667 /* BaseViewModel.swift */; };
+		5F7113F12BAA3D940006C667 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113F02BAA3D940006C667 /* LoginViewModel.swift */; };
+		5F7113F22BAA3D940006C667 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113F02BAA3D940006C667 /* LoginViewModel.swift */; };
+		5F7113F32BAA3D940006C667 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113F02BAA3D940006C667 /* LoginViewModel.swift */; };
+		5F7113FA2BAA4F1B0006C667 /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7113F92BAA4F1B0006C667 /* Patient.storyboard */; };
+		5F7113FB2BAA4F1B0006C667 /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7113F92BAA4F1B0006C667 /* Patient.storyboard */; };
+		5F7113FC2BAA4F1B0006C667 /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7113F92BAA4F1B0006C667 /* Patient.storyboard */; };
+		5F7114012BAA532D0006C667 /* HomePatientViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113FF2BAA532D0006C667 /* HomePatientViewCell.swift */; };
+		5F7114022BAA532D0006C667 /* HomePatientViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113FF2BAA532D0006C667 /* HomePatientViewCell.swift */; };
+		5F7114032BAA532D0006C667 /* HomePatientViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113FF2BAA532D0006C667 /* HomePatientViewCell.swift */; };
+		5F7114042BAA532D0006C667 /* HomePatientViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7114002BAA532D0006C667 /* HomePatientViewCell.xib */; };
+		5F7114052BAA532D0006C667 /* HomePatientViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7114002BAA532D0006C667 /* HomePatientViewCell.xib */; };
+		5F7114062BAA532D0006C667 /* HomePatientViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7114002BAA532D0006C667 /* HomePatientViewCell.xib */; };
+		5F7114092BAA56E50006C667 /* RecordViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7114072BAA56E50006C667 /* RecordViewCell.swift */; };
+		5F71140A2BAA56E50006C667 /* RecordViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7114072BAA56E50006C667 /* RecordViewCell.swift */; };
+		5F71140B2BAA56E50006C667 /* RecordViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7114072BAA56E50006C667 /* RecordViewCell.swift */; };
+		5F71140C2BAA56E50006C667 /* RecordViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7114082BAA56E50006C667 /* RecordViewCell.xib */; };
+		5F71140D2BAA56E50006C667 /* RecordViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7114082BAA56E50006C667 /* RecordViewCell.xib */; };
+		5F71140E2BAA56E50006C667 /* RecordViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7114082BAA56E50006C667 /* RecordViewCell.xib */; };
+		5F7114112BAA5C550006C667 /* CustomAlerts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7114102BAA5C550006C667 /* CustomAlerts.storyboard */; };
+		5F7114122BAA5C550006C667 /* CustomAlerts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7114102BAA5C550006C667 /* CustomAlerts.storyboard */; };
+		5F7114132BAA5C550006C667 /* CustomAlerts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7114102BAA5C550006C667 /* CustomAlerts.storyboard */; };
+		5F71141A2BAA6AC20006C667 /* StoryboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7114192BAA6AC20006C667 /* StoryboardConstants.swift */; };
+		5F71141B2BAA6AC20006C667 /* StoryboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7114192BAA6AC20006C667 /* StoryboardConstants.swift */; };
+		5F71141C2BAA6AC20006C667 /* StoryboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7114192BAA6AC20006C667 /* StoryboardConstants.swift */; };
+		5F71141E2BAEC63F0006C667 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F71141D2BAEC63F0006C667 /* AppConstants.swift */; };
+		5F71141F2BAEC63F0006C667 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F71141D2BAEC63F0006C667 /* AppConstants.swift */; };
+		5F7114202BAEC63F0006C667 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F71141D2BAEC63F0006C667 /* AppConstants.swift */; };
+		5F7114232BAEDD570006C667 /* IconConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7114222BAEDD570006C667 /* IconConstants.swift */; };
+		5F7114242BAEDD570006C667 /* IconConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7114222BAEDD570006C667 /* IconConstants.swift */; };
+		5F7114252BAEDD570006C667 /* IconConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7114222BAEDD570006C667 /* IconConstants.swift */; };
+		5F7114272BAEE4650006C667 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7114262BAEE4650006C667 /* ColorConstants.swift */; };
+		5F7114282BAEE4650006C667 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7114262BAEE4650006C667 /* ColorConstants.swift */; };
+		5F7114292BAEE4650006C667 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7114262BAEE4650006C667 /* ColorConstants.swift */; };
+		5F71142C2BAEE79A0006C667 /* UiColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F71142B2BAEE79A0006C667 /* UiColorExtension.swift */; };
+		5F71142D2BAEE79A0006C667 /* UiColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F71142B2BAEE79A0006C667 /* UiColorExtension.swift */; };
+		5F71142E2BAEE79A0006C667 /* UiColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F71142B2BAEE79A0006C667 /* UiColorExtension.swift */; };
 		5F9977EB2BA560840085309B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9977EA2BA560840085309B /* AppDelegate.swift */; };
 		5F9977ED2BA560840085309B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9977EC2BA560840085309B /* SceneDelegate.swift */; };
 		5F9977EF2BA560840085309B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9977EE2BA560840085309B /* ViewController.swift */; };
@@ -26,12 +72,12 @@
 		5F9978282BA718040085309B /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9978272BA718040085309B /* Auth.storyboard */; };
 		5F9978292BA718040085309B /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9978272BA718040085309B /* Auth.storyboard */; };
 		5F99782A2BA718040085309B /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F9978272BA718040085309B /* Auth.storyboard */; };
-		5F9978302BA719560085309B /* MainBtnViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99782E2BA719560085309B /* MainBtnViewCell.swift */; };
-		5F9978312BA719560085309B /* MainBtnViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99782E2BA719560085309B /* MainBtnViewCell.swift */; };
-		5F9978322BA719560085309B /* MainBtnViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99782E2BA719560085309B /* MainBtnViewCell.swift */; };
-		5F9978332BA719560085309B /* MainBtnViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F99782F2BA719560085309B /* MainBtnViewCell.xib */; };
-		5F9978342BA719560085309B /* MainBtnViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F99782F2BA719560085309B /* MainBtnViewCell.xib */; };
-		5F9978352BA719560085309B /* MainBtnViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F99782F2BA719560085309B /* MainBtnViewCell.xib */; };
+		5F9978302BA719560085309B /* AuthBtnsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99782E2BA719560085309B /* AuthBtnsViewCell.swift */; };
+		5F9978312BA719560085309B /* AuthBtnsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99782E2BA719560085309B /* AuthBtnsViewCell.swift */; };
+		5F9978322BA719560085309B /* AuthBtnsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99782E2BA719560085309B /* AuthBtnsViewCell.swift */; };
+		5F9978332BA719560085309B /* AuthBtnsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F99782F2BA719560085309B /* AuthBtnsViewCell.xib */; };
+		5F9978342BA719560085309B /* AuthBtnsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F99782F2BA719560085309B /* AuthBtnsViewCell.xib */; };
+		5F9978352BA719560085309B /* AuthBtnsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F99782F2BA719560085309B /* AuthBtnsViewCell.xib */; };
 		5F9978392BA71CB00085309B /* SF Pro Text in Resources */ = {isa = PBXBuildFile; fileRef = 5F9978382BA71CB00085309B /* SF Pro Text */; };
 		5F99783A2BA71CB00085309B /* SF Pro Text in Resources */ = {isa = PBXBuildFile; fileRef = 5F9978382BA71CB00085309B /* SF Pro Text */; };
 		5F99783B2BA71CB00085309B /* SF Pro Text in Resources */ = {isa = PBXBuildFile; fileRef = 5F9978382BA71CB00085309B /* SF Pro Text */; };
@@ -53,6 +99,9 @@
 		5F9978532BA824D20085309B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9978522BA824D20085309B /* Observable.swift */; };
 		5F9978542BA824D20085309B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9978522BA824D20085309B /* Observable.swift */; };
 		5F9978552BA824D20085309B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9978522BA824D20085309B /* Observable.swift */; };
+		5FB594032BAF5BE6009D59FB /* PatientHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB594022BAF5BE6009D59FB /* PatientHomeVC.swift */; };
+		7D2BF95808C1F799D162AB78 /* Pods_AlopeciaAreaMeter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72ECCAACB1729374ADD6AA5 /* Pods_AlopeciaAreaMeter.framework */; };
+		A37D9F8936A738FD8745442E /* Pods_AlopeciaAreaMeter_AlopeciaAreaMeterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF2FF10F89D568DC3BAB6AA /* Pods_AlopeciaAreaMeter_AlopeciaAreaMeterUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +122,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EF2FF10F89D568DC3BAB6AA /* Pods_AlopeciaAreaMeter_AlopeciaAreaMeterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlopeciaAreaMeter_AlopeciaAreaMeterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C7658E14B61D33F8258909B /* Pods-AlopeciaAreaMeterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlopeciaAreaMeterTests.release.xcconfig"; path = "Target Support Files/Pods-AlopeciaAreaMeterTests/Pods-AlopeciaAreaMeterTests.release.xcconfig"; sourceTree = "<group>"; };
 		5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewControllerExtension.swift; sourceTree = "<group>"; };
+		5F7113E22BAA33100006C667 /* sf-pro-display-cufonfonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "sf-pro-display-cufonfonts"; path = "../../../../../../Downloads/sf-pro-display-cufonfonts"; sourceTree = "<group>"; };
+		5F7113E42BAA3B400006C667 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		5F7113E62BAA3BBF0006C667 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		5F7113E82BAA3C030006C667 /* SignUpVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVM.swift; sourceTree = "<group>"; };
+		5F7113EC2BAA3D860006C667 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		5F7113F02BAA3D940006C667 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5F7113F92BAA4F1B0006C667 /* Patient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Patient.storyboard; sourceTree = "<group>"; };
+		5F7113FF2BAA532D0006C667 /* HomePatientViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePatientViewCell.swift; sourceTree = "<group>"; };
+		5F7114002BAA532D0006C667 /* HomePatientViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePatientViewCell.xib; sourceTree = "<group>"; };
+		5F7114072BAA56E50006C667 /* RecordViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewCell.swift; sourceTree = "<group>"; };
+		5F7114082BAA56E50006C667 /* RecordViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordViewCell.xib; sourceTree = "<group>"; };
+		5F7114102BAA5C550006C667 /* CustomAlerts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomAlerts.storyboard; sourceTree = "<group>"; };
+		5F7114192BAA6AC20006C667 /* StoryboardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardConstants.swift; sourceTree = "<group>"; };
+		5F71141D2BAEC63F0006C667 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		5F7114222BAEDD570006C667 /* IconConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconConstants.swift; sourceTree = "<group>"; };
+		5F7114262BAEE4650006C667 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		5F71142B2BAEE79A0006C667 /* UiColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiColorExtension.swift; sourceTree = "<group>"; };
 		5F9977E72BA560840085309B /* AlopeciaAreaMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlopeciaAreaMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9977EA2BA560840085309B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F9977EC2BA560840085309B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,8 +158,8 @@
 		5F9978102BA560860085309B /* AlopeciaAreaMeterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlopeciaAreaMeterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5F9978232BA6F7ED0085309B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		5F9978272BA718040085309B /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
-		5F99782E2BA719560085309B /* MainBtnViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBtnViewCell.swift; sourceTree = "<group>"; };
-		5F99782F2BA719560085309B /* MainBtnViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainBtnViewCell.xib; sourceTree = "<group>"; };
+		5F99782E2BA719560085309B /* AuthBtnsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBtnsViewCell.swift; sourceTree = "<group>"; };
+		5F99782F2BA719560085309B /* AuthBtnsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthBtnsViewCell.xib; sourceTree = "<group>"; };
 		5F9978382BA71CB00085309B /* SF Pro Text */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SF Pro Text"; sourceTree = "<group>"; };
 		5F99783C2BA720300085309B /* AuthTextViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextViewCell.swift; sourceTree = "<group>"; };
 		5F99783D2BA720300085309B /* AuthTextViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthTextViewCell.xib; sourceTree = "<group>"; };
@@ -99,6 +167,14 @@
 		5F9978462BA8195D0085309B /* AuthHeaderViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthHeaderViewCell.xib; sourceTree = "<group>"; };
 		5F99784D2BA81D210085309B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		5F9978522BA824D20085309B /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		5FB594022BAF5BE6009D59FB /* PatientHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHomeVC.swift; sourceTree = "<group>"; };
+		9EF794D820FFE1F08247AB50 /* Pods-AlopeciaAreaMeter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlopeciaAreaMeter.release.xcconfig"; path = "Target Support Files/Pods-AlopeciaAreaMeter/Pods-AlopeciaAreaMeter.release.xcconfig"; sourceTree = "<group>"; };
+		B72ECCAACB1729374ADD6AA5 /* Pods_AlopeciaAreaMeter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlopeciaAreaMeter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB09CDCC78806848B536848F /* Pods-AlopeciaAreaMeterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlopeciaAreaMeterTests.debug.xcconfig"; path = "Target Support Files/Pods-AlopeciaAreaMeterTests/Pods-AlopeciaAreaMeterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6E9F442AA7D8005E8267E13 /* Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests.release.xcconfig"; path = "Target Support Files/Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests/Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E789879901430F0D285FD9A6 /* Pods-AlopeciaAreaMeter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlopeciaAreaMeter.debug.xcconfig"; path = "Target Support Files/Pods-AlopeciaAreaMeter/Pods-AlopeciaAreaMeter.debug.xcconfig"; sourceTree = "<group>"; };
+		EA471DB6F60E2D69F0BC34DD /* Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests.debug.xcconfig"; path = "Target Support Files/Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests/Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EAA6AAC740992BB894059524 /* Pods_AlopeciaAreaMeterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlopeciaAreaMeterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D2BF95808C1F799D162AB78 /* Pods_AlopeciaAreaMeter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2538A9262A9399C7D4338C /* Pods_AlopeciaAreaMeterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,12 +198,70 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A37D9F8936A738FD8745442E /* Pods_AlopeciaAreaMeter_AlopeciaAreaMeterUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55EBFE6FEA0FBA0F9D70DEF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E789879901430F0D285FD9A6 /* Pods-AlopeciaAreaMeter.debug.xcconfig */,
+				9EF794D820FFE1F08247AB50 /* Pods-AlopeciaAreaMeter.release.xcconfig */,
+				EA471DB6F60E2D69F0BC34DD /* Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests.debug.xcconfig */,
+				D6E9F442AA7D8005E8267E13 /* Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests.release.xcconfig */,
+				CB09CDCC78806848B536848F /* Pods-AlopeciaAreaMeterTests.debug.xcconfig */,
+				2C7658E14B61D33F8258909B /* Pods-AlopeciaAreaMeterTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5F7113FD2BAA52A20006C667 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5F7113FF2BAA532D0006C667 /* HomePatientViewCell.swift */,
+				5F7114002BAA532D0006C667 /* HomePatientViewCell.xib */,
+				5F7114072BAA56E50006C667 /* RecordViewCell.swift */,
+				5F7114082BAA56E50006C667 /* RecordViewCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5F71140F2BAA5B850006C667 /* CustomAlerts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomAlerts;
+			sourceTree = "<group>";
+		};
+		5F7114182BAA6A9B0006C667 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		5F7114212BAED2360006C667 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5F7114192BAA6AC20006C667 /* StoryboardConstants.swift */,
+				5F71141D2BAEC63F0006C667 /* AppConstants.swift */,
+				5F7114222BAEDD570006C667 /* IconConstants.swift */,
+				5F7114262BAEE4650006C667 /* ColorConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		5F71142A2BAEE7290006C667 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5F71142B2BAEE79A0006C667 /* UiColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		5F9977DE2BA560840085309B = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +269,8 @@
 				5F9978032BA560860085309B /* AlopeciaAreaMeterTests */,
 				5F99780D2BA560860085309B /* AlopeciaAreaMeterUITests */,
 				5F9977E82BA560840085309B /* Products */,
+				55EBFE6FEA0FBA0F9D70DEF5 /* Pods */,
+				7D7B3EDE08934EDD961DE7D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,8 +340,9 @@
 		5F99781F2BA6F6990085309B /* Controllers  */ = {
 			isa = PBXGroup;
 			children = (
+				5FB594012BAF5BC4009D59FB /* Auth */,
 				5F9977EE2BA560840085309B /* ViewController.swift */,
-				5F99784D2BA81D210085309B /* LoginVC.swift */,
+				5FB594022BAF5BE6009D59FB /* PatientHomeVC.swift */,
 			);
 			path = "Controllers ";
 			sourceTree = "<group>";
@@ -218,6 +357,10 @@
 		5F9978212BA6F6FF0085309B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				5F7113F02BAA3D940006C667 /* LoginViewModel.swift */,
+				5F7113EC2BAA3D860006C667 /* BaseViewModel.swift */,
+				5F7113E62BAA3BBF0006C667 /* LoginVM.swift */,
+				5F7113E82BAA3C030006C667 /* SignUpVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -225,8 +368,10 @@
 		5F9978222BA6F7350085309B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5F71140F2BAA5B850006C667 /* CustomAlerts */,
 				5F99782D2BA719090085309B /* Common */,
 				5F99782C2BA718F50085309B /* Auth */,
+				5F7113FD2BAA52A20006C667 /* Home */,
 				5F99782B2BA7180B0085309B /* Storyboards */,
 			);
 			path = Views;
@@ -237,6 +382,8 @@
 			children = (
 				5F9977F02BA560840085309B /* Main.storyboard */,
 				5F9978272BA718040085309B /* Auth.storyboard */,
+				5F7113F92BAA4F1B0006C667 /* Patient.storyboard */,
+				5F7114102BAA5C550006C667 /* CustomAlerts.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -252,8 +399,8 @@
 		5F99782D2BA719090085309B /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				5F99782E2BA719560085309B /* MainBtnViewCell.swift */,
-				5F99782F2BA719560085309B /* MainBtnViewCell.xib */,
+				5F99782E2BA719560085309B /* AuthBtnsViewCell.swift */,
+				5F99782F2BA719560085309B /* AuthBtnsViewCell.xib */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -270,6 +417,7 @@
 		5F9978372BA71C5B0085309B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				5F7113E22BAA33100006C667 /* sf-pro-display-cufonfonts */,
 				5F9978382BA71CB00085309B /* SF Pro Text */,
 			);
 			path = Fonts;
@@ -289,9 +437,31 @@
 		5F9978512BA824BE0085309B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				5F71142A2BAEE7290006C667 /* Extensions */,
+				5F7114212BAED2360006C667 /* Constants */,
+				5F7114182BAA6A9B0006C667 /* Enums */,
 				5F9978522BA824D20085309B /* Observable.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		5FB594012BAF5BC4009D59FB /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				5F99784D2BA81D210085309B /* LoginVC.swift */,
+				5F7113E42BAA3B400006C667 /* SignUpVC.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		7D7B3EDE08934EDD961DE7D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B72ECCAACB1729374ADD6AA5 /* Pods_AlopeciaAreaMeter.framework */,
+				0EF2FF10F89D568DC3BAB6AA /* Pods_AlopeciaAreaMeter_AlopeciaAreaMeterUITests.framework */,
+				EAA6AAC740992BB894059524 /* Pods_AlopeciaAreaMeterTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,9 +471,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F9978142BA560860085309B /* Build configuration list for PBXNativeTarget "AlopeciaAreaMeter" */;
 			buildPhases = (
+				771215D32D87BB47699DB74D /* [CP] Check Pods Manifest.lock */,
 				5F9977E32BA560840085309B /* Sources */,
 				5F9977E42BA560840085309B /* Frameworks */,
 				5F9977E52BA560840085309B /* Resources */,
+				A8C635A7A1971FDFE8C630E7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -318,6 +490,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F9978172BA560860085309B /* Build configuration list for PBXNativeTarget "AlopeciaAreaMeterTests" */;
 			buildPhases = (
+				845FDA828BF687AADC88C58E /* [CP] Check Pods Manifest.lock */,
 				5F9977FC2BA560860085309B /* Sources */,
 				5F9977FD2BA560860085309B /* Frameworks */,
 				5F9977FE2BA560860085309B /* Resources */,
@@ -336,9 +509,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F99781A2BA560860085309B /* Build configuration list for PBXNativeTarget "AlopeciaAreaMeterUITests" */;
 			buildPhases = (
+				4380EBE6CB9D83B626B0FFAC /* [CP] Check Pods Manifest.lock */,
 				5F9978062BA560860085309B /* Sources */,
 				5F9978072BA560860085309B /* Frameworks */,
 				5F9978082BA560860085309B /* Resources */,
+				4977E5310DC2B589272AF40D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -399,10 +574,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F9978412BA720300085309B /* AuthTextViewCell.xib in Resources */,
+				5F7114042BAA532D0006C667 /* HomePatientViewCell.xib in Resources */,
+				5F7114112BAA5C550006C667 /* CustomAlerts.storyboard in Resources */,
+				5F7113FA2BAA4F1B0006C667 /* Patient.storyboard in Resources */,
+				5F7113E32BAA33110006C667 /* sf-pro-display-cufonfonts in Resources */,
 				5F9978282BA718040085309B /* Auth.storyboard in Resources */,
 				5F9977FA2BA560860085309B /* LaunchScreen.storyboard in Resources */,
 				5F9977F72BA560850085309B /* Assets.xcassets in Resources */,
-				5F9978332BA719560085309B /* MainBtnViewCell.xib in Resources */,
+				5F71140C2BAA56E50006C667 /* RecordViewCell.xib in Resources */,
+				5F9978332BA719560085309B /* AuthBtnsViewCell.xib in Resources */,
 				5F99784A2BA8195D0085309B /* AuthHeaderViewCell.xib in Resources */,
 				5F9978392BA71CB00085309B /* SF Pro Text in Resources */,
 				5F9977F22BA560840085309B /* Main.storyboard in Resources */,
@@ -413,8 +593,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F7113FB2BAA4F1B0006C667 /* Patient.storyboard in Resources */,
+				5F7114052BAA532D0006C667 /* HomePatientViewCell.xib in Resources */,
 				5F99784B2BA8195D0085309B /* AuthHeaderViewCell.xib in Resources */,
-				5F9978342BA719560085309B /* MainBtnViewCell.xib in Resources */,
+				5F9978342BA719560085309B /* AuthBtnsViewCell.xib in Resources */,
+				5F7114122BAA5C550006C667 /* CustomAlerts.storyboard in Resources */,
+				5F71140D2BAA56E50006C667 /* RecordViewCell.xib in Resources */,
 				5F99783A2BA71CB00085309B /* SF Pro Text in Resources */,
 				5F9978422BA720300085309B /* AuthTextViewCell.xib in Resources */,
 				5F9978292BA718040085309B /* Auth.storyboard in Resources */,
@@ -425,8 +609,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F7113FC2BAA4F1B0006C667 /* Patient.storyboard in Resources */,
+				5F7114062BAA532D0006C667 /* HomePatientViewCell.xib in Resources */,
 				5F99784C2BA8195D0085309B /* AuthHeaderViewCell.xib in Resources */,
-				5F9978352BA719560085309B /* MainBtnViewCell.xib in Resources */,
+				5F9978352BA719560085309B /* AuthBtnsViewCell.xib in Resources */,
+				5F7114132BAA5C550006C667 /* CustomAlerts.storyboard in Resources */,
+				5F71140E2BAA56E50006C667 /* RecordViewCell.xib in Resources */,
 				5F99783B2BA71CB00085309B /* SF Pro Text in Resources */,
 				5F9978432BA720300085309B /* AuthTextViewCell.xib in Resources */,
 				5F99782A2BA718040085309B /* Auth.storyboard in Resources */,
@@ -435,19 +623,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4380EBE6CB9D83B626B0FFAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4977E5310DC2B589272AF40D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests/Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests/Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests/Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		771215D32D87BB47699DB74D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlopeciaAreaMeter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		845FDA828BF687AADC88C58E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlopeciaAreaMeterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8C635A7A1971FDFE8C630E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlopeciaAreaMeter/Pods-AlopeciaAreaMeter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlopeciaAreaMeter/Pods-AlopeciaAreaMeter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlopeciaAreaMeter/Pods-AlopeciaAreaMeter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5F9977E32BA560840085309B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5F9977EF2BA560840085309B /* ViewController.swift in Sources */,
+				5F71141A2BAA6AC20006C667 /* StoryboardConstants.swift in Sources */,
+				5F7113E72BAA3BBF0006C667 /* LoginVM.swift in Sources */,
 				5F9978472BA8195D0085309B /* AuthHeaderViewCell.swift in Sources */,
 				5F99783E2BA720300085309B /* AuthTextViewCell.swift in Sources */,
+				5FB594032BAF5BE6009D59FB /* PatientHomeVC.swift in Sources */,
+				5F71141E2BAEC63F0006C667 /* AppConstants.swift in Sources */,
+				5F7114012BAA532D0006C667 /* HomePatientViewCell.swift in Sources */,
+				5F7114092BAA56E50006C667 /* RecordViewCell.swift in Sources */,
+				5F7113F12BAA3D940006C667 /* LoginViewModel.swift in Sources */,
 				5F9977EB2BA560840085309B /* AppDelegate.swift in Sources */,
+				5F7113E52BAA3B400006C667 /* SignUpVC.swift in Sources */,
+				5F7113E92BAA3C030006C667 /* SignUpVM.swift in Sources */,
+				5F71142C2BAEE79A0006C667 /* UiColorExtension.swift in Sources */,
 				5F7113C92BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */,
-				5F9978302BA719560085309B /* MainBtnViewCell.swift in Sources */,
+				5F9978302BA719560085309B /* AuthBtnsViewCell.swift in Sources */,
 				5F99784E2BA81D210085309B /* LoginVC.swift in Sources */,
+				5F7114272BAEE4650006C667 /* ColorConstants.swift in Sources */,
 				5F9978532BA824D20085309B /* Observable.swift in Sources */,
+				5F7113ED2BAA3D860006C667 /* BaseViewModel.swift in Sources */,
+				5F7114232BAEDD570006C667 /* IconConstants.swift in Sources */,
 				5F9977F52BA560840085309B /* AlopeciaAreaMeter.xcdatamodeld in Sources */,
 				5F9978242BA6F7ED0085309B /* Utilities.swift in Sources */,
 				5F9977ED2BA560840085309B /* SceneDelegate.swift in Sources */,
@@ -458,14 +762,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F71141F2BAEC63F0006C667 /* AppConstants.swift in Sources */,
 				5F9978252BA6F7ED0085309B /* Utilities.swift in Sources */,
+				5F7114282BAEE4650006C667 /* ColorConstants.swift in Sources */,
+				5F7114022BAA532D0006C667 /* HomePatientViewCell.swift in Sources */,
+				5F7113EE2BAA3D860006C667 /* BaseViewModel.swift in Sources */,
+				5F7114242BAEDD570006C667 /* IconConstants.swift in Sources */,
+				5F7113F22BAA3D940006C667 /* LoginViewModel.swift in Sources */,
+				5F7113EA2BAA3C030006C667 /* SignUpVM.swift in Sources */,
+				5F71140A2BAA56E50006C667 /* RecordViewCell.swift in Sources */,
+				5F71141B2BAA6AC20006C667 /* StoryboardConstants.swift in Sources */,
 				5F9978482BA8195D0085309B /* AuthHeaderViewCell.swift in Sources */,
 				5F99784F2BA81D210085309B /* LoginVC.swift in Sources */,
 				5F9978542BA824D20085309B /* Observable.swift in Sources */,
+				5F71142D2BAEE79A0006C667 /* UiColorExtension.swift in Sources */,
 				5F7113CA2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */,
 				5F9978052BA560860085309B /* AlopeciaAreaMeterTests.swift in Sources */,
 				5F99783F2BA720300085309B /* AuthTextViewCell.swift in Sources */,
-				5F9978312BA719560085309B /* MainBtnViewCell.swift in Sources */,
+				5F9978312BA719560085309B /* AuthBtnsViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,14 +787,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F71142E2BAEE79A0006C667 /* UiColorExtension.swift in Sources */,
+				5F71141C2BAA6AC20006C667 /* StoryboardConstants.swift in Sources */,
 				5F9978552BA824D20085309B /* Observable.swift in Sources */,
-				5F9978322BA719560085309B /* MainBtnViewCell.swift in Sources */,
+				5F7113EF2BAA3D860006C667 /* BaseViewModel.swift in Sources */,
+				5F9978322BA719560085309B /* AuthBtnsViewCell.swift in Sources */,
+				5F7114252BAEDD570006C667 /* IconConstants.swift in Sources */,
 				5F9978262BA6F7ED0085309B /* Utilities.swift in Sources */,
 				5F7113CB2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */,
+				5F71140B2BAA56E50006C667 /* RecordViewCell.swift in Sources */,
 				5F9978502BA81D210085309B /* LoginVC.swift in Sources */,
 				5F99780F2BA560860085309B /* AlopeciaAreaMeterUITests.swift in Sources */,
+				5F7114032BAA532D0006C667 /* HomePatientViewCell.swift in Sources */,
 				5F9978492BA8195D0085309B /* AuthHeaderViewCell.swift in Sources */,
+				5F7113F32BAA3D940006C667 /* LoginViewModel.swift in Sources */,
 				5F9978112BA560860085309B /* AlopeciaAreaMeterUITestsLaunchTests.swift in Sources */,
+				5F7114202BAEC63F0006C667 /* AppConstants.swift in Sources */,
+				5F7114292BAEE4650006C667 /* ColorConstants.swift in Sources */,
+				5F7113EB2BAA3C030006C667 /* SignUpVM.swift in Sources */,
 				5F9978402BA720300085309B /* AuthTextViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,7 +894,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -624,7 +948,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -636,6 +960,7 @@
 		};
 		5F9978152BA560860085309B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E789879901430F0D285FD9A6 /* Pods-AlopeciaAreaMeter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -665,6 +990,7 @@
 		};
 		5F9978162BA560860085309B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EF794D820FFE1F08247AB50 /* Pods-AlopeciaAreaMeter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -694,6 +1020,7 @@
 		};
 		5F9978182BA560860085309B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB09CDCC78806848B536848F /* Pods-AlopeciaAreaMeterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -714,6 +1041,7 @@
 		};
 		5F9978192BA560860085309B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C7658E14B61D33F8258909B /* Pods-AlopeciaAreaMeterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -734,6 +1062,7 @@
 		};
 		5F99781B2BA560860085309B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA471DB6F60E2D69F0BC34DD /* Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -752,6 +1081,7 @@
 		};
 		5F99781C2BA560860085309B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6E9F442AA7D8005E8267E13 /* Pods-AlopeciaAreaMeter-AlopeciaAreaMeterUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

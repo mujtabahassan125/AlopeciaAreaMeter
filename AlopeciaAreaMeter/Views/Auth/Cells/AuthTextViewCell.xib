@@ -12,6 +12,9 @@
         <array key="SF-Pro-Text-Regular.otf">
             <string>SFProText-Regular</string>
         </array>
+        <array key="SFPRODISPLAYREGULAR.OTF">
+            <string>SFProDisplay-Regular</string>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -38,12 +41,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="g83-B4-G2p">
                                         <rect key="frame" x="8" y="0.0" width="244" height="35"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emailIcon" translatesAutoresizingMaskIntoConstraints="NO" id="lHD-sP-k8m">
-                                                <rect key="frame" x="0.0" y="0.0" width="16.666666666666668" height="35"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_icon" translatesAutoresizingMaskIntoConstraints="NO" id="lHD-sP-k8m">
+                                                <rect key="frame" x="0.0" y="0.0" width="18" height="18.666666666666668"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="0ZG-by-Pic"/>
+                                                    <constraint firstAttribute="width" constant="18" id="4nr-eo-jDt"/>
+                                                </constraints>
                                             </imageView>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="abc@example.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nj4-aP-EMj">
-                                                <rect key="frame" x="24.666666666666671" y="0.0" width="219.33333333333331" height="35"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="abc@example.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nj4-aP-EMj">
+                                                <rect key="frame" x="26" y="0.0" width="218" height="18.666666666666668"/>
+                                                <color key="textColor" name="SubTitleLblColor"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
@@ -96,9 +104,12 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="emailIcon" width="16.666666030883789" height="15.666666984558105"/>
+        <image name="email_icon" width="16.666666030883789" height="15.666666984558105"/>
         <namedColor name="PrimaryColor">
-            <color red="0.075000002980232239" green="0.48600000143051147" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.074509803921568626" green="0.48627450980392156" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SubTitleLblColor">
+            <color red="0.13333333333333333" green="0.13333333333333333" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

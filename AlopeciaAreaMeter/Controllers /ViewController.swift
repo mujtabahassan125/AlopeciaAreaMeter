@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     }
     
     func showAuthController() {
-        self.navigateToViewController(storyboardName: Storyboard.auth.rawValue, viewControllerIdentifier: String(describing: LoginVC.self), viewModel: LoginViewModel()) { (vc: LoginVC, viewModel) in
-            vc.viewModel = viewModel as? LoginViewModel
+        self.navigateToViewController(storyboardName: Storyboard.auth.rawValue, viewControllerIdentifier: String(describing: LoginVC.self), viewModel: LoginVM()) { (vc: LoginVC, viewModel) in
+            vc.viewModel = viewModel as? LoginVM
             return vc
         }
     }

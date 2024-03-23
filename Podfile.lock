@@ -1,0 +1,134 @@
+PODS:
+  - AppAuth (1.7.3):
+    - AppAuth/Core (= 1.7.3)
+    - AppAuth/ExternalUserAgent (= 1.7.3)
+  - AppAuth/Core (1.7.3)
+  - AppAuth/ExternalUserAgent (1.7.3):
+    - AppAuth/Core
+  - Charts (4.1.0):
+    - Charts/Core (= 4.1.0)
+  - Charts/Core (4.1.0):
+    - SwiftAlgorithms (~> 1.0)
+  - DatePicker (1.3.1):
+    - Extended
+  - DatePickerDialog (4.0)
+  - DownPickerSwift (1.1.2):
+    - DownPickerSwift/Core (= 1.1.2)
+  - DownPickerSwift/Core (1.1.2)
+  - Extended (1.0.5)
+  - GoogleSignIn (7.0.0):
+    - AppAuth (~> 1.5)
+    - GTMAppAuth (< 3.0, >= 1.3)
+    - GTMSessionFetcher/Core (< 4.0, >= 1.1)
+  - GTMAppAuth (2.0.0):
+    - AppAuth/Core (~> 1.6)
+    - GTMSessionFetcher/Core (< 4.0, >= 1.5)
+  - GTMSessionFetcher/Core (1.7.2)
+  - IQKeyboardManagerSwift (6.5.10)
+  - MaterialComponents/AnimationTiming (124.2.0)
+  - MaterialComponents/Availability (124.2.0)
+  - MaterialComponents/private/Math (124.2.0)
+  - "MaterialComponents/private/TextControlsPrivate+BaseStyle (124.2.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/private/TextControlsPrivate+FilledStyle (124.2.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+    - "MaterialComponents/private/TextControlsPrivate+UnderlinedStyle"
+  - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle (124.2.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/private/TextControlsPrivate+Shared (124.2.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
+    - "MaterialComponents/TextControls+Enums"
+  - "MaterialComponents/private/TextControlsPrivate+TextFields (124.2.0)":
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/private/TextControlsPrivate+UnderlinedStyle (124.2.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/TextControls+BaseTextFields (124.2.0)":
+    - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+    - "MaterialComponents/private/TextControlsPrivate+TextFields"
+    - MDFInternationalization
+  - "MaterialComponents/TextControls+Enums (124.2.0)"
+  - "MaterialComponents/TextControls+FilledTextFields (124.2.0)":
+    - MaterialComponents/Availability
+    - "MaterialComponents/private/TextControlsPrivate+FilledStyle"
+    - "MaterialComponents/TextControls+BaseTextFields"
+  - "MaterialComponents/TextControls+OutlinedTextFields (124.2.0)":
+    - MaterialComponents/Availability
+    - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
+    - "MaterialComponents/TextControls+BaseTextFields"
+  - MDFInternationalization (3.0.0)
+  - ReachabilitySwift (5.2.1)
+  - ShimmerView (0.5.0)
+  - SwiftAlgorithms (1.0.0)
+  - ToastViewSwift (2.1.2)
+  - TPKeyboardAvoiding (1.3.5)
+
+DEPENDENCIES:
+  - Charts
+  - DatePicker (~> 1.3.0)
+  - DatePickerDialog
+  - DownPickerSwift (~> 1.1.1)
+  - GoogleSignIn
+  - IQKeyboardManagerSwift
+  - "MaterialComponents/TextControls+FilledTextFields"
+  - "MaterialComponents/TextControls+OutlinedTextFields"
+  - ReachabilitySwift
+  - ShimmerView
+  - ToastViewSwift
+  - TPKeyboardAvoiding (~> 1.3)
+
+SPEC REPOS:
+  trunk:
+    - AppAuth
+    - Charts
+    - DatePicker
+    - DatePickerDialog
+    - DownPickerSwift
+    - Extended
+    - GoogleSignIn
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - IQKeyboardManagerSwift
+    - MaterialComponents
+    - MDFInternationalization
+    - ReachabilitySwift
+    - ShimmerView
+    - SwiftAlgorithms
+    - ToastViewSwift
+    - TPKeyboardAvoiding
+
+SPEC CHECKSUMS:
+  AppAuth: a13994980c1ec792f7e2e665acd4d4aa6be43240
+  Charts: ce0768268078eee0336f122c3c4ca248e4e204c5
+  DatePicker: 05ddbd2b57d00ce6f44c1f0611ced32f948d33a6
+  DatePickerDialog: ccff2f91ff7a018057a4d72fa5ad6de49c8cb0cd
+  DownPickerSwift: 3d76c73a86fd2984b8f4add53901a655f036fd5c
+  Extended: c463225e0c29b2823847866c1b106827772ac678
+  GoogleSignIn: b232380cf495a429b8095d3178a8d5855b42e842
+  GTMAppAuth: 99fb010047ba3973b7026e45393f51f27ab965ae
+  GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
+  MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
+  ReachabilitySwift: 5ae15e16814b5f9ef568963fb2c87aeb49158c66
+  ShimmerView: ffde81304d8fb29127cbce492d14430dca288ebb
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
+  ToastViewSwift: 62e4c54cd482dd1106c2b2224103a8b171763cf3
+  TPKeyboardAvoiding: d55b3ea7b362540af8fcf36aa3ed2e87bf210cc6
+
+PODFILE CHECKSUM: dbfe1a2d4c63863f774caecff7825db9ca377aac
+
+COCOAPODS: 1.15.2

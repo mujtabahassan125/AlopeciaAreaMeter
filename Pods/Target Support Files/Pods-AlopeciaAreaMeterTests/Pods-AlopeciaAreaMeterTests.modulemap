@@ -1,0 +1,6 @@
+framework module Pods_AlopeciaAreaMeterTests {
+  umbrella header "Pods-AlopeciaAreaMeterTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

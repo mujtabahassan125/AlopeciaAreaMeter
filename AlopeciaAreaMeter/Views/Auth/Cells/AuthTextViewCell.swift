@@ -15,7 +15,17 @@ class AuthTextViewCell: UITableViewCell {
     @IBOutlet weak var titleLbl: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        // Set border color of the view
+        InputView.layer.borderColor = ColorConstants.primary.cgColor
+        InputView.layer.borderWidth = 1.0 // You can adjust the width as needed
+        InputView.layer.cornerRadius = 6.0 // You can adjust the corner radius as needed
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -22,16 +22,15 @@
 		<string>SF-Pro-Text-ThinItalic.otf</string>
 		<string>SF-Pro-Text-Ultralight.otf</string>
 		<string>SF-Pro-Text-UltralightItalic.otf</string>
-        
-        <string>SFPRODISPLAYBLACKITALIC.otf</string>
-        <string>SFPRODISPLAYBOLD.otf</string>
-        <string>SFPRODISPLAYHEAVYITALIC.otf</string>
-        <string>SFPRODISPLAYLIGHTITALIC.otf</string>
-        <string>SFPRODISPLAYMEDIUM.otf</string>
-        <string>SFPRODISPLAYREGULAR.otf</string>
-        <string>SFPRODISPLAYSEMIBOLDITALIC.otf</string>
-        <string>SFPRODISPLAYTHINITALIC.otf</string>
-        <string>SFPRODISPLAYULTRALIGHTITALIC.otf</string>
+		<string>SFPRODISPLAYBLACKITALIC.otf</string>
+		<string>SFPRODISPLAYBOLD.otf</string>
+		<string>SFPRODISPLAYHEAVYITALIC.otf</string>
+		<string>SFPRODISPLAYLIGHTITALIC.otf</string>
+		<string>SFPRODISPLAYMEDIUM.otf</string>
+		<string>SFPRODISPLAYREGULAR.otf</string>
+		<string>SFPRODISPLAYSEMIBOLDITALIC.otf</string>
+		<string>SFPRODISPLAYTHINITALIC.otf</string>
+		<string>SFPRODISPLAYULTRALIGHTITALIC.otf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
@@ -52,5 +51,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Please allow to take photo</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Please allow to record audio</string>
 </dict>
 </plist>

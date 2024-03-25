@@ -27,5 +27,13 @@ struct AppConstants {
     static let authEmailLbl = "Email"
     static let authPasswordLbl = "Password"
     
+    
+    ///--  SideMenu Constants --  ///
+    
+    static let patientLbl = "Patients"
+    static let contactsLbl = "Contacts"
+    static let cameraLbl = "Camera"
+    static let settingsLbl = "Settings"
+    static let logoutLbl = "Logout"
 
 }

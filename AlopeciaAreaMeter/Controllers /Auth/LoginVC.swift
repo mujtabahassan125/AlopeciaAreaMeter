@@ -83,10 +83,10 @@ extension LoginVC: AuthActionsProtocol {
     }
     
     func authProccessing(isLogin: Bool) {
-//        self.navigateToViewController(storyboardName: Storyboard.patient.rawValue, viewControllerIdentifier: String(describing: LoginVC.self), viewModel: LoginVM()) { (vc: LoginVC, viewModel) in
-//            vc.viewModel = viewModel as? LoginVM
-//            return vc
-//        }
+        self.navigateToViewController(storyboardName: Storyboard.patient.rawValue, viewControllerIdentifier: String(describing: PatientHomeVC.self), viewModel: BaseViewModel()) { (vc: PatientHomeVC, nil) in
+          //  vc.viewModel = viewModel as? BaseViewModel
+            return vc
+        }
     }
     
     

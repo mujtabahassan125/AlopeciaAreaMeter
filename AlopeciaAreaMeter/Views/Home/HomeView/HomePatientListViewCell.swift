@@ -9,6 +9,12 @@ import UIKit
 
 class HomePatientListViewCell: UITableViewCell {
 
+
+    
+    @IBOutlet weak var editBtn: UIButton!
+    @IBOutlet weak var deleteBtn: UIButton!
+    @IBOutlet weak var profileImgView: UIImageView!
+    @IBOutlet weak var cameraBtn: UIButton!
     @IBOutlet weak var mainView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,9 +23,29 @@ class HomePatientListViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
         mainView.layer.borderColor = UIColor.white.cgColor
         mainView.layer.borderWidth = 1.0 // You can adjust the width as needed
         mainView.layer.cornerRadius = 6.0 // You can adjust the corner radius as needed
+        
+        let padding: CGFloat = 50.0
+        
+        // Adjust the frame to add padding
+        profileImgView.frame = CGRect(x: profileImgView.frame.origin.x + padding,
+                                      y: profileImgView.frame.origin.y + padding,
+                                      width: profileImgView.frame.size.width - 2 * padding,
+                                      height: profileImgView.frame.size.height - 2 * padding)
     }
     
+    @IBAction func cameraAction(_ sender: Any) {
+    }
+    
+    @IBAction func editAction(_ sender: Any) {
+    }
+    @IBAction func removeAction(_ sender: Any) {
+    }
 }

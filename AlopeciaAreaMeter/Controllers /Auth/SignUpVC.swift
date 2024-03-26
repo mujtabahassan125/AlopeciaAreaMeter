@@ -11,7 +11,7 @@ class SignUpVC: UIViewController {
 
     
     @IBOutlet weak var tableView: UITableView!
-    var authList = [SideMenu]()
+    var authList = [ListModel]()
     var viewModel: SignUpVM?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,13 +38,13 @@ class SignUpVC: UIViewController {
     
     private func populateSideMenuItems() {
         
-        authList.append(SideMenu(title: AppConstants.authCreateAccount, image: ""))
-        authList.append(SideMenu(title: AppConstants.authFirstNameLbl, image: IconName.userProfile))
-        authList.append(SideMenu(title: AppConstants.authlastNameLbl, image: IconName.userProfile))
-        authList.append(SideMenu(title: AppConstants.authPhoneLbl, image: IconName.phone))
-        authList.append(SideMenu(title: AppConstants.authEmailLbl, image: IconName.email))
-        authList.append(SideMenu(title: AppConstants.authPasswordLbl, image: IconName.password))
-        authList.append(SideMenu(title: "", image: ""))
+        authList.append(ListModel(title: AppConstants.authCreateAccount, image: "", hint: ""))
+        authList.append(ListModel(title: AppConstants.authFirstNameLbl, image: IconName.userProfile, hint: "Ex:John"))
+        authList.append(ListModel(title: AppConstants.authlastNameLbl, image: IconName.userProfile, hint: "Ex:Doe"))
+        authList.append(ListModel(title: AppConstants.authPhoneLbl, image: IconName.phone, hint: "Ex: +44 7172 423"))
+        authList.append(ListModel(title: AppConstants.authEmailLbl, image: IconName.email, hint: "Ex: abc@example.com"))
+        authList.append(ListModel(title: AppConstants.authPasswordLbl, image: IconName.password, hint: "*******"))
+        authList.append(ListModel(title: "", image: "", hint: ""))
         
     }
     
@@ -73,17 +73,16 @@ extension SignUpVC: UITableViewDelegate, UITableViewDataSource {
         case 6:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthBtnsViewCell.self)) as? AuthBtnsViewCell else { return UITableViewCell() }
             cell.setDataForSignup()
-
             cell.authActionsDelegate = self
             return cell
         default:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthTextViewCell.self)) as? AuthTextViewCell else { return UITableViewCell() }
             let data = authList[indexPath.row]
             if data.title == AppConstants.authPasswordLbl {
-                cell.setPasswordUi()
+                cell.inputTextField.isSecureTextEntry = true
             }
-            cell.titleLbl.text = data.title
-            cell.iconView.image = UIImage(named: data.image)
+            cell.setData(data: data)
+            
             return cell
         }
     }

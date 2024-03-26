@@ -24,6 +24,7 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
         registerNibs()
         noDataStack.isHidden = true 
         sideMenuBackView.isHidden = true
+        sideMenuView.isHidden = true 
 //        sideMenuView.layer.cornerRadius = 10
 //        sideMenuView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
         
@@ -98,6 +99,7 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
 //
 //        self.sideMenuBackView.isHidden = false
         sideMenuBackView.isHidden = false
+        sideMenuView.isHidden = false
         self.sideMenuLeadingConstraint.constant = 0
 
     }

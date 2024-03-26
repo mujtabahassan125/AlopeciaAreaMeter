@@ -22,10 +22,11 @@ class SideMenuListViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setCellData(data: SideMenu) {
+    func setCellData(data: ListModel) {
         
         cellImage.image = UIImage(named: data.image)
         cellLabel.text = data.title
+     //   cellLabel
     }
     
 }

@@ -25,6 +25,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nwe-Wd-BYa">
+                                <rect key="frame" x="0.0" y="160" width="393" height="658"/>
+                                <color key="backgroundColor" name="PrimaryColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="fhn-YJ-azF"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="YI3-I7-WZP"/>
+                                </connections>
+                            </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PI8-wh-V6Z">
                                 <rect key="frame" x="20" y="60" width="353" height="40"/>
                                 <subviews>
@@ -55,14 +63,6 @@
                                     <constraint firstAttribute="height" constant="40" id="hRh-Bq-lDt"/>
                                 </constraints>
                             </stackView>
-                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nwe-Wd-BYa">
-                                <rect key="frame" x="0.0" y="100" width="393" height="718"/>
-                                <color key="backgroundColor" name="PrimaryColor"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="fhn-YJ-azF"/>
-                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="YI3-I7-WZP"/>
-                                </connections>
-                            </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgy-0Z-zhV">
                                 <rect key="frame" x="100" y="346" width="193" height="160"/>
                                 <subviews>
@@ -160,7 +160,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Bi3-zE-Beh" secondAttribute="bottom" id="VAQ-XM-Adu"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jgy-0Z-zhV" secondAttribute="trailing" constant="100" id="Wtd-UM-VUm"/>
                             <constraint firstItem="jgy-0Z-zhV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="XoK-mb-rLs"/>
-                            <constraint firstItem="nwe-Wd-BYa" firstAttribute="top" secondItem="PI8-wh-V6Z" secondAttribute="bottom" id="iZS-eZ-SKl"/>
+                            <constraint firstItem="nwe-Wd-BYa" firstAttribute="top" secondItem="PI8-wh-V6Z" secondAttribute="bottom" constant="60" id="iZS-eZ-SKl"/>
                             <constraint firstItem="nwe-Wd-BYa" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="lBu-a9-ubV"/>
                             <constraint firstItem="nwe-Wd-BYa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="oJ2-gt-cPw"/>
                             <constraint firstAttribute="bottom" secondItem="6Du-SJ-Hy6" secondAttribute="bottom" id="omc-Wf-aFY"/>

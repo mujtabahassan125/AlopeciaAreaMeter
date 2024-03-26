@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -28,19 +29,31 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GnQ-uv-6cW">
                                 <rect key="frame" x="16" y="16" width="200" height="42"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_icon" translatesAutoresizingMaskIntoConstraints="NO" id="3jy-hb-G8A">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0z-b8-1VL">
                                         <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_icon" translatesAutoresizingMaskIntoConstraints="NO" id="3jy-hb-G8A">
+                                                <rect key="frame" x="9" y="9" width="24" height="24"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="24" id="Cad-mb-pFa"/>
+                                                    <constraint firstAttribute="height" constant="24" id="wt6-jb-hlX"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="42" id="EQY-d5-faJ"/>
-                                            <constraint firstAttribute="height" constant="42" id="Ews-A8-eyy"/>
+                                            <constraint firstItem="3jy-hb-G8A" firstAttribute="centerX" secondItem="J0z-b8-1VL" secondAttribute="centerX" id="JFP-hw-NvN"/>
+                                            <constraint firstItem="3jy-hb-G8A" firstAttribute="centerY" secondItem="J0z-b8-1VL" secondAttribute="centerY" id="P0O-eF-Pcc"/>
+                                            <constraint firstAttribute="width" constant="42" id="py5-Ev-1mu"/>
+                                            <constraint firstAttribute="height" constant="42" id="wdt-pb-E9x"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="24"/>
+                                                <integer key="value" value="21"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                    </imageView>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdy-MT-TGl">
                                         <rect key="frame" x="50" y="0.0" width="150" height="42"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
@@ -60,16 +73,25 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="camera_white_icon" title=" "/>
+                                        <connections>
+                                            <action selector="cameraAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xgV-eE-cbh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSH-SS-0n9">
                                         <rect key="frame" x="36" y="0.0" width="20" height="20"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="edit_white_icon" title=" "/>
+                                        <connections>
+                                            <action selector="editAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wz4-ce-BrI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUn-YL-197">
                                         <rect key="frame" x="72" y="0.0" width="20" height="20"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="delete_white_icon" title=" "/>
+                                        <connections>
+                                            <action selector="removeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="OZd-Sx-y6o"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -78,6 +100,7 @@
                         <constraints>
                             <constraint firstItem="GnQ-uv-6cW" firstAttribute="top" secondItem="YC6-c8-03w" secondAttribute="top" constant="16" id="47X-fA-qOd"/>
                             <constraint firstAttribute="trailing" secondItem="vMD-Fz-bHS" secondAttribute="trailing" constant="16" id="4Vf-Bl-lMi"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vMD-Fz-bHS" secondAttribute="bottom" constant="27" id="7eI-eF-pRn"/>
                             <constraint firstItem="vMD-Fz-bHS" firstAttribute="leading" secondItem="GnQ-uv-6cW" secondAttribute="trailing" id="RV3-XI-uzg"/>
                             <constraint firstItem="vMD-Fz-bHS" firstAttribute="centerY" secondItem="GnQ-uv-6cW" secondAttribute="centerY" id="Yee-bo-1ib"/>
                             <constraint firstItem="GnQ-uv-6cW" firstAttribute="centerY" secondItem="YC6-c8-03w" secondAttribute="centerY" id="aAf-41-dP1"/>
@@ -96,7 +119,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="cameraBtn" destination="NEi-y1-WMB" id="hYi-aK-Qsy"/>
+                <outlet property="deleteBtn" destination="eUn-YL-197" id="m7N-vE-7ke"/>
+                <outlet property="editBtn" destination="lSH-SS-0n9" id="dqB-vT-PoQ"/>
                 <outlet property="mainView" destination="YC6-c8-03w" id="o53-Aa-cCB"/>
+                <outlet property="profileImgView" destination="3jy-hb-G8A" id="IkU-kt-9Ws"/>
             </connections>
             <point key="canvasLocation" x="73.282442748091597" y="15.492957746478874"/>
         </tableViewCell>
@@ -109,5 +136,8 @@
         <namedColor name="PrimaryColor">
             <color red="0.075000002980232239" green="0.48600000143051147" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

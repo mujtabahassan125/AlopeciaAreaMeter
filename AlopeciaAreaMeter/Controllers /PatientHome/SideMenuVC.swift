@@ -13,7 +13,7 @@ protocol SideMenuViewControllerDelegate {
 
 class SideMenuVC: UIViewController {
     
-    var sideMenuItems = [SideMenu]()
+    var sideMenuItems = [ListModel]()
     var delegate : SideMenuViewControllerDelegate?
 
     @IBOutlet var mainView: UIView!
@@ -34,11 +34,11 @@ class SideMenuVC: UIViewController {
         mainView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
     }
     private func populateSideMenuItems() {
-        sideMenuItems.append(SideMenu(title: AppConstants.patientLbl, image: IconName.phoneUserList))
-        sideMenuItems.append(SideMenu(title: AppConstants.contactsLbl, image: IconName.phone))
-        sideMenuItems.append(SideMenu(title: AppConstants.cameraLbl, image: IconName.camera))
-        sideMenuItems.append(SideMenu(title: AppConstants.settingsLbl, image: IconName.settings))
-        sideMenuItems.append(SideMenu(title: AppConstants.logoutLbl, image: IconName.logout))
+        sideMenuItems.append(ListModel(title: AppConstants.patientLbl, image: IconName.phoneUserList, hint: ""))
+        sideMenuItems.append(ListModel(title: AppConstants.contactsLbl, image: IconName.phone, hint: ""))
+        sideMenuItems.append(ListModel(title: AppConstants.cameraLbl, image: IconName.camera, hint: ""))
+        sideMenuItems.append(ListModel(title: AppConstants.settingsLbl, image: IconName.settings, hint: ""))
+        sideMenuItems.append(ListModel(title: AppConstants.logoutLbl, image: IconName.logout, hint: ""))
         
     }
     
@@ -49,7 +49,6 @@ class SideMenuVC: UIViewController {
     
     func navigateToCamera() {
         self.navigateToViewController(storyboardName: Storyboard.patient.rawValue, viewControllerIdentifier: String(describing: CameraVC.self), viewModel: BaseViewModel()) { (vc: CameraVC, nil) in
-          //  vc.viewModel = viewModel as? BaseViewModel
             return vc
         }
     }
@@ -92,13 +91,3 @@ extension SideMenuVC: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-struct SideMenu {
-    var title: String = ""
-    var image: String = ""
-    
-    
-    init(title: String, image: String) {
-        self.title = title
-        self.image = image
-    }
-}

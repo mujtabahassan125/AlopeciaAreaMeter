@@ -53,14 +53,15 @@ extension LoginVC: UITableViewDelegate, UITableViewDataSource {
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthTextViewCell.self)) as? AuthTextViewCell else { return UITableViewCell() }
-            cell.titleLbl.text = AppConstants.authEmailLbl
-            cell.iconView.image = UIImage(named: IconName.email)
+//            cell.titleLbl.text = AppConstants.authEmailLbl
+//            cell.iconView.image = UIImage(named: IconName.email)
+            cell.setData(data: ListModel(title: AppConstants.authEmailLbl, image: IconName.email, hint: "Ex: abc@example.com"))
             return cell
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthTextViewCell.self)) as? AuthTextViewCell else { return UITableViewCell() }
-            cell.titleLbl.text =  "Your \(AppConstants.authPasswordLbl)"
-            cell.iconView.image = UIImage(named: IconName.password)
-            cell.setPasswordUi()
+          //  cell.titleLbl.text =  "Your \(AppConstants.authPasswordLbl)"
+           // cell.iconView.image = UIImage(named: IconName.password)
+            cell.setData(data: ListModel(title: "Your \(AppConstants.authPasswordLbl)", image: IconName.password, hint: "******"))
             return cell
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthBtnsViewCell.self)) as? AuthBtnsViewCell else { return UITableViewCell() }

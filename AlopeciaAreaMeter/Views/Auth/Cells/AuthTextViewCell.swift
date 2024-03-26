@@ -27,6 +27,10 @@ class AuthTextViewCell: UITableViewCell {
         InputView.layer.borderWidth = 1.0 // You can adjust the width as needed
         InputView.layer.cornerRadius = 6.0 // You can adjust the corner radius as needed
     }
+    func setPasswordUi() {
+        inputTextField.isSecureTextEntry = true
+        inputTextField.placeholder = "**********"
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

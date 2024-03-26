@@ -8,8 +8,8 @@
 import UIKit
 
 protocol AuthActionsProtocol {
-    func authNavigation(isLogin: Bool)
-    func authProccessing(isLogin: Bool)
+    func authNavigation()
+    func authProccessing()
 }
 
 class AuthBtnsViewCell: UITableViewCell {
@@ -21,6 +21,7 @@ class AuthBtnsViewCell: UITableViewCell {
     @IBOutlet weak var sepratorView: UIView!
     @IBOutlet weak var loginBtn: UIButton!
     
+    @IBOutlet weak var registerLoginLbl: UILabel!
     var isLogin: Bool = false
     var authActionsDelegate: AuthActionsProtocol?
     override func awakeFromNib() {
@@ -57,25 +58,34 @@ class AuthBtnsViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func isRegistrationAction(_ sender: Any) {
+        authActionsDelegate?.authNavigation()
+    }
     
     func setDataForLogin() {
-        self.isLogin = true
         sepratorView.isHidden = false
-        authActionBtn.setTitle(AppConstants.authLogin, for: .normal)
-        
+        registerLoginLbl.text = AppConstants.authRegisterBtn
+       
         
     }
     
-    func setDataForRegister() {
-        self.isLogin = false
+    func setDataForSignup() {
+        sepratorView.isHidden = true
+        continueWithGoogleBtn.isHidden = true
+        sepratorView.isHidden = true
+        registerLoginLbl.text = AppConstants.authLogin
+        loginBtn.setTitle(AppConstants.authRegisterBtn, for: .normal)
     }
+    
+
     
     
     
     @IBAction func authNavigationAction(_ sender: Any) {
+        authActionsDelegate?.authNavigation()
     }
     @IBAction func AuthActionBtn(_ sender: Any) {
-        authActionsDelegate?.authProccessing(isLogin: isLogin)
+        authActionsDelegate?.authProccessing()
     }
     @IBAction func signWithGoogleAction(_ sender: Any) {
     }

@@ -59,9 +59,8 @@ extension LoginVC: UITableViewDelegate, UITableViewDataSource {
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthTextViewCell.self)) as? AuthTextViewCell else { return UITableViewCell() }
             cell.titleLbl.text =  "Your \(AppConstants.authPasswordLbl)"
-            cell.inputTextField.isSecureTextEntry = true
-            cell.inputTextField.placeholder = "**********"
             cell.iconView.image = UIImage(named: IconName.password)
+            cell.setPasswordUi()
             return cell
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthBtnsViewCell.self)) as? AuthBtnsViewCell else { return UITableViewCell() }
@@ -78,16 +77,16 @@ extension LoginVC: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension LoginVC: AuthActionsProtocol {
-    func authNavigation(isLogin: Bool) {
-        print("Navigation")
-    }
-    
-    func authProccessing(isLogin: Bool) {
-        self.navigateToViewController(storyboardName: Storyboard.patient.rawValue, viewControllerIdentifier: String(describing: PatientHomeVC.self), viewModel: BaseViewModel()) { (vc: PatientHomeVC, nil) in
-          //  vc.viewModel = viewModel as? BaseViewModel
+    func authNavigation() {
+        self.navigateToViewController(storyboardName: Storyboard.auth.rawValue, viewControllerIdentifier: String(describing: SignUpVC.self), viewModel: BaseViewModel()) { (vc: SignUpVC, nil) in
             return vc
         }
     }
     
+    func authProccessing() {
+        self.navigateToViewController(storyboardName: Storyboard.patient.rawValue, viewControllerIdentifier: String(describing: PatientHomeVC.self), viewModel: BaseViewModel()) { (vc: PatientHomeVC, nil) in
+            return vc
+        }
+    }
     
 }

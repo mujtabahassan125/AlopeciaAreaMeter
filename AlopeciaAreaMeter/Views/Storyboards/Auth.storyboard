@@ -78,7 +78,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Qde-34-OVD">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="99" width="393" height="719"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="abx-Ed-cqB" id="HMW-mb-cdV"/>
@@ -92,7 +92,7 @@
                             <constraint firstItem="Qde-34-OVD" firstAttribute="trailing" secondItem="Vzu-Fy-bxV" secondAttribute="trailing" id="BPk-84-Phi"/>
                             <constraint firstItem="Vzu-Fy-bxV" firstAttribute="bottom" secondItem="Qde-34-OVD" secondAttribute="bottom" id="RN1-Xu-SVY"/>
                             <constraint firstItem="Qde-34-OVD" firstAttribute="leading" secondItem="Vzu-Fy-bxV" secondAttribute="leading" id="YAs-Yu-oBq"/>
-                            <constraint firstItem="Qde-34-OVD" firstAttribute="top" secondItem="Vzu-Fy-bxV" secondAttribute="top" id="wHk-cu-bO7"/>
+                            <constraint firstItem="Qde-34-OVD" firstAttribute="top" secondItem="Vzu-Fy-bxV" secondAttribute="top" constant="40" id="wHk-cu-bO7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1hf-aL-AVu"/>

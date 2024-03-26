@@ -7,26 +7,90 @@
 
 import UIKit
 
-class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
+class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate, HamburgerViewControllerDelegate {
 
+    @IBOutlet weak var sideMenuBackView: UIView!
+    @IBOutlet weak var sideMenuLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var sideMenuView: UIView!
+    
+    var sideMenuVC : SideMenuVC?
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        sideMenuBackView.isHidden = true
+        
         // Do any additional setup after loading the view.
     }
     
+    func hideHamburgerMenu() {
+        self.hideHamburgerView()
+    }
+    
+    private func hideHamburgerView() {
+//        UIView.animate(withDuration: 0.1) {
+//            self.sideMenuLeadingConstraint.constant = 10
+//            self.view.layoutIfNeeded()
+//        } completion: { (status) in
+//            self.sideMenuBackView.alpha = 0.0
+//            UIView.animate(withDuration: 0.1) {
+//                self.sideMenuLeadingConstraint.constant = -280
+//                self.view.layoutIfNeeded()
+//            } completion: { (status) in
+//                self.sideMenuBackView.isHidden = true
+//             //   self.isHamburgerMenuShown = false
+//            }
+//        }
+        
+        sideMenuBackView.isHidden = true
+        self.sideMenuLeadingConstraint.constant = -280
+    }
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "hamburgerSegue")
+        {
+            if let controller = segue.destination as? SideMenuVC
+            {
+                self.sideMenuVC = controller
+                self.sideMenuVC?.delegate = self
+            }
+        }
+    }
+    
+    
+    
 
+    @IBAction func tappedOnSideSideMenuBg(_ sender: Any) {
+        
+        self.hideHamburgerView()
+        
+    }
     @IBAction func searchAction(_ sender: Any) {
     }
 
 
     @IBAction func sideMenuAction(_ sender: Any) {
-    //    presentSideMenuController()
+        
+//        UIView.animate(withDuration: 0.1) {
+//            self.sideMenuLeadingConstraint.constant = 10
+//            self.view.layoutIfNeeded()
+//        } completion: { (status) in
+//            self.sideMenuBackView.alpha = 0.75
+//            self.sideMenuBackView.isHidden = false
+//            UIView.animate(withDuration: 0.1) {
+//                self.sideMenuLeadingConstraint.constant = 0
+//                self.view.layoutIfNeeded()
+//            } completion: { (status) in
+//               // self.isHamburgerMenuShown = true
+//            }
+//
+//        }
+//
+//        self.sideMenuBackView.isHidden = false
+        sideMenuBackView.isHidden = false
+        self.sideMenuLeadingConstraint.constant = 0
 
-        self.navigateToViewController(storyboardName: Storyboard.patient.rawValue, viewControllerIdentifier: String(describing: SideMenuVC.self), viewModel: BaseViewModel()) { (vc: SideMenuVC, viewModel) in
-            //vc.viewModel = viewModel as? LoginVM
-            return vc
-        }
     }
     
     func presentSideMenuController() {

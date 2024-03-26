@@ -158,9 +158,15 @@ class CameraVC: UIViewController  {
     
     
     
+    @IBAction func patientListAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 
-
-
+    @IBAction func settingsAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func captureBtnAction(_ sender: Any) {
         
         photoOutput.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)

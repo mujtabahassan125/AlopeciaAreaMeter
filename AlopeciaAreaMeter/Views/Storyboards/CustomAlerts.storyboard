@@ -34,7 +34,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ngh-xE-acf">
                                         <rect key="frame" x="140.66666666666666" y="40.000000000000028" width="42" height="42"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummyProfile" translatesAutoresizingMaskIntoConstraints="NO" id="bed-xE-pcj">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_profile_icon" translatesAutoresizingMaskIntoConstraints="NO" id="bed-xE-pcj">
                                                 <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
                                             </imageView>
                                         </subviews>
@@ -55,7 +55,7 @@
                                             <constraint firstAttribute="width" constant="12" id="swO-aj-fII"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="plus-circle" title=" "/>
+                                        <buttonConfiguration key="configuration" style="plain" image="plus_circle" title=" "/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload profile picture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNI-9f-tjj">
                                         <rect key="frame" x="99" y="103.00000000000003" width="125" height="17"/>
@@ -208,13 +208,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dummyProfile" width="50" height="50"/>
-        <image name="plus-circle" width="12" height="12"/>
+        <image name="dummy_profile_icon" width="50" height="50"/>
+        <image name="plus_circle" width="12" height="12"/>
         <namedColor name="PrimaryColor">
             <color red="0.075000002980232239" green="0.48600000143051147" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="SepratorColor">
-            <color red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.86299997568130493" green="0.86299997568130493" blue="0.86299997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="SubTitleLblColor">
             <color red="0.13300000131130219" green="0.13300000131130219" blue="0.15299999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -7,7 +7,8 @@
 
 import UIKit
 
-class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate, HamburgerViewControllerDelegate {
+class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
+    
 
     @IBOutlet weak var sideMenuBackView: UIView!
     @IBOutlet weak var sideMenuLeadingConstraint: NSLayoutConstraint!
@@ -18,15 +19,14 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate, Ha
         super.viewDidLoad()
 
         sideMenuBackView.isHidden = true
+        sideMenuView.layer.cornerRadius = 10
+        sideMenuView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
         
         // Do any additional setup after loading the view.
     }
     
-    func hideHamburgerMenu() {
-        self.hideHamburgerView()
-    }
-    
-    private func hideHamburgerView() {
+
+    private func hideView() {
 //        UIView.animate(withDuration: 0.1) {
 //            self.sideMenuLeadingConstraint.constant = 10
 //            self.view.layoutIfNeeded()
@@ -48,7 +48,7 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate, Ha
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "hamburgerSegue")
+        if (segue.identifier == AppConstants.sideMenuSegue)
         {
             if let controller = segue.destination as? SideMenuVC
             {
@@ -62,9 +62,7 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate, Ha
     
 
     @IBAction func tappedOnSideSideMenuBg(_ sender: Any) {
-        
-        self.hideHamburgerView()
-        
+        self.hideView()
     }
     @IBAction func searchAction(_ sender: Any) {
     }
@@ -117,3 +115,8 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate, Ha
     }
 }
 
+extension PatientHomeVC: SideMenuViewControllerDelegate {
+    func hideSideMenu() {
+        self.hideView()
+    }
+}

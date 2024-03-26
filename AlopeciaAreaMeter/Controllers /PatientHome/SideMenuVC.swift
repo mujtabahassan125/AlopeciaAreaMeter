@@ -7,14 +7,14 @@
 
 import UIKit
 
-protocol HamburgerViewControllerDelegate {
-    func hideHamburgerMenu()
+protocol SideMenuViewControllerDelegate {
+    func hideSideMenu()
 }
 
 class SideMenuVC: UIViewController {
     
     var sideMenuItems = [SideMenu]()
-    var delegate : HamburgerViewControllerDelegate?
+    var delegate : SideMenuViewControllerDelegate?
 
     @IBOutlet var mainView: UIView!
     @IBOutlet weak var profileImage: UIImageView!
@@ -29,8 +29,9 @@ class SideMenuVC: UIViewController {
     
     private func setupUI() {
         
+       // let sideMenuView = self.view // or however you reference your side menu's view
         mainView.layer.cornerRadius = 10
-        
+        mainView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
     }
     private func populateSideMenuItems() {
         sideMenuItems.append(SideMenu(title: AppConstants.patientLbl, image: IconName.phoneUserList))
@@ -69,14 +70,15 @@ extension SideMenuVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SideMenuListViewCell.self)) as? SideMenuListViewCell else { return  UITableViewCell() }
         cell.setCellData(data: sideMenuItems[indexPath.row])
+        cell.selectionStyle = .none
         return cell
 
     }
     // swiftlint: disable cyclomatic_complexity
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        delegate?.hideSideMenu()
         switch indexPath.row {
-        case 0:
+        case 2:
             navigateToCamera()
         default:
             break

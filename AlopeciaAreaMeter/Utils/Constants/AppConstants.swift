@@ -35,5 +35,7 @@ struct AppConstants {
     static let cameraLbl = "Camera"
     static let settingsLbl = "Settings"
     static let logoutLbl = "Logout"
+    static let sideMenuSegue = "sideMenuSegue"
 
 }
+

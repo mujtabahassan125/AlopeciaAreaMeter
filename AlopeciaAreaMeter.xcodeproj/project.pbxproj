@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5B2538A9262A9399C7D4338C /* Pods_AlopeciaAreaMeterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA6AAC740992BB894059524 /* Pods_AlopeciaAreaMeterTests.framework */; };
+		5F0D0B322BB26A300074DD07 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B312BB26A300074DD07 /* DrawingView.swift */; };
+		5F0D0B342BB26A470074DD07 /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B332BB26A470074DD07 /* PhotoVC.swift */; };
 		5F7113C92BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
 		5F7113CA2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
 		5F7113CB2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
@@ -26,12 +28,12 @@
 		5F7113FA2BAA4F1B0006C667 /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7113F92BAA4F1B0006C667 /* Patient.storyboard */; };
 		5F7113FB2BAA4F1B0006C667 /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7113F92BAA4F1B0006C667 /* Patient.storyboard */; };
 		5F7113FC2BAA4F1B0006C667 /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7113F92BAA4F1B0006C667 /* Patient.storyboard */; };
-		5F7114012BAA532D0006C667 /* HomePatientViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113FF2BAA532D0006C667 /* HomePatientViewCell.swift */; };
-		5F7114022BAA532D0006C667 /* HomePatientViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113FF2BAA532D0006C667 /* HomePatientViewCell.swift */; };
-		5F7114032BAA532D0006C667 /* HomePatientViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113FF2BAA532D0006C667 /* HomePatientViewCell.swift */; };
-		5F7114042BAA532D0006C667 /* HomePatientViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7114002BAA532D0006C667 /* HomePatientViewCell.xib */; };
-		5F7114052BAA532D0006C667 /* HomePatientViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7114002BAA532D0006C667 /* HomePatientViewCell.xib */; };
-		5F7114062BAA532D0006C667 /* HomePatientViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7114002BAA532D0006C667 /* HomePatientViewCell.xib */; };
+		5F7114012BAA532D0006C667 /* HomePatientListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113FF2BAA532D0006C667 /* HomePatientListViewCell.swift */; };
+		5F7114022BAA532D0006C667 /* HomePatientListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113FF2BAA532D0006C667 /* HomePatientListViewCell.swift */; };
+		5F7114032BAA532D0006C667 /* HomePatientListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113FF2BAA532D0006C667 /* HomePatientListViewCell.swift */; };
+		5F7114042BAA532D0006C667 /* HomePatientListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7114002BAA532D0006C667 /* HomePatientListViewCell.xib */; };
+		5F7114052BAA532D0006C667 /* HomePatientListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7114002BAA532D0006C667 /* HomePatientListViewCell.xib */; };
+		5F7114062BAA532D0006C667 /* HomePatientListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F7114002BAA532D0006C667 /* HomePatientListViewCell.xib */; };
 		5F7114092BAA56E50006C667 /* RecordViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7114072BAA56E50006C667 /* RecordViewCell.swift */; };
 		5F71140A2BAA56E50006C667 /* RecordViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7114072BAA56E50006C667 /* RecordViewCell.swift */; };
 		5F71140B2BAA56E50006C667 /* RecordViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7114072BAA56E50006C667 /* RecordViewCell.swift */; };
@@ -99,7 +101,6 @@
 		5F9978532BA824D20085309B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9978522BA824D20085309B /* Observable.swift */; };
 		5F9978542BA824D20085309B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9978522BA824D20085309B /* Observable.swift */; };
 		5F9978552BA824D20085309B /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9978522BA824D20085309B /* Observable.swift */; };
-		5FA27D8F2BAF5E2F00C459C1 /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA27D8E2BAF5E2E00C459C1 /* PhotoVC.swift */; };
 		5FA27D912BAF5E4100C459C1 /* UiImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA27D902BAF5E4100C459C1 /* UiImageExtension.swift */; };
 		5FA27D932BAF5E4F00C459C1 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA27D922BAF5E4F00C459C1 /* CameraVC.swift */; };
 		5FB594032BAF5BE6009D59FB /* PatientHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB594022BAF5BE6009D59FB /* PatientHomeVC.swift */; };
@@ -144,6 +145,8 @@
 /* Begin PBXFileReference section */
 		0EF2FF10F89D568DC3BAB6AA /* Pods_AlopeciaAreaMeter_AlopeciaAreaMeterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlopeciaAreaMeter_AlopeciaAreaMeterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C7658E14B61D33F8258909B /* Pods-AlopeciaAreaMeterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlopeciaAreaMeterTests.release.xcconfig"; path = "Target Support Files/Pods-AlopeciaAreaMeterTests/Pods-AlopeciaAreaMeterTests.release.xcconfig"; sourceTree = "<group>"; };
+		5F0D0B312BB26A300074DD07 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		5F0D0B332BB26A470074DD07 /* PhotoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
 		5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewControllerExtension.swift; sourceTree = "<group>"; };
 		5F7113E22BAA33100006C667 /* sf-pro-display-cufonfonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "sf-pro-display-cufonfonts"; path = "../../../../../../Downloads/sf-pro-display-cufonfonts"; sourceTree = "<group>"; };
 		5F7113E42BAA3B400006C667 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
@@ -152,8 +155,8 @@
 		5F7113EC2BAA3D860006C667 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		5F7113F02BAA3D940006C667 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		5F7113F92BAA4F1B0006C667 /* Patient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Patient.storyboard; sourceTree = "<group>"; };
-		5F7113FF2BAA532D0006C667 /* HomePatientViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePatientViewCell.swift; sourceTree = "<group>"; };
-		5F7114002BAA532D0006C667 /* HomePatientViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePatientViewCell.xib; sourceTree = "<group>"; };
+		5F7113FF2BAA532D0006C667 /* HomePatientListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePatientListViewCell.swift; sourceTree = "<group>"; };
+		5F7114002BAA532D0006C667 /* HomePatientListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePatientListViewCell.xib; sourceTree = "<group>"; };
 		5F7114072BAA56E50006C667 /* RecordViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewCell.swift; sourceTree = "<group>"; };
 		5F7114082BAA56E50006C667 /* RecordViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordViewCell.xib; sourceTree = "<group>"; };
 		5F7114102BAA5C550006C667 /* CustomAlerts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomAlerts.storyboard; sourceTree = "<group>"; };
@@ -187,7 +190,6 @@
 		5F9978462BA8195D0085309B /* AuthHeaderViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthHeaderViewCell.xib; sourceTree = "<group>"; };
 		5F99784D2BA81D210085309B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		5F9978522BA824D20085309B /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
-		5FA27D8E2BAF5E2E00C459C1 /* PhotoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
 		5FA27D902BAF5E4100C459C1 /* UiImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiImageExtension.swift; sourceTree = "<group>"; };
 		5FA27D922BAF5E4F00C459C1 /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		5FB594022BAF5BE6009D59FB /* PatientHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHomeVC.swift; sourceTree = "<group>"; };
@@ -248,14 +250,40 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5F0D0B302BB26A180074DD07 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				5F0D0B312BB26A300074DD07 /* DrawingView.swift */,
+				5FA27D922BAF5E4F00C459C1 /* CameraVC.swift */,
+				5F0D0B332BB26A470074DD07 /* PhotoVC.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		5F0D0B352BB26D420074DD07 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				5F7113FF2BAA532D0006C667 /* HomePatientListViewCell.swift */,
+				5F7114002BAA532D0006C667 /* HomePatientListViewCell.xib */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		5F0D0B362BB26D820074DD07 /* PatientRecord */ = {
+			isa = PBXGroup;
+			children = (
+				5F7114072BAA56E50006C667 /* RecordViewCell.swift */,
+				5F7114082BAA56E50006C667 /* RecordViewCell.xib */,
+			);
+			path = PatientRecord;
+			sourceTree = "<group>";
+		};
 		5F7113FD2BAA52A20006C667 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5F0D0B362BB26D820074DD07 /* PatientRecord */,
+				5F0D0B352BB26D420074DD07 /* HomeView */,
 				5FDF5F562BB03C5800AA665D /* SideMenu */,
-				5F7113FF2BAA532D0006C667 /* HomePatientViewCell.swift */,
-				5F7114002BAA532D0006C667 /* HomePatientViewCell.xib */,
-				5F7114072BAA56E50006C667 /* RecordViewCell.swift */,
-				5F7114082BAA56E50006C667 /* RecordViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -372,10 +400,9 @@
 		5F99781F2BA6F6990085309B /* Controllers  */ = {
 			isa = PBXGroup;
 			children = (
+				5F0D0B302BB26A180074DD07 /* Camera */,
 				5FDF5F632BB040A700AA665D /* PatientHome */,
 				5FB594012BAF5BC4009D59FB /* Auth */,
-				5FA27D922BAF5E4F00C459C1 /* CameraVC.swift */,
-				5FA27D8E2BAF5E2E00C459C1 /* PhotoVC.swift */,
 				5F9977EE2BA560840085309B /* ViewController.swift */,
 			);
 			path = "Controllers ";
@@ -630,7 +657,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F9978412BA720300085309B /* AuthTextViewCell.xib in Resources */,
-				5F7114042BAA532D0006C667 /* HomePatientViewCell.xib in Resources */,
+				5F7114042BAA532D0006C667 /* HomePatientListViewCell.xib in Resources */,
 				5FDF5F602BB03DFF00AA665D /* SideMenuListViewCell.xib in Resources */,
 				5F7114112BAA5C550006C667 /* CustomAlerts.storyboard in Resources */,
 				5FDF5F5A2BB03C7B00AA665D /* SideMenuHeaderViewCell.xib in Resources */,
@@ -652,7 +679,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F7113FB2BAA4F1B0006C667 /* Patient.storyboard in Resources */,
-				5F7114052BAA532D0006C667 /* HomePatientViewCell.xib in Resources */,
+				5F7114052BAA532D0006C667 /* HomePatientListViewCell.xib in Resources */,
 				5FDF5F612BB03DFF00AA665D /* SideMenuListViewCell.xib in Resources */,
 				5F99784B2BA8195D0085309B /* AuthHeaderViewCell.xib in Resources */,
 				5F9978342BA719560085309B /* AuthBtnsViewCell.xib in Resources */,
@@ -669,7 +696,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F7113FC2BAA4F1B0006C667 /* Patient.storyboard in Resources */,
-				5F7114062BAA532D0006C667 /* HomePatientViewCell.xib in Resources */,
+				5F7114062BAA532D0006C667 /* HomePatientListViewCell.xib in Resources */,
 				5FDF5F622BB03DFF00AA665D /* SideMenuListViewCell.xib in Resources */,
 				5F99784C2BA8195D0085309B /* AuthHeaderViewCell.xib in Resources */,
 				5F9978352BA719560085309B /* AuthBtnsViewCell.xib in Resources */,
@@ -799,7 +826,8 @@
 				5FB594032BAF5BE6009D59FB /* PatientHomeVC.swift in Sources */,
 				5F71141E2BAEC63F0006C667 /* AppConstants.swift in Sources */,
 				5FA27D912BAF5E4100C459C1 /* UiImageExtension.swift in Sources */,
-				5F7114012BAA532D0006C667 /* HomePatientViewCell.swift in Sources */,
+				5F7114012BAA532D0006C667 /* HomePatientListViewCell.swift in Sources */,
+				5F0D0B322BB26A300074DD07 /* DrawingView.swift in Sources */,
 				5F7114092BAA56E50006C667 /* RecordViewCell.swift in Sources */,
 				5F7113F12BAA3D940006C667 /* LoginViewModel.swift in Sources */,
 				5FDF5F5D2BB03DFF00AA665D /* SideMenuListViewCell.swift in Sources */,
@@ -813,6 +841,7 @@
 				5F7113C92BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */,
 				5F9978302BA719560085309B /* AuthBtnsViewCell.swift in Sources */,
 				5F99784E2BA81D210085309B /* LoginVC.swift in Sources */,
+				5F0D0B342BB26A470074DD07 /* PhotoVC.swift in Sources */,
 				5F7114272BAEE4650006C667 /* ColorConstants.swift in Sources */,
 				5FA27D932BAF5E4F00C459C1 /* CameraVC.swift in Sources */,
 				5F9978532BA824D20085309B /* Observable.swift in Sources */,
@@ -820,7 +849,6 @@
 				5F7114232BAEDD570006C667 /* IconConstants.swift in Sources */,
 				5F9977F52BA560840085309B /* AlopeciaAreaMeter.xcdatamodeld in Sources */,
 				5F9978242BA6F7ED0085309B /* Utilities.swift in Sources */,
-				5FA27D8F2BAF5E2F00C459C1 /* PhotoVC.swift in Sources */,
 				5F9977ED2BA560840085309B /* SceneDelegate.swift in Sources */,
 				5FDF5F692BB08D1100AA665D /* SideMenuPresentationController.swift in Sources */,
 			);
@@ -834,7 +862,7 @@
 				5F9978252BA6F7ED0085309B /* Utilities.swift in Sources */,
 				5FDF5F6A2BB08D1100AA665D /* SideMenuPresentationController.swift in Sources */,
 				5F7114282BAEE4650006C667 /* ColorConstants.swift in Sources */,
-				5F7114022BAA532D0006C667 /* HomePatientViewCell.swift in Sources */,
+				5F7114022BAA532D0006C667 /* HomePatientListViewCell.swift in Sources */,
 				5FDF5F6E2BB08D6B00AA665D /* SlideInPresentationAnimator.swift in Sources */,
 				5F7113EE2BAA3D860006C667 /* BaseViewModel.swift in Sources */,
 				5F7114242BAEDD570006C667 /* IconConstants.swift in Sources */,
@@ -873,7 +901,7 @@
 				5FDF5F6B2BB08D1100AA665D /* SideMenuPresentationController.swift in Sources */,
 				5FDF5F5F2BB03DFF00AA665D /* SideMenuListViewCell.swift in Sources */,
 				5F99780F2BA560860085309B /* AlopeciaAreaMeterUITests.swift in Sources */,
-				5F7114032BAA532D0006C667 /* HomePatientViewCell.swift in Sources */,
+				5F7114032BAA532D0006C667 /* HomePatientListViewCell.swift in Sources */,
 				5FDF5F6F2BB08D6B00AA665D /* SlideInPresentationAnimator.swift in Sources */,
 				5F9978492BA8195D0085309B /* AuthHeaderViewCell.swift in Sources */,
 				5F7113F32BAA3D940006C667 /* LoginViewModel.swift in Sources */,

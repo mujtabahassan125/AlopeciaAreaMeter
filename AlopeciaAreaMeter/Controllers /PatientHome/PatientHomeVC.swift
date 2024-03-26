@@ -10,19 +10,28 @@ import UIKit
 class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
     
 
+    @IBOutlet weak var noDataStack: UIView!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var sideMenuBackView: UIView!
     @IBOutlet weak var sideMenuLeadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var sideMenuView: UIView!
+    @IBOutlet weak var addPatientBtn: UIButton!
     
     var sideMenuVC : SideMenuVC?
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        registerNibs()
+        noDataStack.isHidden = true 
         sideMenuBackView.isHidden = true
-        sideMenuView.layer.cornerRadius = 10
-        sideMenuView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
+//        sideMenuView.layer.cornerRadius = 10
+//        sideMenuView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
         
         // Do any additional setup after loading the view.
+    }
+    
+    private func registerNibs() {
+        tableView.register(UINib(nibName: String(describing: HomePatientListViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: HomePatientListViewCell.self))
     }
     
 
@@ -67,7 +76,9 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
     @IBAction func searchAction(_ sender: Any) {
     }
 
-
+    @IBAction func addPatientAction(_ sender: Any) {
+    }
+    
     @IBAction func sideMenuAction(_ sender: Any) {
         
 //        UIView.animate(withDuration: 0.1) {
@@ -120,3 +131,27 @@ extension PatientHomeVC: SideMenuViewControllerDelegate {
         self.hideView()
     }
 }
+
+extension PatientHomeVC: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: HomePatientListViewCell.self)) as? HomePatientListViewCell else { return UITableViewCell() }
+        
+        return cell
+
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    
+}
+
+

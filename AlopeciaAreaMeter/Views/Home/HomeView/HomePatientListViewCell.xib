@@ -15,20 +15,20 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="108" id="KGk-i7-Jjw" customClass="HomePatientViewCell" customModule="AlopeciaAreaMeter" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="460" height="108"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="108" id="KGk-i7-Jjw" customClass="HomePatientListViewCell" customModule="AlopeciaAreaMeter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="108"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="460" height="108"/>
+                <rect key="frame" x="0.0" y="0.0" width="364" height="108"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YC6-c8-03w">
-                        <rect key="frame" x="20" y="20" width="420" height="74"/>
+                        <rect key="frame" x="20" y="20" width="324" height="74"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GnQ-uv-6cW">
-                                <rect key="frame" x="15.999999999999993" y="16" width="114.33333333333331" height="42"/>
+                                <rect key="frame" x="16" y="16" width="200" height="42"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healthicons_ui-user-profile" translatesAutoresizingMaskIntoConstraints="NO" id="3jy-hb-G8A">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_icon" translatesAutoresizingMaskIntoConstraints="NO" id="3jy-hb-G8A">
                                         <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -37,35 +37,39 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="21"/>
+                                                <integer key="value" value="24"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdy-MT-TGl">
-                                        <rect key="frame" x="49.999999999999993" y="0.0" width="64.333333333333314" height="42"/>
+                                        <rect key="frame" x="50" y="0.0" width="150" height="42"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vMD-Fz-bHS">
-                                <rect key="frame" x="242" y="20.000000000000004" width="162" height="34.333333333333343"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vMD-Fz-bHS">
+                                <rect key="frame" x="216" y="27" width="92" height="20"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEi-y1-WMB">
-                                        <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="cIx-gX-fJc"/>
+                                            <constraint firstAttribute="height" constant="20" id="mzb-Ze-Hm4"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="bi_camera_white" title=" "/>
+                                        <buttonConfiguration key="configuration" style="plain" image="camera_white_icon" title=" "/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSH-SS-0n9">
-                                        <rect key="frame" x="56.666666666666686" y="0.0" width="48.666666666666657" height="34.333333333333336"/>
+                                        <rect key="frame" x="36" y="0.0" width="20" height="20"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="edit_white" title=" "/>
+                                        <buttonConfiguration key="configuration" style="plain" image="edit_white_icon" title=" "/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUn-YL-197">
-                                        <rect key="frame" x="113.33333333333333" y="0.0" width="48.666666666666671" height="34.333333333333336"/>
+                                        <rect key="frame" x="72" y="0.0" width="20" height="20"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="delete_white" title=" "/>
+                                        <buttonConfiguration key="configuration" style="plain" image="delete_white_icon" title=" "/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -74,6 +78,7 @@
                         <constraints>
                             <constraint firstItem="GnQ-uv-6cW" firstAttribute="top" secondItem="YC6-c8-03w" secondAttribute="top" constant="16" id="47X-fA-qOd"/>
                             <constraint firstAttribute="trailing" secondItem="vMD-Fz-bHS" secondAttribute="trailing" constant="16" id="4Vf-Bl-lMi"/>
+                            <constraint firstItem="vMD-Fz-bHS" firstAttribute="leading" secondItem="GnQ-uv-6cW" secondAttribute="trailing" id="RV3-XI-uzg"/>
                             <constraint firstItem="vMD-Fz-bHS" firstAttribute="centerY" secondItem="GnQ-uv-6cW" secondAttribute="centerY" id="Yee-bo-1ib"/>
                             <constraint firstItem="GnQ-uv-6cW" firstAttribute="centerY" secondItem="YC6-c8-03w" secondAttribute="centerY" id="aAf-41-dP1"/>
                             <constraint firstAttribute="bottom" secondItem="GnQ-uv-6cW" secondAttribute="bottom" constant="16" id="iiB-Q4-5pv"/>
@@ -90,14 +95,17 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="146.56488549618319" y="15.492957746478874"/>
+            <connections>
+                <outlet property="mainView" destination="YC6-c8-03w" id="o53-Aa-cCB"/>
+            </connections>
+            <point key="canvasLocation" x="73.282442748091597" y="15.492957746478874"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="bi_camera_white" width="20" height="20"/>
-        <image name="delete_white" width="20" height="20"/>
-        <image name="edit_white" width="20" height="20"/>
-        <image name="healthicons_ui-user-profile" width="62" height="62"/>
+        <image name="camera_white_icon" width="20" height="20"/>
+        <image name="delete_white_icon" width="20" height="20"/>
+        <image name="edit_white_icon" width="20" height="20"/>
+        <image name="user_icon" width="24" height="24"/>
         <namedColor name="PrimaryColor">
             <color red="0.075000002980232239" green="0.48600000143051147" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

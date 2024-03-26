@@ -7,8 +7,9 @@
 
 import UIKit
 
-class HomePatientViewCell: UITableViewCell {
+class HomePatientListViewCell: UITableViewCell {
 
+    @IBOutlet weak var mainView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -16,8 +17,9 @@ class HomePatientViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        mainView.layer.borderColor = UIColor.white.cgColor
+        mainView.layer.borderWidth = 1.0 // You can adjust the width as needed
+        mainView.layer.cornerRadius = 6.0 // You can adjust the corner radius as needed
     }
     
 }

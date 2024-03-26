@@ -45,6 +45,13 @@ class SideMenuVC: UIViewController {
         tableView.register(UINib(nibName: String(describing: SideMenuListViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: SideMenuListViewCell.self))
         tableView.register(UINib(nibName: String(describing: SideMenuHeaderViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: SideMenuHeaderViewCell.self))
     }
+    
+    func navigateToCamera() {
+        self.navigateToViewController(storyboardName: Storyboard.patient.rawValue, viewControllerIdentifier: String(describing: CameraVC.self), viewModel: BaseViewModel()) { (vc: CameraVC, nil) in
+          //  vc.viewModel = viewModel as? BaseViewModel
+            return vc
+        }
+    }
 
 
 }
@@ -67,6 +74,13 @@ extension SideMenuVC: UITableViewDelegate, UITableViewDataSource {
     }
     // swiftlint: disable cyclomatic_complexity
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        switch indexPath.row {
+        case 0:
+            navigateToCamera()
+        default:
+            break
+        }
     
     }
     // swiftlint: enable cyclomatic_complexity

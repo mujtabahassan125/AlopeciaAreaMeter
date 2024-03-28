@@ -24,7 +24,8 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
         registerNibs()
         noDataStack.isHidden = true 
         sideMenuBackView.isHidden = true
-        sideMenuView.isHidden = true 
+        sideMenuView.isHidden = true
+        
 //        sideMenuView.layer.cornerRadius = 10
 //        sideMenuView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
         
@@ -103,29 +104,7 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
         self.sideMenuLeadingConstraint.constant = 0
 
     }
-    
-    func presentSideMenuController() {
-        let sideMenuController = SideMenuVC()
-        sideMenuController.modalPresentationStyle = .custom
-        sideMenuController.transitioningDelegate = self // Set transitioning delegate
-        
-        // Present the side menu controller
-        present(sideMenuController, animated: true, completion: nil)
-    }
-    
-    // MARK: - UIViewControllerTransitioningDelegate
-    
-    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return SideMenuPresentationController(presentedViewController: presented, presenting: presenting)
-    }
-    
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return SlideInPresentationAnimator(isPresenting: true)
-    }
-    
-    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return SlideInPresentationAnimator(isPresenting: false)
-    }
+
 }
 
 extension PatientHomeVC: SideMenuViewControllerDelegate {
@@ -145,12 +124,17 @@ extension PatientHomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: HomePatientListViewCell.self)) as? HomePatientListViewCell else { return UITableViewCell() }
-        
         return cell
 
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.navigateToViewController(storyboardName: Storyboard.records.rawValue, viewControllerIdentifier: String(describing: RecordsVC.self), viewModel: BaseViewModel()) { (vc: RecordsVC, nil) in
+            return vc
+        }
     }
     
     

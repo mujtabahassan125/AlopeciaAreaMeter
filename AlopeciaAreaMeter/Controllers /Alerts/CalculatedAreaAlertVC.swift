@@ -11,7 +11,7 @@ class CalculatedAreaAlertVC: UIViewController {
 
     @IBOutlet weak var areaLbl: UILabel!
     
-    var calculatedArea: Double = 0
+    var calculatedArea: String = ""
     
     
     override func viewDidLoad() {

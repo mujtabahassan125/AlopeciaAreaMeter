@@ -42,6 +42,7 @@ class DrawingView: UIView {
         context.setStrokeColor(strokeColor.cgColor)
         context.setLineWidth(lineWidth)
         context.strokePath()
+        
     }
 
     // Resets the current drawing

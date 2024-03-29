@@ -396,8 +396,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="cameraRotationAction:" destination="DtX-W7-9ht" eventType="touchUpInside" id="D3n-os-HdD"/>
-                                                    <action selector="settingsAction:" destination="DtX-W7-9ht" eventType="touchUpInside" id="pBp-Qy-3ID"/>
+                                                    <action selector="cameraRotationAction:" destination="DtX-W7-9ht" eventType="touchUpInside" id="hm9-h0-Brc"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -459,7 +458,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title=" "/>
                                         <connections>
-                                            <action selector="backAction:" destination="43b-6e-0hj" eventType="touchUpInside" id="h9g-iv-Ro6"/>
+                                            <action selector="cameraAction:" destination="43b-6e-0hj" eventType="touchUpInside" id="fWT-Jd-JQW"/>
                                         </connections>
                                     </button>
                                 </subviews>

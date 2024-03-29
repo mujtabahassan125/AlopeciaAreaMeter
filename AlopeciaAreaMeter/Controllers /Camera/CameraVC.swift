@@ -165,12 +165,11 @@ class CameraVC: UIViewController  {
                 if torchOn {
                     device.torchMode = .off
                     torchOn = false
-                    torchBtnIcon.imageView?.image = UIImage(systemName: "bolt.fill")
-                   
+                    torchBtnIcon.setImage(UIImage(systemName: "bolt.fill"), for: .normal)
                 } else {
                     try device.setTorchModeOn(level: 1.0)
                     torchOn = true
-                    torchBtnIcon.imageView?.image = UIImage(systemName: "bolt.slash.fill")
+                    torchBtnIcon.setImage(UIImage(systemName: "bolt.slash.fill"), for: .normal)
                 }
                 device.unlockForConfiguration()
             } catch {

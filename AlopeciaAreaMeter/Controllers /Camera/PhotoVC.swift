@@ -89,20 +89,10 @@ class PhotoVC: UIViewController, PKCanvasViewDelegate {
 
 
     @IBAction func drawAction(_ sender: Any) {
-      //  canvasView.allowsFingerDrawing = true  // Enable finger drawing
-//        canvasView.isUserInteractionEnabled = true
-//        canvasView.drawingPolicy = .anyInput
         drawingView.highlightArea()
-//        let area = drawingView.calculateArea()
-//        print("Drawn Area: \(area) pixels²")
-               // Convert area to your desired unit and display it
-               // This example simply prints it to the console
-            // let area = drawingView.calculateAreaInCm2(ppi: 460)
-        
         let area = drawingView.calculateAreaInCm2(ppi: 400)
         openAreaDialog(area: area ?? "")
         print("Drawn Area: \(area) cm²")
-        
     }
     
     @IBAction func cameraAction(_ sender: Any) {

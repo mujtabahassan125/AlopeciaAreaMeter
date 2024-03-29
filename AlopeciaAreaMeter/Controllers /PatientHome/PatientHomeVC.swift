@@ -18,13 +18,17 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
     @IBOutlet weak var addPatientBtn: UIButton!
     
     var sideMenuVC : SideMenuVC?
+    
+    let patients = [PatientModel(firstName: "John", lastName: "Doe", profileImg: IconName.userIcon), PatientModel(firstName: "Sarah", lastName: "Brown", profileImg: IconName.userIcon)]
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        applyRoundedCorners()
         registerNibs()
         noDataStack.isHidden = true 
         sideMenuBackView.isHidden = true
-        sideMenuView.isHidden = true 
+        sideMenuView.isHidden = true
+        
 //        sideMenuView.layer.cornerRadius = 10
 //        sideMenuView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
         
@@ -33,6 +37,20 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
     
     private func registerNibs() {
         tableView.register(UINib(nibName: String(describing: HomePatientListViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: HomePatientListViewCell.self))
+    }
+    
+    private func applyRoundedCorners() {
+        // Create a path for rounded corners
+        let cornerRadius: CGFloat = 20 // Adjust as per your preference
+        let maskPath = UIBezierPath(roundedRect: sideMenuView.bounds, byRoundingCorners: [.topRight, .bottomRight], cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
+        
+        // Create a shape layer with the rounded path
+        let maskLayer = CAShapeLayer()
+        maskLayer.frame = sideMenuView.bounds
+        maskLayer.path = maskPath.cgPath
+        
+        // Apply the mask to the side menu view's layer
+        sideMenuView.layer.mask = maskLayer
     }
     
 
@@ -68,6 +86,33 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
         }
     }
     
+    func openDeleteAlert(index: Int) {
+        let storyboard = UIStoryboard(name: Storyboard.customAlerts.rawValue, bundle: nil)
+                let customAlert = storyboard.instantiateViewController(withIdentifier: String(describing: PatientDeleteAlertVC.self)) as! PatientDeleteAlertVC
+                customAlert.modalPresentationStyle = .overCurrentContext
+                customAlert.providesPresentationContextTransitionStyle = true
+                customAlert.definesPresentationContext = true
+                customAlert.modalTransitionStyle = .crossDissolve
+                self.present(customAlert, animated: true, completion: nil)
+    }
+    
+    func openEditAlert(index: Int) {
+        let storyboard = UIStoryboard(name: Storyboard.customAlerts.rawValue, bundle: nil)
+              let customAlert = storyboard.instantiateViewController(withIdentifier: String(describing: PatientHomeAlertVC.self)) as! PatientHomeAlertVC
+              customAlert.modalPresentationStyle = .overCurrentContext
+              customAlert.providesPresentationContextTransitionStyle = true
+              customAlert.definesPresentationContext = true
+              customAlert.modalTransitionStyle = .crossDissolve
+              customAlert.patient = patients[index]
+              self.present(customAlert, animated: true, completion: nil)
+       }
+    
+    func navigateToCamera(index: Int) {
+           self.navigateToViewController(storyboardName: Storyboard.patient.rawValue, viewControllerIdentifier: String(describing: CameraVC.self), viewModel: BaseViewModel()) { (vc: CameraVC, nil) in
+               return vc
+           }
+       }
+    
     
     
 
@@ -75,6 +120,15 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
         self.hideView()
     }
     @IBAction func searchAction(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: Storyboard.customAlerts.rawValue, bundle: nil)
+        let customAlert = storyboard.instantiateViewController(withIdentifier: String(describing: PatientHomeAlertVC.self)) as! PatientHomeAlertVC
+        customAlert.modalPresentationStyle = .overCurrentContext
+        customAlert.providesPresentationContextTransitionStyle = true
+        customAlert.definesPresentationContext = true
+        customAlert.modalTransitionStyle = .crossDissolve
+        self.present(customAlert, animated: true, completion: nil)
+        
     }
 
     @IBAction func addPatientAction(_ sender: Any) {
@@ -103,29 +157,7 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
         self.sideMenuLeadingConstraint.constant = 0
 
     }
-    
-    func presentSideMenuController() {
-        let sideMenuController = SideMenuVC()
-        sideMenuController.modalPresentationStyle = .custom
-        sideMenuController.transitioningDelegate = self // Set transitioning delegate
-        
-        // Present the side menu controller
-        present(sideMenuController, animated: true, completion: nil)
-    }
-    
-    // MARK: - UIViewControllerTransitioningDelegate
-    
-    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return SideMenuPresentationController(presentedViewController: presented, presenting: presenting)
-    }
-    
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return SlideInPresentationAnimator(isPresenting: true)
-    }
-    
-    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return SlideInPresentationAnimator(isPresenting: false)
-    }
+
 }
 
 extension PatientHomeVC: SideMenuViewControllerDelegate {
@@ -139,18 +171,40 @@ extension PatientHomeVC: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return 2
+        return patients.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: HomePatientListViewCell.self)) as? HomePatientListViewCell else { return UITableViewCell() }
-        
+        cell.setCellData(data: patients[indexPath.row])
+        cell.cameraBtn.tag = indexPath.row
+        cell.homeDelegate = self
         return cell
-
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.navigateToViewController(storyboardName: Storyboard.records.rawValue, viewControllerIdentifier: String(describing: RecordsVC.self), viewModel: BaseViewModel()) { [weak self] (vc: RecordsVC, nil) in
+            vc.patient = self?.patients[indexPath.row]
+            return vc
+        }
+    }
+}
+
+extension PatientHomeVC: HomePatientDelegate {
+    func deletePatient(index: Int) {
+        openDeleteAlert(index: index)
+    }
+    
+    func editPatient(index: Int) {
+        openEditAlert(index: index)
+    }
+    
+    func openCamera(index: Int) {
+        navigateToCamera(index: index)
     }
     
     

@@ -7,15 +7,27 @@
 
 import UIKit
 
+protocol HomePatientDelegate {
+    func deletePatient(index: Int)
+    func editPatient(index: Int)
+    func openCamera(index: Int)
+}
+
 class HomePatientListViewCell: UITableViewCell {
 
 
     
+    @IBOutlet weak var imageViewWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var imageViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var view: UIView!
+    @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var editBtn: UIButton!
     @IBOutlet weak var deleteBtn: UIButton!
     @IBOutlet weak var profileImgView: UIImageView!
     @IBOutlet weak var cameraBtn: UIButton!
     @IBOutlet weak var mainView: UIView!
+    
+    var homeDelegate: HomePatientDelegate?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,6 +36,18 @@ class HomePatientListViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+    }
+    
+    func setCellData(data: PatientModel) {
+        
+        nameLbl.text = "\(data.firstName)" + " \(data.lastName)"
+        profileImgView.image = UIImage(named: data.profileImg)
+        
+//        if data.profileImg == IconName.dummy {
+//            view.backgroundColor = .clear
+//            imageViewHeightConstraint.constant = 42
+//            imageViewWidthConstraint.constant = 42
+//        } 
     }
     
     override func layoutSubviews() {
@@ -42,10 +66,13 @@ class HomePatientListViewCell: UITableViewCell {
     }
     
     @IBAction func cameraAction(_ sender: Any) {
+        homeDelegate?.openCamera(index: cameraBtn.tag)
     }
     
     @IBAction func editAction(_ sender: Any) {
+        homeDelegate?.editPatient(index: cameraBtn.tag)
     }
     @IBAction func removeAction(_ sender: Any) {
+        homeDelegate?.deletePatient(index: cameraBtn.tag)
     }
 }

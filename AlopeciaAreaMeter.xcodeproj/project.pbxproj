@@ -16,6 +16,15 @@
 		5F0D0B452BB3420C0074DD07 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B432BB3420C0074DD07 /* LoginVC.swift */; };
 		5F0D0B462BB3420C0074DD07 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B442BB3420C0074DD07 /* SignUpVC.swift */; };
 		5F0D0B4A2BB3585C0074DD07 /* ListViewCustomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B492BB3585B0074DD07 /* ListViewCustomModel.swift */; };
+		5F0D0B4C2BB683900074DD07 /* PatientCustomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B4B2BB683900074DD07 /* PatientCustomModel.swift */; };
+		5F0D0B4E2BB688570074DD07 /* PatientRecordCustomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B4D2BB688570074DD07 /* PatientRecordCustomModel.swift */; };
+		5F0D0B512BB690D70074DD07 /* PatientHomeAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B502BB690D70074DD07 /* PatientHomeAlertVC.swift */; };
+		5F0D0B572BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B562BB69E3E0074DD07 /* PatientDeleteAlertVC.swift */; };
+		5F0D0B582BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B562BB69E3E0074DD07 /* PatientDeleteAlertVC.swift */; };
+		5F0D0B592BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B562BB69E3E0074DD07 /* PatientDeleteAlertVC.swift */; };
+		5F0D0B5B2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B5A2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift */; };
+		5F0D0B5C2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B5A2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift */; };
+		5F0D0B5D2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B5A2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift */; };
 		5F7113C92BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
 		5F7113CA2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
 		5F7113CB2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
@@ -164,6 +173,11 @@
 		5F0D0B432BB3420C0074DD07 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		5F0D0B442BB3420C0074DD07 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		5F0D0B492BB3585B0074DD07 /* ListViewCustomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCustomModel.swift; sourceTree = "<group>"; };
+		5F0D0B4B2BB683900074DD07 /* PatientCustomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientCustomModel.swift; sourceTree = "<group>"; };
+		5F0D0B4D2BB688570074DD07 /* PatientRecordCustomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRecordCustomModel.swift; sourceTree = "<group>"; };
+		5F0D0B502BB690D70074DD07 /* PatientHomeAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHomeAlertVC.swift; sourceTree = "<group>"; };
+		5F0D0B562BB69E3E0074DD07 /* PatientDeleteAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDeleteAlertVC.swift; sourceTree = "<group>"; };
+		5F0D0B5A2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedAreaAlertVC.swift; sourceTree = "<group>"; };
 		5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewControllerExtension.swift; sourceTree = "<group>"; };
 		5F7113E62BAA3BBF0006C667 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		5F7113E82BAA3C030006C667 /* SignUpVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVM.swift; sourceTree = "<group>"; };
@@ -311,8 +325,20 @@
 			isa = PBXGroup;
 			children = (
 				5F0D0B492BB3585B0074DD07 /* ListViewCustomModel.swift */,
+				5F0D0B4B2BB683900074DD07 /* PatientCustomModel.swift */,
+				5F0D0B4D2BB688570074DD07 /* PatientRecordCustomModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5F0D0B4F2BB690940074DD07 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				5F0D0B502BB690D70074DD07 /* PatientHomeAlertVC.swift */,
+				5F0D0B562BB69E3E0074DD07 /* PatientDeleteAlertVC.swift */,
+				5F0D0B5A2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift */,
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 		5F7113FD2BAA52A20006C667 /* Home */ = {
@@ -438,6 +464,7 @@
 		5F99781F2BA6F6990085309B /* Controllers  */ = {
 			isa = PBXGroup;
 			children = (
+				5F0D0B4F2BB690940074DD07 /* Alerts */,
 				5F0D0B472BB342210074DD07 /* Auth */,
 				85E0A5482BB29197005BDA7C /* Records */,
 				5F0D0B302BB26A180074DD07 /* Camera */,
@@ -884,15 +911,20 @@
 				5FDF5F592BB03C7B00AA665D /* SideMenuHeaderViewCell.swift in Sources */,
 				5F7113E92BAA3C030006C667 /* SignUpVM.swift in Sources */,
 				5FDF5F6D2BB08D6B00AA665D /* SlideInPresentationAnimator.swift in Sources */,
+				5F0D0B4C2BB683900074DD07 /* PatientCustomModel.swift in Sources */,
 				5F71142C2BAEE79A0006C667 /* UiColorExtension.swift in Sources */,
 				5F7113C92BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */,
+				5F0D0B512BB690D70074DD07 /* PatientHomeAlertVC.swift in Sources */,
 				5F0D0B342BB26A470074DD07 /* PhotoVC.swift in Sources */,
 				5F7114272BAEE4650006C667 /* ColorConstants.swift in Sources */,
 				5FA27D932BAF5E4F00C459C1 /* CameraVC.swift in Sources */,
+				5F0D0B4E2BB688570074DD07 /* PatientRecordCustomModel.swift in Sources */,
 				85E0A54F2BB29B65005BDA7C /* GraphViewCell.swift in Sources */,
 				5F9978532BA824D20085309B /* Observable.swift in Sources */,
 				5F7113ED2BAA3D860006C667 /* BaseViewModel.swift in Sources */,
 				5F0D0B462BB3420C0074DD07 /* SignUpVC.swift in Sources */,
+				5F0D0B5B2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift in Sources */,
+				5F0D0B572BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */,
 				5F0D0B402BB341D00074DD07 /* AuthBtnsViewCell.swift in Sources */,
 				5F7114232BAEDD570006C667 /* IconConstants.swift in Sources */,
 				5F9977F52BA560840085309B /* AlopeciaAreaMeter.xcdatamodeld in Sources */,
@@ -909,6 +941,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F71141F2BAEC63F0006C667 /* AppConstants.swift in Sources */,
+				5F0D0B5C2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift in Sources */,
 				5F9978252BA6F7ED0085309B /* Utilities.swift in Sources */,
 				85E0A5502BB29B65005BDA7C /* GraphViewCell.swift in Sources */,
 				5FDF5F6A2BB08D1100AA665D /* SideMenuPresentationController.swift in Sources */,
@@ -930,6 +963,7 @@
 				5F7113CA2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */,
 				5F9978052BA560860085309B /* AlopeciaAreaMeterTests.swift in Sources */,
 				85E0A54B2BB291B5005BDA7C /* RecordsVC.swift in Sources */,
+				5F0D0B582BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */,
 				5F99783F2BA720300085309B /* AuthTextViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -938,6 +972,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0D0B5D2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift in Sources */,
 				5F71142E2BAEE79A0006C667 /* UiColorExtension.swift in Sources */,
 				5F71141C2BAA6AC20006C667 /* StoryboardConstants.swift in Sources */,
 				5FDF5F672BB040D000AA665D /* SideMenuVC.swift in Sources */,
@@ -948,6 +983,7 @@
 				5F7113CB2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */,
 				5F71140B2BAA56E50006C667 /* RecordViewCell.swift in Sources */,
 				5FDF5F6B2BB08D1100AA665D /* SideMenuPresentationController.swift in Sources */,
+				5F0D0B592BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */,
 				5FDF5F5F2BB03DFF00AA665D /* SideMenuListViewCell.swift in Sources */,
 				85E0A5512BB29B65005BDA7C /* GraphViewCell.swift in Sources */,
 				5F99780F2BA560860085309B /* AlopeciaAreaMeterUITests.swift in Sources */,

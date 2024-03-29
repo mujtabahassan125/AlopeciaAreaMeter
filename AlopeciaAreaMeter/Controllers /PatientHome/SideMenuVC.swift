@@ -22,7 +22,7 @@ class SideMenuVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+        //applyRoundedCorners()
         registerNib()
         populateSideMenuItems()
     }
@@ -32,6 +32,20 @@ class SideMenuVC: UIViewController {
        // let sideMenuView = self.view // or however you reference your side menu's view
         mainView.layer.cornerRadius = 10
         mainView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
+    }
+    
+    private func applyRoundedCorners() {
+        // Create a path for rounded corners
+        let cornerRadius: CGFloat = 20 // Adjust as per your preference
+        let maskPath = UIBezierPath(roundedRect: mainView.bounds, byRoundingCorners: [.topRight, .bottomRight], cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
+        
+        // Create a shape layer with the rounded path
+        let maskLayer = CAShapeLayer()
+        maskLayer.frame = mainView.bounds
+        maskLayer.path = maskPath.cgPath
+        
+        // Apply the mask to the side menu view's layer
+        mainView.layer.mask = maskLayer
     }
     private func populateSideMenuItems() {
         sideMenuItems.append(ListModel(title: AppConstants.patientLbl, image: IconName.phoneUserList, hint: ""))

@@ -7,6 +7,12 @@
 
 import UIKit
 
+protocol HomePatientDelegate {
+    func deletePatient(index: Int)
+    func editPatient(index: Int)
+    func openCamera(index: Int)
+}
+
 class HomePatientListViewCell: UITableViewCell {
 
 
@@ -20,6 +26,8 @@ class HomePatientListViewCell: UITableViewCell {
     @IBOutlet weak var profileImgView: UIImageView!
     @IBOutlet weak var cameraBtn: UIButton!
     @IBOutlet weak var mainView: UIView!
+    
+    var homeDelegate: HomePatientDelegate?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -58,10 +66,13 @@ class HomePatientListViewCell: UITableViewCell {
     }
     
     @IBAction func cameraAction(_ sender: Any) {
+        homeDelegate?.openCamera(index: cameraBtn.tag)
     }
     
     @IBAction func editAction(_ sender: Any) {
+        homeDelegate?.editPatient(index: cameraBtn.tag)
     }
     @IBAction func removeAction(_ sender: Any) {
+        homeDelegate?.deletePatient(index: cameraBtn.tag)
     }
 }

@@ -86,6 +86,33 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
         }
     }
     
+    func openDeleteAlert(index: Int) {
+        let storyboard = UIStoryboard(name: Storyboard.customAlerts.rawValue, bundle: nil)
+                let customAlert = storyboard.instantiateViewController(withIdentifier: String(describing: PatientDeleteAlertVC.self)) as! PatientDeleteAlertVC
+                customAlert.modalPresentationStyle = .overCurrentContext
+                customAlert.providesPresentationContextTransitionStyle = true
+                customAlert.definesPresentationContext = true
+                customAlert.modalTransitionStyle = .crossDissolve
+                self.present(customAlert, animated: true, completion: nil)
+    }
+    
+    func openEditAlert(index: Int) {
+        let storyboard = UIStoryboard(name: Storyboard.customAlerts.rawValue, bundle: nil)
+              let customAlert = storyboard.instantiateViewController(withIdentifier: String(describing: PatientHomeAlertVC.self)) as! PatientHomeAlertVC
+              customAlert.modalPresentationStyle = .overCurrentContext
+              customAlert.providesPresentationContextTransitionStyle = true
+              customAlert.definesPresentationContext = true
+              customAlert.modalTransitionStyle = .crossDissolve
+              customAlert.patient = patients[index]
+              self.present(customAlert, animated: true, completion: nil)
+       }
+    
+    func navigateToCamera(index: Int) {
+           self.navigateToViewController(storyboardName: Storyboard.patient.rawValue, viewControllerIdentifier: String(describing: CameraVC.self), viewModel: BaseViewModel()) { (vc: CameraVC, nil) in
+               return vc
+           }
+       }
+    
     
     
 
@@ -148,12 +175,13 @@ extension PatientHomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: HomePatientListViewCell.self)) as? HomePatientListViewCell else { return UITableViewCell() }
         cell.setCellData(data: patients[indexPath.row])
+        cell.cameraBtn.tag = indexPath.row
+        cell.homeDelegate = self
         return cell
-
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
@@ -163,6 +191,20 @@ extension PatientHomeVC: UITableViewDelegate, UITableViewDataSource {
             vc.patient = self?.patients[indexPath.row]
             return vc
         }
+    }
+}
+
+extension PatientHomeVC: HomePatientDelegate {
+    func deletePatient(index: Int) {
+        openDeleteAlert(index: index)
+    }
+    
+    func editPatient(index: Int) {
+        openEditAlert(index: index)
+    }
+    
+    func openCamera(index: Int) {
+        navigateToCamera(index: index)
     }
     
     

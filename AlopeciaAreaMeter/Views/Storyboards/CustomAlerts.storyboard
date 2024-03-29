@@ -152,10 +152,10 @@
             </objects>
             <point key="canvasLocation" x="135.1145038167939" y="-17.605633802816904"/>
         </scene>
-        <!--View Controller-->
+        <!--Patient Delete AlertVC-->
         <scene sceneID="ldZ-DO-nbi">
             <objects>
-                <viewController id="041-Dg-1u3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PatientDeleteAlertVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="041-Dg-1u3" customClass="PatientDeleteAlertVC" customModule="AlopeciaAreaMeter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lLi-fV-ZeY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,13 +183,19 @@
                                                 <color key="backgroundColor" name="PrimaryColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Update"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Delete"/>
+                                                <connections>
+                                                    <action selector="deleteAction:" destination="041-Dg-1u3" eventType="touchUpInside" id="ETH-Xz-90J"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6p-ZE-GPF">
                                                 <rect key="frame" x="146.66666666666663" y="0.0" width="136.33333333333337" height="40"/>
                                                 <color key="tintColor" name="PrimaryColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                                <connections>
+                                                    <action selector="cancelAction:" destination="041-Dg-1u3" eventType="touchUpInside" id="Z4j-Fc-vd2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>

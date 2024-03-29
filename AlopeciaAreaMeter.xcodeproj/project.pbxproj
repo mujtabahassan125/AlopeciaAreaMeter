@@ -19,6 +19,9 @@
 		5F0D0B4C2BB683900074DD07 /* PatientCustomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B4B2BB683900074DD07 /* PatientCustomModel.swift */; };
 		5F0D0B4E2BB688570074DD07 /* PatientRecordCustomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B4D2BB688570074DD07 /* PatientRecordCustomModel.swift */; };
 		5F0D0B512BB690D70074DD07 /* PatientHomeAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B502BB690D70074DD07 /* PatientHomeAlertVC.swift */; };
+		5F0D0B572BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B562BB69E3E0074DD07 /* PatientDeleteAlertVC.swift */; };
+		5F0D0B582BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B562BB69E3E0074DD07 /* PatientDeleteAlertVC.swift */; };
+		5F0D0B592BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B562BB69E3E0074DD07 /* PatientDeleteAlertVC.swift */; };
 		5F7113C92BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
 		5F7113CA2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
 		5F7113CB2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
@@ -170,6 +173,7 @@
 		5F0D0B4B2BB683900074DD07 /* PatientCustomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientCustomModel.swift; sourceTree = "<group>"; };
 		5F0D0B4D2BB688570074DD07 /* PatientRecordCustomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRecordCustomModel.swift; sourceTree = "<group>"; };
 		5F0D0B502BB690D70074DD07 /* PatientHomeAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHomeAlertVC.swift; sourceTree = "<group>"; };
+		5F0D0B562BB69E3E0074DD07 /* PatientDeleteAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDeleteAlertVC.swift; sourceTree = "<group>"; };
 		5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewControllerExtension.swift; sourceTree = "<group>"; };
 		5F7113E62BAA3BBF0006C667 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		5F7113E82BAA3C030006C667 /* SignUpVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVM.swift; sourceTree = "<group>"; };
@@ -327,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				5F0D0B502BB690D70074DD07 /* PatientHomeAlertVC.swift */,
+				5F0D0B562BB69E3E0074DD07 /* PatientDeleteAlertVC.swift */,
 			);
 			path = Alerts;
 			sourceTree = "<group>";
@@ -913,6 +918,7 @@
 				5F9978532BA824D20085309B /* Observable.swift in Sources */,
 				5F7113ED2BAA3D860006C667 /* BaseViewModel.swift in Sources */,
 				5F0D0B462BB3420C0074DD07 /* SignUpVC.swift in Sources */,
+				5F0D0B572BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */,
 				5F0D0B402BB341D00074DD07 /* AuthBtnsViewCell.swift in Sources */,
 				5F7114232BAEDD570006C667 /* IconConstants.swift in Sources */,
 				5F9977F52BA560840085309B /* AlopeciaAreaMeter.xcdatamodeld in Sources */,
@@ -950,6 +956,7 @@
 				5F7113CA2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */,
 				5F9978052BA560860085309B /* AlopeciaAreaMeterTests.swift in Sources */,
 				85E0A54B2BB291B5005BDA7C /* RecordsVC.swift in Sources */,
+				5F0D0B582BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */,
 				5F99783F2BA720300085309B /* AuthTextViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -968,6 +975,7 @@
 				5F7113CB2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */,
 				5F71140B2BAA56E50006C667 /* RecordViewCell.swift in Sources */,
 				5FDF5F6B2BB08D1100AA665D /* SideMenuPresentationController.swift in Sources */,
+				5F0D0B592BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */,
 				5FDF5F5F2BB03DFF00AA665D /* SideMenuListViewCell.swift in Sources */,
 				85E0A5512BB29B65005BDA7C /* GraphViewCell.swift in Sources */,
 				5F99780F2BA560860085309B /* AlopeciaAreaMeterUITests.swift in Sources */,

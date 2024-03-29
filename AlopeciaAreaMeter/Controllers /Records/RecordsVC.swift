@@ -14,10 +14,14 @@ class RecordsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet weak var navigationBarView: NavBarView!
+    
+    var patient: PatientModel?
+    
+    let records = [PatientRecordModel(date: "Friday, 15 March, 12:08 PM", value: 71.33), PatientRecordModel(date: "Thursday, 14 March, 01:08 PM", value: 71.33), PatientRecordModel(date: "Wednesday, 13 March, 12:08 PM", value: 71.33) ]
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNibs()
-       // navigationBarView.nameLbl.text = "John Smith"
+        navTitle.text = patient?.name
         
 
     }
@@ -58,7 +62,7 @@ extension RecordsVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch segmentControl.selectedSegmentIndex {
         case 0:
-            return 2
+            return records.count
         case 1:
             return 1
         default:
@@ -73,6 +77,7 @@ extension RecordsVC: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RecordViewCell.self)) as? RecordViewCell else { return UITableViewCell() }
             sepratorView.isHidden = false
             cell.setView()
+            cell.setCellData(data: records[indexPath.row])
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: GraphViewCell.self)) as? GraphViewCell else { return UITableViewCell() }

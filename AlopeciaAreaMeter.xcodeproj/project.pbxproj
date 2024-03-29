@@ -16,6 +16,8 @@
 		5F0D0B452BB3420C0074DD07 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B432BB3420C0074DD07 /* LoginVC.swift */; };
 		5F0D0B462BB3420C0074DD07 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B442BB3420C0074DD07 /* SignUpVC.swift */; };
 		5F0D0B4A2BB3585C0074DD07 /* ListViewCustomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B492BB3585B0074DD07 /* ListViewCustomModel.swift */; };
+		5F0D0B4C2BB683900074DD07 /* PatientCustomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B4B2BB683900074DD07 /* PatientCustomModel.swift */; };
+		5F0D0B4E2BB688570074DD07 /* PatientRecordCustomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B4D2BB688570074DD07 /* PatientRecordCustomModel.swift */; };
 		5F7113C92BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
 		5F7113CA2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
 		5F7113CB2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
@@ -164,6 +166,8 @@
 		5F0D0B432BB3420C0074DD07 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		5F0D0B442BB3420C0074DD07 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		5F0D0B492BB3585B0074DD07 /* ListViewCustomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCustomModel.swift; sourceTree = "<group>"; };
+		5F0D0B4B2BB683900074DD07 /* PatientCustomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientCustomModel.swift; sourceTree = "<group>"; };
+		5F0D0B4D2BB688570074DD07 /* PatientRecordCustomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRecordCustomModel.swift; sourceTree = "<group>"; };
 		5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewControllerExtension.swift; sourceTree = "<group>"; };
 		5F7113E62BAA3BBF0006C667 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		5F7113E82BAA3C030006C667 /* SignUpVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVM.swift; sourceTree = "<group>"; };
@@ -311,6 +315,8 @@
 			isa = PBXGroup;
 			children = (
 				5F0D0B492BB3585B0074DD07 /* ListViewCustomModel.swift */,
+				5F0D0B4B2BB683900074DD07 /* PatientCustomModel.swift */,
+				5F0D0B4D2BB688570074DD07 /* PatientRecordCustomModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -884,11 +890,13 @@
 				5FDF5F592BB03C7B00AA665D /* SideMenuHeaderViewCell.swift in Sources */,
 				5F7113E92BAA3C030006C667 /* SignUpVM.swift in Sources */,
 				5FDF5F6D2BB08D6B00AA665D /* SlideInPresentationAnimator.swift in Sources */,
+				5F0D0B4C2BB683900074DD07 /* PatientCustomModel.swift in Sources */,
 				5F71142C2BAEE79A0006C667 /* UiColorExtension.swift in Sources */,
 				5F7113C92BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */,
 				5F0D0B342BB26A470074DD07 /* PhotoVC.swift in Sources */,
 				5F7114272BAEE4650006C667 /* ColorConstants.swift in Sources */,
 				5FA27D932BAF5E4F00C459C1 /* CameraVC.swift in Sources */,
+				5F0D0B4E2BB688570074DD07 /* PatientRecordCustomModel.swift in Sources */,
 				85E0A54F2BB29B65005BDA7C /* GraphViewCell.swift in Sources */,
 				5F9978532BA824D20085309B /* Observable.swift in Sources */,
 				5F7113ED2BAA3D860006C667 /* BaseViewModel.swift in Sources */,

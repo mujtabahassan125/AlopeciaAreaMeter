@@ -102,7 +102,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="dateLbl" destination="jhM-fk-0Us" id="7Z1-eC-TXN"/>
                 <outlet property="mainView" destination="MNt-7n-yL6" id="hG7-Gy-dzG"/>
+                <outlet property="valueLbl" destination="TmW-iu-adP" id="hMm-4E-bB9"/>
             </connections>
             <point key="canvasLocation" x="61.832061068702288" y="62.676056338028175"/>
         </tableViewCell>

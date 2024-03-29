@@ -43,7 +43,7 @@ class SignUpVC: UIViewController {
         authList.append(ListModel(title: AppConstants.authlastNameLbl, image: IconName.userProfile, hint: "Ex:Doe"))
         authList.append(ListModel(title: AppConstants.authPhoneLbl, image: IconName.phone, hint: "Ex: +44 7172 423"))
         authList.append(ListModel(title: AppConstants.authEmailLbl, image: IconName.email, hint: "Ex: abc@example.com"))
-        authList.append(ListModel(title: AppConstants.authPasswordLbl, image: IconName.password, hint: "*******"))
+        authList.append(ListModel(title: AppConstants.authPasswordLbl, image: IconName.password, hint: "**********"))
         authList.append(ListModel(title: "", image: "", hint: ""))
         
     }

@@ -18,6 +18,8 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
     @IBOutlet weak var addPatientBtn: UIButton!
     
     var sideMenuVC : SideMenuVC?
+    
+    let patients = [PatientModel(name: "John Doe", profileImg: IconName.userIcon), PatientModel(name: "Sarah Brown", profileImg: IconName.userIcon)]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -133,12 +135,13 @@ extension PatientHomeVC: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return 2
+        return patients.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: HomePatientListViewCell.self)) as? HomePatientListViewCell else { return UITableViewCell() }
+        cell.setCellData(data: patients[indexPath.row])
         return cell
 
     }
@@ -147,7 +150,8 @@ extension PatientHomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.navigateToViewController(storyboardName: Storyboard.records.rawValue, viewControllerIdentifier: String(describing: RecordsVC.self), viewModel: BaseViewModel()) { (vc: RecordsVC, nil) in
+        self.navigateToViewController(storyboardName: Storyboard.records.rawValue, viewControllerIdentifier: String(describing: RecordsVC.self), viewModel: BaseViewModel()) { [weak self] (vc: RecordsVC, nil) in
+            vc.patient = self?.patients[indexPath.row]
             return vc
         }
     }

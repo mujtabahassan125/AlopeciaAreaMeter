@@ -11,6 +11,10 @@ class HomePatientListViewCell: UITableViewCell {
 
 
     
+    @IBOutlet weak var imageViewWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var imageViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var view: UIView!
+    @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var editBtn: UIButton!
     @IBOutlet weak var deleteBtn: UIButton!
     @IBOutlet weak var profileImgView: UIImageView!
@@ -24,6 +28,18 @@ class HomePatientListViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+    }
+    
+    func setCellData(data: PatientModel) {
+        
+        nameLbl.text = data.name
+        profileImgView.image = UIImage(named: data.profileImg)
+        
+//        if data.profileImg == IconName.dummy {
+//            view.backgroundColor = .clear
+//            imageViewHeightConstraint.constant = 42
+//            imageViewWidthConstraint.constant = 42
+//        } 
     }
     
     override func layoutSubviews() {

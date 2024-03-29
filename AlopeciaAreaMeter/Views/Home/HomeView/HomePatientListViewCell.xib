@@ -122,8 +122,12 @@
                 <outlet property="cameraBtn" destination="NEi-y1-WMB" id="hYi-aK-Qsy"/>
                 <outlet property="deleteBtn" destination="eUn-YL-197" id="m7N-vE-7ke"/>
                 <outlet property="editBtn" destination="lSH-SS-0n9" id="dqB-vT-PoQ"/>
+                <outlet property="imageViewHeightConstraint" destination="wdt-pb-E9x" id="FuQ-cB-jPk"/>
+                <outlet property="imageViewWidthConstraint" destination="py5-Ev-1mu" id="FLB-DR-UzE"/>
                 <outlet property="mainView" destination="YC6-c8-03w" id="o53-Aa-cCB"/>
+                <outlet property="nameLbl" destination="Hdy-MT-TGl" id="ELC-FP-7yv"/>
                 <outlet property="profileImgView" destination="3jy-hb-G8A" id="IkU-kt-9Ws"/>
+                <outlet property="view" destination="J0z-b8-1VL" id="Fwb-R1-cpJ"/>
             </connections>
             <point key="canvasLocation" x="73.282442748091597" y="15.492957746478874"/>
         </tableViewCell>

@@ -31,5 +31,7 @@ struct IconName {
     static let phone = "phone_icon"
     static let settings = "settings_icon"
     static let userProfile = "user_profile_icon"
+    static let userIcon = "user_icon"
+    
     static let value = "value_icon"
 }

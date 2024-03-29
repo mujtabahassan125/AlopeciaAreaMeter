@@ -1,6 +1,0 @@
-framework module DownPickerSwift {
-  umbrella header "DownPickerSwift-umbrella.h"
-
-  export *
-  module * { export * }
-}

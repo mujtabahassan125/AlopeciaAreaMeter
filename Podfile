@@ -11,10 +11,6 @@ target 'AlopeciaAreaMeter' do
   pod 'Charts'
   pod 'ShimmerView'
   pod 'ReachabilitySwift'
-  pod 'GoogleSignIn'
-  pod 'DatePicker', '~> 1.3.0'
-  pod 'DatePickerDialog'
-  pod 'DownPickerSwift', '~> 1.1.1'
   pod 'IQKeyboardManagerSwift'
   pod 'TPKeyboardAvoiding', '~> 1.3'
 

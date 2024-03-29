@@ -32,6 +32,15 @@ class AuthTextViewCell: UITableViewCell {
         titleLbl.text = data.title
         iconView.image = UIImage(named: data.image)
     }
+    
+    func setAlertData(name: String, listData: ListModel) {
+        iconView.isHidden = true
+        inputTextField.text = name
+        
+        titleLbl.text = listData.title
+        
+        
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

@@ -19,7 +19,7 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
     
     var sideMenuVC : SideMenuVC?
     
-    let patients = [PatientModel(name: "John Doe", profileImg: IconName.userIcon), PatientModel(name: "Sarah Brown", profileImg: IconName.userIcon)]
+    let patients = [PatientModel(firstName: "John", lastName: "Doe", profileImg: IconName.userIcon), PatientModel(firstName: "Sarah", lastName: "Brown", profileImg: IconName.userIcon)]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -93,6 +93,15 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
         self.hideView()
     }
     @IBAction func searchAction(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: Storyboard.customAlerts.rawValue, bundle: nil)
+        let customAlert = storyboard.instantiateViewController(withIdentifier: String(describing: PatientHomeAlertVC.self)) as! PatientHomeAlertVC
+        customAlert.modalPresentationStyle = .overCurrentContext
+        customAlert.providesPresentationContextTransitionStyle = true
+        customAlert.definesPresentationContext = true
+        customAlert.modalTransitionStyle = .crossDissolve
+        self.present(customAlert, animated: true, completion: nil)
+        
     }
 
     @IBAction func addPatientAction(_ sender: Any) {

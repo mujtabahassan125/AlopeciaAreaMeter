@@ -9,11 +9,13 @@ import Foundation
 
 
 struct PatientModel {
-    var name: String = ""
+    var firstName: String = ""
+    var lastName: String = ""
     var profileImg: String = ""
     
-    init(name: String, profileImg: String) {
-        self.name = name
+    init(firstName: String, lastName: String, profileImg: String) {
+        self.firstName = firstName
+        self.lastName = lastName
         self.profileImg = profileImg
     }
 }

@@ -32,7 +32,7 @@ class HomePatientListViewCell: UITableViewCell {
     
     func setCellData(data: PatientModel) {
         
-        nameLbl.text = data.name
+        nameLbl.text = "\(data.firstName)" + " \(data.lastName)"
         profileImgView.image = UIImage(named: data.profileImg)
         
 //        if data.profileImg == IconName.dummy {

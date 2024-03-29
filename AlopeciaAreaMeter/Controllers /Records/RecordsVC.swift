@@ -21,7 +21,7 @@ class RecordsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNibs()
-        navTitle.text = patient?.name
+        navTitle.text = "\(patient?.firstName ?? "")" + " \(patient?.lastName ?? "")"
         
 
     }

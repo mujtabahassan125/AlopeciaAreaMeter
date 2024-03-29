@@ -232,10 +232,10 @@
             </objects>
             <point key="canvasLocation" x="878.62595419847321" y="-18.30985915492958"/>
         </scene>
-        <!--View Controller-->
+        <!--Calculated Area AlertVC-->
         <scene sceneID="DVO-nN-vCe">
             <objects>
-                <viewController id="aCF-kg-g2c" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalculatedAreaAlertVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aCF-kg-g2c" customClass="CalculatedAreaAlertVC" customModule="AlopeciaAreaMeter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ypw-6V-XzE">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,6 +264,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                                <connections>
+                                                    <action selector="addAction:" destination="aCF-kg-g2c" eventType="touchUpInside" id="MHm-Od-smi"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gX-X4-0Wz">
                                                 <rect key="frame" x="146.66666666666663" y="0.0" width="136.33333333333337" height="40"/>
@@ -281,6 +284,9 @@
                                                         <color key="value" name="PrimaryColor"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cancelAction:" destination="aCF-kg-g2c" eventType="touchUpInside" id="nwz-ye-mjZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -312,6 +318,9 @@
                             <constraint firstItem="0V4-a8-4cM" firstAttribute="centerX" secondItem="0JD-k3-5WX" secondAttribute="centerX" id="f47-lc-DNc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="areaLbl" destination="NjG-os-FW3" id="zAp-Mc-r4M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mMr-ae-gTz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,13 +14,14 @@ class CameraVC: UIViewController  {
     @IBOutlet weak var preview: UIView!
     
     
+    @IBOutlet weak var torchBtnIcon: UIButton!
     let captureSession = AVCaptureSession()
     lazy var previewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
     let videoDataOutput = AVCaptureVideoDataOutput()
     let photoOutput = AVCapturePhotoOutput()
     let requestHandler = VNSequenceRequestHandler()
     var paymentCardRectangleObservation: VNRectangleObservation?
-    
+    var torchOn = false
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -157,6 +158,30 @@ class CameraVC: UIViewController  {
     }
     
     
+    @IBAction func flashAction(_ sender: Any) {
+        
+        guard let device = AVCaptureDevice.default(for: .video) else { return }
+        if device.hasTorch {
+            do {
+                try device.lockForConfiguration()
+                if torchOn {
+                    device.torchMode = .off
+                    torchOn = false
+                    torchBtnIcon.imageView?.image = UIImage(systemName: "bolt.fill")
+                   
+                } else {
+                    try device.setTorchModeOn(level: 1.0)
+                    torchOn = true
+                    torchBtnIcon.imageView?.image = UIImage(systemName: "bolt.slash.fill")
+                }
+                device.unlockForConfiguration()
+            } catch {
+                print("Torch could not be used")
+            }
+        } else {
+            print("Torch is not available")
+        }
+    }
     
     @IBAction func patientListAction(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)

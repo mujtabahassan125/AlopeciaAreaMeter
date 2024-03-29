@@ -14,6 +14,8 @@ class PhotoVC: UIViewController, PKCanvasViewDelegate {
     var image: UIImage?
     let canvasView = PKCanvasView()
     var drawingView: DrawingView!
+    
+    var torchOn = false
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,6 +38,11 @@ class PhotoVC: UIViewController, PKCanvasViewDelegate {
         captureImage.isUserInteractionEnabled = true
     }
     
+    @IBAction func flashAction(_ sender: Any) {
+        
+
+        
+    }
     func calculateHighlightedArea() -> CGFloat {
         let boundingBox = drawingView.drawPath.boundingBox
         // Assuming the image view's content mode is scaleAspectFit, calculate the scale factor
@@ -64,6 +71,19 @@ class PhotoVC: UIViewController, PKCanvasViewDelegate {
         return areaInCm²
     }
     
+    func openAreaDialog(area: Double) {
+        
+        let storyboard = UIStoryboard(name: Storyboard.customAlerts.rawValue, bundle: nil)
+        let customAlert = storyboard.instantiateViewController(withIdentifier: String(describing: CalculatedAreaAlertVC.self)) as! CalculatedAreaAlertVC
+        customAlert.modalPresentationStyle = .overCurrentContext
+        customAlert.providesPresentationContextTransitionStyle = true
+        customAlert.definesPresentationContext = true
+        customAlert.modalTransitionStyle = .crossDissolve
+        customAlert.calculatedArea = area
+        self.present(customAlert, animated: true, completion: nil)
+    }
+        
+    
     
     
 
@@ -78,7 +98,9 @@ class PhotoVC: UIViewController, PKCanvasViewDelegate {
                // Convert area to your desired unit and display it
                // This example simply prints it to the console
             // let area = drawingView.calculateAreaInCm2(ppi: 460)
+        
         let area = drawingView.calculateRealImageArea(ppi: 400, imageView: captureImage, drawingView: drawingView)
+        openAreaDialog(area: area)
         print("Drawn Area: \(area) cm²")
         
     }

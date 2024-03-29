@@ -22,6 +22,9 @@
 		5F0D0B572BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B562BB69E3E0074DD07 /* PatientDeleteAlertVC.swift */; };
 		5F0D0B582BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B562BB69E3E0074DD07 /* PatientDeleteAlertVC.swift */; };
 		5F0D0B592BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B562BB69E3E0074DD07 /* PatientDeleteAlertVC.swift */; };
+		5F0D0B5B2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B5A2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift */; };
+		5F0D0B5C2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B5A2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift */; };
+		5F0D0B5D2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B5A2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift */; };
 		5F7113C92BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
 		5F7113CA2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
 		5F7113CB2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
@@ -174,6 +177,7 @@
 		5F0D0B4D2BB688570074DD07 /* PatientRecordCustomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRecordCustomModel.swift; sourceTree = "<group>"; };
 		5F0D0B502BB690D70074DD07 /* PatientHomeAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientHomeAlertVC.swift; sourceTree = "<group>"; };
 		5F0D0B562BB69E3E0074DD07 /* PatientDeleteAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDeleteAlertVC.swift; sourceTree = "<group>"; };
+		5F0D0B5A2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedAreaAlertVC.swift; sourceTree = "<group>"; };
 		5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewControllerExtension.swift; sourceTree = "<group>"; };
 		5F7113E62BAA3BBF0006C667 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		5F7113E82BAA3C030006C667 /* SignUpVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVM.swift; sourceTree = "<group>"; };
@@ -332,6 +336,7 @@
 			children = (
 				5F0D0B502BB690D70074DD07 /* PatientHomeAlertVC.swift */,
 				5F0D0B562BB69E3E0074DD07 /* PatientDeleteAlertVC.swift */,
+				5F0D0B5A2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift */,
 			);
 			path = Alerts;
 			sourceTree = "<group>";
@@ -918,6 +923,7 @@
 				5F9978532BA824D20085309B /* Observable.swift in Sources */,
 				5F7113ED2BAA3D860006C667 /* BaseViewModel.swift in Sources */,
 				5F0D0B462BB3420C0074DD07 /* SignUpVC.swift in Sources */,
+				5F0D0B5B2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift in Sources */,
 				5F0D0B572BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */,
 				5F0D0B402BB341D00074DD07 /* AuthBtnsViewCell.swift in Sources */,
 				5F7114232BAEDD570006C667 /* IconConstants.swift in Sources */,
@@ -935,6 +941,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F71141F2BAEC63F0006C667 /* AppConstants.swift in Sources */,
+				5F0D0B5C2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift in Sources */,
 				5F9978252BA6F7ED0085309B /* Utilities.swift in Sources */,
 				85E0A5502BB29B65005BDA7C /* GraphViewCell.swift in Sources */,
 				5FDF5F6A2BB08D1100AA665D /* SideMenuPresentationController.swift in Sources */,
@@ -965,6 +972,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0D0B5D2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift in Sources */,
 				5F71142E2BAEE79A0006C667 /* UiColorExtension.swift in Sources */,
 				5F71141C2BAA6AC20006C667 /* StoryboardConstants.swift in Sources */,
 				5FDF5F672BB040D000AA665D /* SideMenuVC.swift in Sources */,

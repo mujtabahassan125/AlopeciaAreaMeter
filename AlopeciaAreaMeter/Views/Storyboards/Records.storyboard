@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFPRODISPLAYMEDIUM.OTF">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--RecordsVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="RecordsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="RecordsVC" customModule="AlopeciaAreaMeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDo-TA-EQP">
+                                <rect key="frame" x="0.0" y="59" width="393" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6U-Hr-oCj">
+                                        <rect key="frame" x="24" y="7" width="26" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="26" id="RGe-kh-tez"/>
+                                            <constraint firstAttribute="height" constant="26" id="iEf-d2-j1K"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title=" "/>
+                                        <connections>
+                                            <action selector="backBtnAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6sl-MW-s4L"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8F-4H-NBQ">
+                                        <rect key="frame" x="147" y="6" width="99.333333333333314" height="28"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="24"/>
+                                        <color key="textColor" name="PrimaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="F8F-4H-NBQ" firstAttribute="centerY" secondItem="y6U-Hr-oCj" secondAttribute="centerY" id="Qb7-Zb-A1E"/>
+                                    <constraint firstItem="F8F-4H-NBQ" firstAttribute="centerX" secondItem="XDo-TA-EQP" secondAttribute="centerX" id="aHd-5b-ne0"/>
+                                    <constraint firstItem="y6U-Hr-oCj" firstAttribute="centerY" secondItem="XDo-TA-EQP" secondAttribute="centerY" id="cFv-wU-B1O"/>
+                                    <constraint firstItem="y6U-Hr-oCj" firstAttribute="leading" secondItem="XDo-TA-EQP" secondAttribute="leading" constant="24" id="dFg-aR-zWt"/>
+                                    <constraint firstAttribute="height" constant="40" id="mFo-oQ-HZw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lu5-80-Gnz">
+                                <rect key="frame" x="20" y="131" width="353" height="1"/>
+                                <color key="backgroundColor" name="RecordSepratorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Cgu-C9-1aT"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="u8j-3m-EfZ"/>
+                                </constraints>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JdJ-5Y-wxW">
+                                <rect key="frame" x="20" y="156" width="353" height="41"/>
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UE0-qY-TMm"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="List View"/>
+                                    <segment title="Graph view"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" name="PrimaryColor"/>
+                                <connections>
+                                    <action selector="segmentValueChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="Gfh-XE-gn3"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BY7-aU-df2">
+                                <rect key="frame" x="0.0" y="233" width="393" height="385"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="BYN-W9-L60"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="ZpC-VU-qHy"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BtZ-Er-qtP">
+                                <rect key="frame" x="20" y="220" width="353" height="1"/>
+                                <color key="backgroundColor" name="RecordSepratorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="2vb-pP-M83"/>
+                                    <constraint firstAttribute="height" constant="1" id="iKT-11-Q1K"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JdJ-5Y-wxW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="6Cz-1x-meR"/>
+                            <constraint firstAttribute="trailing" secondItem="BtZ-Er-qtP" secondAttribute="trailing" constant="20" id="AbW-du-FdM"/>
+                            <constraint firstItem="JdJ-5Y-wxW" firstAttribute="top" secondItem="Lu5-80-Gnz" secondAttribute="bottom" constant="24" id="JQ7-RJ-KmI"/>
+                            <constraint firstItem="BtZ-Er-qtP" firstAttribute="top" secondItem="JdJ-5Y-wxW" secondAttribute="bottom" constant="24" id="LlD-uf-oIW"/>
+                            <constraint firstItem="BtZ-Er-qtP" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="20" id="Lme-az-xmW"/>
+                            <constraint firstItem="Lu5-80-Gnz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Pli-bs-IAK"/>
+                            <constraint firstItem="XDo-TA-EQP" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="TVz-pN-D31"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="BY7-aU-df2" secondAttribute="bottom" constant="200" id="Uv4-jc-yke"/>
+                            <constraint firstItem="BY7-aU-df2" firstAttribute="top" secondItem="BtZ-Er-qtP" secondAttribute="bottom" constant="12" id="VZU-7X-J5F"/>
+                            <constraint firstItem="XDo-TA-EQP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ZrI-MS-XKM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JdJ-5Y-wxW" secondAttribute="trailing" constant="20" id="lOh-N2-f8N"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Lu5-80-Gnz" secondAttribute="trailing" constant="20" id="oNm-sX-5rT"/>
+                            <constraint firstItem="XDo-TA-EQP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qxD-GW-3qk"/>
+                            <constraint firstItem="BY7-aU-df2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vOo-OC-Qbt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BY7-aU-df2" secondAttribute="trailing" id="y52-HD-1LY"/>
+                            <constraint firstItem="Lu5-80-Gnz" firstAttribute="top" secondItem="XDo-TA-EQP" secondAttribute="bottom" constant="32" id="yOj-F0-aQy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="navTitle" destination="F8F-4H-NBQ" id="OZp-GG-iPm"/>
+                        <outlet property="segmentControl" destination="JdJ-5Y-wxW" id="9WH-SK-5XS"/>
+                        <outlet property="sepratorView" destination="BtZ-Er-qtP" id="3dl-9K-POS"/>
+                        <outlet property="tableView" destination="BY7-aU-df2" id="tvJ-FH-qAB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.075000002980232239" green="0.48600000143051147" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="RecordSepratorColor">
+            <color red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

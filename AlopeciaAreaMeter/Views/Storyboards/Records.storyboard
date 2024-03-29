@@ -23,10 +23,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDo-TA-EQP">
-                                <rect key="frame" x="0.0" y="59" width="393" height="20"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6U-Hr-oCj">
-                                        <rect key="frame" x="24" y="-3" width="26" height="26"/>
+                                        <rect key="frame" x="24" y="7" width="26" height="26"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="26" id="RGe-kh-tez"/>
                                             <constraint firstAttribute="height" constant="26" id="iEf-d2-j1K"/>
@@ -38,7 +38,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8F-4H-NBQ">
-                                        <rect key="frame" x="146.66666666666666" y="-4.3333333333333357" width="99.666666666666657" height="28.666666666666668"/>
+                                        <rect key="frame" x="147" y="6" width="99.333333333333314" height="28"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="24"/>
                                         <color key="textColor" name="PrimaryColor"/>
                                         <nil key="highlightedColor"/>
@@ -50,11 +50,11 @@
                                     <constraint firstItem="F8F-4H-NBQ" firstAttribute="centerX" secondItem="XDo-TA-EQP" secondAttribute="centerX" id="aHd-5b-ne0"/>
                                     <constraint firstItem="y6U-Hr-oCj" firstAttribute="centerY" secondItem="XDo-TA-EQP" secondAttribute="centerY" id="cFv-wU-B1O"/>
                                     <constraint firstItem="y6U-Hr-oCj" firstAttribute="leading" secondItem="XDo-TA-EQP" secondAttribute="leading" constant="24" id="dFg-aR-zWt"/>
-                                    <constraint firstAttribute="height" constant="20" id="mFo-oQ-HZw"/>
+                                    <constraint firstAttribute="height" constant="40" id="mFo-oQ-HZw"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lu5-80-Gnz">
-                                <rect key="frame" x="20" y="111" width="353" height="1"/>
+                                <rect key="frame" x="20" y="131" width="353" height="1"/>
                                 <color key="backgroundColor" name="RecordSepratorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="Cgu-C9-1aT"/>
@@ -62,7 +62,7 @@
                                 </constraints>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JdJ-5Y-wxW">
-                                <rect key="frame" x="20" y="136" width="353" height="41"/>
+                                <rect key="frame" x="20" y="156" width="353" height="41"/>
                                 <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="UE0-qY-TMm"/>
@@ -77,7 +77,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BY7-aU-df2">
-                                <rect key="frame" x="0.0" y="213" width="393" height="405"/>
+                                <rect key="frame" x="0.0" y="233" width="393" height="385"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Y6W-OH-hqX" id="BYN-W9-L60"/>
@@ -85,7 +85,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BtZ-Er-qtP">
-                                <rect key="frame" x="20" y="200" width="353" height="1"/>
+                                <rect key="frame" x="20" y="220" width="353" height="1"/>
                                 <color key="backgroundColor" name="RecordSepratorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="2vb-pP-M83"/>
@@ -117,6 +117,7 @@
                     <connections>
                         <outlet property="navTitle" destination="F8F-4H-NBQ" id="OZp-GG-iPm"/>
                         <outlet property="segmentControl" destination="JdJ-5Y-wxW" id="9WH-SK-5XS"/>
+                        <outlet property="sepratorView" destination="BtZ-Er-qtP" id="3dl-9K-POS"/>
                         <outlet property="tableView" destination="BY7-aU-df2" id="tvJ-FH-qAB"/>
                     </connections>
                 </viewController>

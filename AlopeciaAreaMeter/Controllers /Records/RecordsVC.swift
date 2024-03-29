@@ -9,6 +9,7 @@ import UIKit
 
 class RecordsVC: UIViewController {
 
+    @IBOutlet weak var sepratorView: UIView!
     @IBOutlet weak var navTitle: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segmentControl: UISegmentedControl!
@@ -28,6 +29,7 @@ class RecordsVC: UIViewController {
     }
     
     @IBAction func backBtnAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func segmentValueChanged(_ sender: Any) {
         switch segmentControl.selectedSegmentIndex {
@@ -69,10 +71,12 @@ extension RecordsVC: UITableViewDelegate, UITableViewDataSource {
         switch segmentControl.selectedSegmentIndex {
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RecordViewCell.self)) as? RecordViewCell else { return UITableViewCell() }
+            sepratorView.isHidden = false
             cell.setView()
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: GraphViewCell.self)) as? GraphViewCell else { return UITableViewCell() }
+            sepratorView.isHidden = true
             cell.setupChart()
             return cell
         default:

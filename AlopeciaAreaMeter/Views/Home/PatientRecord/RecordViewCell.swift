@@ -37,6 +37,8 @@ class RecordViewCell: UITableViewCell {
         mainView.layer.shadowRadius = 6
         mainView.layer.shadowOpacity = 1.0
         mainView.layer.masksToBounds = false
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

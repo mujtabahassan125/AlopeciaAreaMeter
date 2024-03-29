@@ -3,9 +3,9 @@ import UIKit
 class DrawingView: UIView {
     var drawPath = CGMutablePath()
     var points: [CGPoint] = [] // Stores the points for area calculation
-    private var strokeColor: UIColor = .red
+    private var strokeColor: UIColor = ColorConstants.primary
     private var lineWidth: CGFloat = 5
-    var fillColor: UIColor = UIColor.red.withAlphaComponent(0.5) // Semi-transparent fill color
+    var fillColor: UIColor = UIColor.blue.withAlphaComponent(0.5) // Semi-transparent fill color
     private var shouldFill: Bool = false // Determines whether to fill the path
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -42,6 +42,7 @@ class DrawingView: UIView {
         context.setStrokeColor(strokeColor.cgColor)
         context.setLineWidth(lineWidth)
         context.strokePath()
+        
     }
 
     // Resets the current drawing
@@ -69,8 +70,8 @@ class DrawingView: UIView {
         return abs(area)
     }
     
-    func calculateAreaInCm2(ppi: CGFloat) -> CGFloat {
-        guard points.count >= 3 else { return 0 }
+    func calculateAreaInCm2(ppi: CGFloat) -> String? {
+        guard points.count >= 3 else { return nil }
         
         // Calculate area in pixels² using the shoelace formula
         let pixelArea = points.enumerated().reduce(0) { sum, elem in
@@ -84,9 +85,20 @@ class DrawingView: UIView {
         let areaInInches = areaInPixels / (ppi * ppi)
         
         // Convert area from inches² to cm² (1 inch² = 6.4516 cm²)
-        let areaInCm = areaInInches * 6.4516
+        let areaInCm = (areaInInches * 6.4516) * 10
         
-        return areaInCm
+        let formatter = NumberFormatter()
+        formatter.minimumFractionDigits = 2
+        formatter.maximumFractionDigits = 2
+        
+        if let formattedNumber = formatter.string(from: NSNumber(value: areaInCm)) {
+            print(formattedNumber) // Output: 10.46
+            return formattedNumber
+        }
+        
+        return nil
+        
+       
     }
     
     func calculateRealImageArea(ppi: CGFloat, imageView: UIImageView, drawingView: DrawingView) -> CGFloat {

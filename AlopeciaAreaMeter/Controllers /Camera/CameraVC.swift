@@ -149,12 +149,10 @@ class CameraVC: UIViewController  {
     
     func navigateToCapturedImage(image: UIImage) {
 
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let photoVC = storyboard.instantiateViewController(withIdentifier: "PhotoVC")
-        guard let photoVC = photoVC as? PhotoVC else { return }
-        photoVC.modalPresentationStyle = .fullScreen
-        photoVC.image = image
-        navigationController?.pushViewController(photoVC, animated: false)
+        self.navigateToViewController(storyboardName: Storyboard.patient.rawValue, viewControllerIdentifier: String(describing: PhotoVC.self), viewModel: BaseViewModel()) { (vc: PhotoVC, nil) in
+            vc.image = image
+            return vc
+        }
     }
     
     

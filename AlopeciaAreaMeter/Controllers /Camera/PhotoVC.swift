@@ -71,7 +71,7 @@ class PhotoVC: UIViewController, PKCanvasViewDelegate {
         return areaInCm²
     }
     
-    func openAreaDialog(area: Double) {
+    func openAreaDialog(area: String) {
         
         let storyboard = UIStoryboard(name: Storyboard.customAlerts.rawValue, bundle: nil)
         let customAlert = storyboard.instantiateViewController(withIdentifier: String(describing: CalculatedAreaAlertVC.self)) as! CalculatedAreaAlertVC
@@ -99,8 +99,8 @@ class PhotoVC: UIViewController, PKCanvasViewDelegate {
                // This example simply prints it to the console
             // let area = drawingView.calculateAreaInCm2(ppi: 460)
         
-        let area = drawingView.calculateRealImageArea(ppi: 400, imageView: captureImage, drawingView: drawingView)
-        openAreaDialog(area: area)
+        let area = drawingView.calculateAreaInCm2(ppi: 400)
+        openAreaDialog(area: area ?? "")
         print("Drawn Area: \(area) cm²")
         
     }

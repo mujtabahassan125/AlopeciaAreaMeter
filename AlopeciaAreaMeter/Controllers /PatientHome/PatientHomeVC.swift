@@ -6,16 +6,19 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
     
 
+    @IBOutlet weak var navLbl: UILabel!
     @IBOutlet weak var noDataStack: UIView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var sideMenuBackView: UIView!
     @IBOutlet weak var sideMenuLeadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var sideMenuView: UIView!
     @IBOutlet weak var addPatientBtn: UIButton!
+
     
     var sideMenuVC : SideMenuVC?
     
@@ -28,6 +31,8 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
         noDataStack.isHidden = true 
         sideMenuBackView.isHidden = true
         sideMenuView.isHidden = true
+        
+        navLbl.text = AppConstants.patientLbl
         
 //        sideMenuView.layer.cornerRadius = 10
 //        sideMenuView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]

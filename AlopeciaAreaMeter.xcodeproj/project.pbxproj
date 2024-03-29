@@ -1158,7 +1158,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2MFQ75U5X3;
+				DEVELOPMENT_TEAM = UHCF77GKU5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AlopeciaAreaMeter/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow to take photo";
@@ -1174,7 +1174,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = App.AlopeciaAreaMeter;
+				PRODUCT_BUNDLE_IDENTIFIER = iOS.AlopeciaAreaMeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1190,7 +1190,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2MFQ75U5X3;
+				DEVELOPMENT_TEAM = UHCF77GKU5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AlopeciaAreaMeter/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow to take photo";
@@ -1206,7 +1206,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = App.AlopeciaAreaMeter;
+				PRODUCT_BUNDLE_IDENTIFIER = iOS.AlopeciaAreaMeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

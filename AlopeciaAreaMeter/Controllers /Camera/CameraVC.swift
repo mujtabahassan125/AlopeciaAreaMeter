@@ -22,6 +22,7 @@ class CameraVC: UIViewController  {
     let requestHandler = VNSequenceRequestHandler()
     var paymentCardRectangleObservation: VNRectangleObservation?
     var torchOn = false
+    var currentCameraPosition: AVCaptureDevice.Position = .back
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -74,6 +75,39 @@ class CameraVC: UIViewController  {
         }
     }
     
+    @IBAction func cameraRotationAction(_ sender: Any) {
+        captureSession.beginConfiguration()
+        captureSession.removeInput(captureSession.inputs.first!)
+
+        if currentCameraPosition == .back {
+            currentCameraPosition = .front
+        } else {
+            currentCameraPosition = .back
+        }
+
+        guard let newCamera = cameraWithPosition(position: currentCameraPosition) else { return }
+
+        do {
+            let newVideoInput = try AVCaptureDeviceInput(device: newCamera)
+            captureSession.addInput(newVideoInput)
+        } catch {
+            print(error)
+            return
+        }
+
+        captureSession.commitConfiguration()
+    }
+    
+    func cameraWithPosition(position: AVCaptureDevice.Position) -> AVCaptureDevice? {
+        let discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: .unspecified)
+
+        for device in discoverySession.devices {
+            if device.position == position {
+                return device
+            }
+        }
+        return nil
+    }
     func startCamera(delegate: AVCaptureVideoDataOutputSampleBufferDelegate) {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) { [weak self] in

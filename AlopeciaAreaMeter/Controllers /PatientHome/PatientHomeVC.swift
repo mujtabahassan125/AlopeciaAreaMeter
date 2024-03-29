@@ -21,6 +21,7 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        applyRoundedCorners()
         registerNibs()
         noDataStack.isHidden = true 
         sideMenuBackView.isHidden = true
@@ -34,6 +35,20 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
     
     private func registerNibs() {
         tableView.register(UINib(nibName: String(describing: HomePatientListViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: HomePatientListViewCell.self))
+    }
+    
+    private func applyRoundedCorners() {
+        // Create a path for rounded corners
+        let cornerRadius: CGFloat = 20 // Adjust as per your preference
+        let maskPath = UIBezierPath(roundedRect: sideMenuView.bounds, byRoundingCorners: [.topRight, .bottomRight], cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
+        
+        // Create a shape layer with the rounded path
+        let maskLayer = CAShapeLayer()
+        maskLayer.frame = sideMenuView.bounds
+        maskLayer.path = maskPath.cgPath
+        
+        // Apply the mask to the side menu view's layer
+        sideMenuView.layer.mask = maskLayer
     }
     
 

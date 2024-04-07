@@ -29,6 +29,13 @@ struct AppConstants {
     static let authEmailLbl = "Email"
     static let authPasswordLbl = "Password"
     
+    static let resetPasswordBtnTitle = "Reset Password"
+    static let verifyOtpBtnTitle = "Verify Code"
+    static let updatePasswordBtnTitle = "Update Password"
+    static let confirmPasswordBtnTitle = "Update Password"
+    
+    
+    
     
     ///--  SideMenu Constants --  ///
     

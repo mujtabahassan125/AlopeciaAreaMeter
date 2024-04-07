@@ -44,7 +44,7 @@ extension VerifyOTPVC: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: BackBtnViewCell.self)) as? BackBtnViewCell else { return UITableViewCell() }
-            
+            cell.backBtnDelegate = self
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthHeaderViewCell.self)) as? AuthHeaderViewCell else { return UITableViewCell() }
@@ -53,10 +53,12 @@ extension VerifyOTPVC: UITableViewDelegate, UITableViewDataSource {
             return cell
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VerifyOTPViewCell.self)) as? VerifyOTPViewCell else { return UITableViewCell() }
-           
+            cell.viewStyling(view: cell.viewOne)
             return cell
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ConfirmBtnCellView.self)) as? ConfirmBtnCellView else { return UITableViewCell() }
+            cell.setCellBtnTitle(title: AppConstants.verifyOtpBtnTitle)
+            cell.confirmActionDelegate = self
             return cell
         case 4:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VerifyTextViewCell.self)) as? VerifyTextViewCell else { return UITableViewCell() }
@@ -68,4 +70,18 @@ extension VerifyOTPVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
+}
+
+
+extension VerifyOTPVC: ConfirmActionProtocol, BackBtnProtocol {
+    func popViewContoller() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    func navigateToNextScreen() {
+//        self.navigateToViewController(storyboardName: Storyboard.auth.rawValue, viewControllerIdentifier: String(describing: VerifyOTPVC.self), viewModel: BaseViewModel()) { (vc: VerifyOTPVC, nil) in
+//            return vc
+//        }
+    }
+    
 }

@@ -152,6 +152,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="viewFive" destination="thK-4A-P4V" id="PFh-ov-bKO"/>
+                <outlet property="viewFour" destination="Bo7-9s-qQn" id="j1g-5a-uSi"/>
+                <outlet property="viewOne" destination="fis-oz-8cX" id="5F9-SO-v39"/>
+                <outlet property="viewThree" destination="jYb-3R-Nw4" id="pgq-f8-2Rr"/>
+                <outlet property="viewTwo" destination="xIq-2o-UQI" id="ypV-B2-ZTM"/>
+            </connections>
             <point key="canvasLocation" x="156.4885496183206" y="-2.4647887323943665"/>
         </tableViewCell>
     </objects>

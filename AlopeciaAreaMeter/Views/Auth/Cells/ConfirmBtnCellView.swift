@@ -13,6 +13,7 @@ protocol ConfirmActionProtocol {
 
 class ConfirmBtnCellView: UITableViewCell {
     
+    @IBOutlet weak var confirmBtn: UIButton!
     var confirmActionDelegate: ConfirmActionProtocol?
 
     override func awakeFromNib() {
@@ -24,6 +25,10 @@ class ConfirmBtnCellView: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setCellBtnTitle(title: String) {
+        confirmBtn.setTitle(title, for: .normal)
     }
     
     @IBAction func confirmBtnAction(_ sender: Any) {

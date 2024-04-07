@@ -23,22 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0FD63270-E869-483B-8816-825FA1679037"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AlopeciaAreaMeter/Views/Auth/Cells/AuthTextViewCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "setAlertData(name:listData:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "6522EBC4-EF05-4EF5-9B8D-103F439340DA"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -46,8 +30,8 @@
             filePath = "AlopeciaAreaMeter/Controllers /Alerts/PatientHomeAlertVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,9 +46,89 @@
             filePath = "AlopeciaAreaMeter/Controllers /Alerts/PatientHomeAlertVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "640C0C08-82E3-4A6A-A56E-81779269A0F7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlopeciaAreaMeter/Controllers /Auth/ForgetPassword/ForgetPasswordVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2873F3F-E46B-43D8-B009-9DF43F4F2AEB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlopeciaAreaMeter/Controllers /Auth/ForgetPassword/ForgetPasswordVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "navigateToNextScreen()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A2873F3F-E46B-43D8-B009-9DF43F4F2AEB - 9f389c131c8a424a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AlopeciaAreaMeter.ForgetPasswordVC.navigateToNextScreen() -&gt; ()"
+                  moduleName = "AlopeciaAreaMeter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hassanm/Desktop/Alopecia_Area_Meter/AlopeciaAreaMeter/AlopeciaAreaMeter/Controllers%20/Auth/ForgetPassword/ForgetPasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "A2873F3F-E46B-43D8-B009-9DF43F4F2AEB - 90a59255842fa95a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (AlopeciaAreaMeter.VerifyOTPVC, AlopeciaAreaMeter.BaseViewModel) -&gt; Swift.Optional&lt;AlopeciaAreaMeter.VerifyOTPVC&gt; in AlopeciaAreaMeter.ForgetPasswordVC.navigateToNextScreen() -&gt; ()"
+                  moduleName = "AlopeciaAreaMeter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hassanm/Desktop/Alopecia_Area_Meter/AlopeciaAreaMeter/AlopeciaAreaMeter/Controllers%20/Auth/ForgetPassword/ForgetPasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7249A514-5BE3-4681-9C96-A49CD04945FF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlopeciaAreaMeter/Views/Auth/Cells/ConfirmBtnCellView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "confirmBtnAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

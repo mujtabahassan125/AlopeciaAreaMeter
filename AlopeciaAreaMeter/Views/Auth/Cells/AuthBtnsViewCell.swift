@@ -73,7 +73,7 @@ class AuthBtnsViewCell: UITableViewCell {
         sepratorView.isHidden = true
         continueWithGoogleBtn.isHidden = true
         sepratorView.isHidden = true
-        registerLoginLbl.text = AppConstants.authLogin
+        registerLoginLbl.text = AppConstants.authLoginTitle
         loginBtn.setTitle(AppConstants.authRegisterBtn, for: .normal)
     }
     

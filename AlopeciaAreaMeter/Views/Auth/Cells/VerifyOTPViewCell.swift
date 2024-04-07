@@ -1,16 +1,14 @@
 //
-//  AuthHeaderViewCell.swift
+//  VerifyOTPViewCell.swift
 //  AlopeciaAreaMeter
 //
-//  Created by Syed Mujtaba Hassan on 18/03/2024.
+//  Created by Syed Mujtaba Hassan on 06/04/2024.
 //
 
 import UIKit
 
-class AuthHeaderViewCell: UITableViewCell {
+class VerifyOTPViewCell: UITableViewCell {
 
-    @IBOutlet weak var titleLbl: UILabel!
-    @IBOutlet weak var subtilteLbl: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

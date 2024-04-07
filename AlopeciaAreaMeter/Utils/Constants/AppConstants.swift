@@ -11,11 +11,13 @@ import Foundation
 struct AppConstants {
     
     ///--  Auth Constants --  ///
-    static let authCreateAccount = "Create Account"
-    static let authLogin = "Login"
-    static let authHeader = "Login now to track all your expenses and income at a place!"
+    static let authCreateAccountTitle = "Create Account"
+    static let authLoginTitle = "Login"
+    static let authLoginSubtitle = "Login now to track all your expenses and income at a place!"
     static let authAlreadyAccountText = "Already have an account?"
     static let authDontHaveAccountText = "Don’t have an account?"
+    static let forgetPassTitleText = "Forgot password"
+    static let forgetPassSubTitleText = "Please enter your email to reset the password"
     
     static let authRegisterBtn = "Register"
     static let authGoogleBtn = "Continue with Google"

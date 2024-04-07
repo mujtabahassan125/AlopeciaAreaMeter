@@ -49,11 +49,13 @@ extension PatientHomeAlertVC: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthTextViewCell.self)) as? AuthTextViewCell else { return UITableViewCell() }
+            cell.setBorderColor(isPrimaryColor: true)
             cell.setAlertData(name: patient?.firstName ?? "John", listData: ListModel(title: AppConstants.authFirstNameLbl, image: "", hint: ""))
             
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthTextViewCell.self)) as? AuthTextViewCell else { return UITableViewCell() }
+            cell.setBorderColor(isPrimaryColor: true)
             cell.setAlertData(name: patient?.lastName ?? "Doe", listData: ListModel(title: AppConstants.authlastNameLbl, image: "", hint: ""))
             return cell
             

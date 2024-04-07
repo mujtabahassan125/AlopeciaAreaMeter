@@ -38,7 +38,7 @@ class SignUpVC: UIViewController {
     
     private func populateSideMenuItems() {
         
-        authList.append(ListModel(title: AppConstants.authCreateAccount, image: "", hint: ""))
+        authList.append(ListModel(title: AppConstants.authCreateAccountTitle, image: "", hint: ""))
         authList.append(ListModel(title: AppConstants.authFirstNameLbl, image: IconName.userProfile, hint: "Ex:John"))
         authList.append(ListModel(title: AppConstants.authlastNameLbl, image: IconName.userProfile, hint: "Ex:Doe"))
         authList.append(ListModel(title: AppConstants.authPhoneLbl, image: IconName.phone, hint: "Ex: +44 7172 423"))
@@ -67,8 +67,8 @@ extension SignUpVC: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthHeaderViewCell.self)) as? AuthHeaderViewCell else { return UITableViewCell() }
-            cell.headerLbl.text = AppConstants.authHeader
-            cell.headerTitle.text = AppConstants.authCreateAccount
+            cell.titleLbl.text = AppConstants.authCreateAccountTitle
+            cell.subtilteLbl.text = AppConstants.authLoginSubtitle
             return cell
         case 6:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthBtnsViewCell.self)) as? AuthBtnsViewCell else { return UITableViewCell() }
@@ -77,6 +77,7 @@ extension SignUpVC: UITableViewDelegate, UITableViewDataSource {
             return cell
         default:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthTextViewCell.self)) as? AuthTextViewCell else { return UITableViewCell() }
+            cell.setBorderColor(isPrimaryColor: true)
             let data = authList[indexPath.row]
             if data.title == AppConstants.authPasswordLbl {
                 cell.inputTextField.isSecureTextEntry = true

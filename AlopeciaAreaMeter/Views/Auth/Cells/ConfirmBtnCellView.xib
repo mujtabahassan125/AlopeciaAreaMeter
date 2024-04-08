@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="ConfirmBtnCellView" customModule="AlopeciaAreaMeter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEE-sS-pZR">
+                        <rect key="frame" x="10" y="20" width="301" height="51"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLq-kN-bnT">
+                                <rect key="frame" x="20" y="8" width="261" height="35"/>
+                                <color key="backgroundColor" name="PrimaryColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="SJJ-IK-pWS"/>
+                                </constraints>
+                                <color key="tintColor" name="PrimaryColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Rest Password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="confirmBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lgV-Mv-dMH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tLq-kN-bnT" secondAttribute="trailing" constant="20" id="DHl-aF-RwU"/>
+                            <constraint firstItem="tLq-kN-bnT" firstAttribute="leading" secondItem="UEE-sS-pZR" secondAttribute="leading" constant="20" id="UAt-db-2oV"/>
+                            <constraint firstItem="tLq-kN-bnT" firstAttribute="top" secondItem="UEE-sS-pZR" secondAttribute="top" constant="8" id="YAm-cE-mMX"/>
+                            <constraint firstItem="tLq-kN-bnT" firstAttribute="centerY" secondItem="UEE-sS-pZR" secondAttribute="centerY" id="e6h-rv-q78"/>
+                            <constraint firstAttribute="bottom" secondItem="tLq-kN-bnT" secondAttribute="bottom" constant="8" id="h4i-y2-LE9"/>
+                            <constraint firstItem="tLq-kN-bnT" firstAttribute="centerX" secondItem="UEE-sS-pZR" secondAttribute="centerX" id="zAi-S6-aqx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="UEE-sS-pZR" secondAttribute="trailing" constant="10" id="4Bl-1f-hUr"/>
+                    <constraint firstItem="UEE-sS-pZR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="OeO-DF-Lfl"/>
+                    <constraint firstItem="UEE-sS-pZR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="ofG-ik-Wl4"/>
+                    <constraint firstAttribute="bottom" secondItem="UEE-sS-pZR" secondAttribute="bottom" constant="20" id="yJR-Qn-pXD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="confirmBtn" destination="tLq-kN-bnT" id="gPb-34-Bnn"/>
+            </connections>
+            <point key="canvasLocation" x="139.69465648854961" y="15.140845070422536"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="PrimaryColor">
+            <color red="0.075000002980232239" green="0.48600000143051147" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Khg-OX-l17">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -50,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847" y="-11"/>
+            <point key="canvasLocation" x="760" y="4"/>
         </scene>
         <!--AuthNavigationController-->
         <scene sceneID="qQB-li-EQW">
@@ -102,7 +103,77 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kt0-O7-Fzz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1724" y="-11"/>
+            <point key="canvasLocation" x="1482" y="4"/>
+        </scene>
+        <!--Forget PasswordVC-->
+        <scene sceneID="jop-Fe-pfa">
+            <objects>
+                <viewController storyboardIdentifier="ForgetPasswordVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f0M-fb-GVx" customClass="ForgetPasswordVC" customModule="AlopeciaAreaMeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AWm-3F-Quw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gtH-x8-mnz">
+                                <rect key="frame" x="0.0" y="79" width="393" height="739"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="f0M-fb-GVx" id="Fhg-MR-kHA"/>
+                                    <outlet property="delegate" destination="f0M-fb-GVx" id="ccE-BD-6mL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oP7-x2-bHu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gtH-x8-mnz" firstAttribute="leading" secondItem="oP7-x2-bHu" secondAttribute="leading" id="D7X-Rr-Osd"/>
+                            <constraint firstItem="oP7-x2-bHu" firstAttribute="bottom" secondItem="gtH-x8-mnz" secondAttribute="bottom" id="GbK-KS-J9d"/>
+                            <constraint firstItem="gtH-x8-mnz" firstAttribute="top" secondItem="oP7-x2-bHu" secondAttribute="top" constant="20" id="L2j-cH-vhv"/>
+                            <constraint firstItem="gtH-x8-mnz" firstAttribute="trailing" secondItem="oP7-x2-bHu" secondAttribute="trailing" id="tnT-Id-RIj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="R8c-YW-fKh"/>
+                    <connections>
+                        <outlet property="tableView" destination="gtH-x8-mnz" id="INH-AD-aU5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fu-Ky-5Zx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2313.740458015267" y="3.5211267605633805"/>
+        </scene>
+        <!--VerifyOTPVC-->
+        <scene sceneID="hGj-ew-S9n">
+            <objects>
+                <viewController storyboardIdentifier="VerifyOTPVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ki0-3I-r45" customClass="VerifyOTPVC" customModule="AlopeciaAreaMeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8ZS-az-CUD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hXZ-uN-E5a">
+                                <rect key="frame" x="0.0" y="79" width="393" height="739"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ki0-3I-r45" id="EkI-0U-Qf5"/>
+                                    <outlet property="delegate" destination="Ki0-3I-r45" id="cbc-jZ-POw"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uim-hA-XfI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uim-hA-XfI" firstAttribute="bottom" secondItem="hXZ-uN-E5a" secondAttribute="bottom" id="FYR-Ak-pqz"/>
+                            <constraint firstItem="hXZ-uN-E5a" firstAttribute="trailing" secondItem="uim-hA-XfI" secondAttribute="trailing" id="VQc-H6-vhM"/>
+                            <constraint firstItem="hXZ-uN-E5a" firstAttribute="top" secondItem="uim-hA-XfI" secondAttribute="top" constant="20" id="ayA-ep-lG5"/>
+                            <constraint firstItem="hXZ-uN-E5a" firstAttribute="leading" secondItem="uim-hA-XfI" secondAttribute="leading" id="kV1-4T-Ugw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zaJ-Qk-g5E"/>
+                    <connections>
+                        <outlet property="tableView" destination="hXZ-uN-E5a" id="Pri-J9-v2c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0d0-qj-8BC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3036" y="4"/>
         </scene>
     </scenes>
     <resources>

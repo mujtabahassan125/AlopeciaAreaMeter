@@ -77,7 +77,11 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tms-jK-W1m">
+<<<<<<< HEAD
                                                 <rect key="frame" x="59.666666666666664" y="96" width="73.666666666666686" height="24.666666666666671"/>
+=======
+                                                <rect key="frame" x="62.333333333333343" y="96" width="68.333333333333314" height="24"/>
+>>>>>>> main
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -172,6 +176,7 @@
                     <navigationItem key="navigationItem" id="Ddg-zD-FGg"/>
                     <connections>
                         <outlet property="addPatientBtn" destination="LmW-5I-TlW" id="NUP-7v-OJT"/>
+                        <outlet property="navLbl" destination="AJs-nu-MWD" id="HOd-o5-dHW"/>
                         <outlet property="noDataStack" destination="jgy-0Z-zhV" id="Vvi-9z-YTR"/>
                         <outlet property="sideMenuBackView" destination="6Du-SJ-Hy6" id="yea-H8-B93"/>
                         <outlet property="sideMenuLeadingConstraint" destination="4W6-Kd-Iz5" id="RdU-EW-6oV"/>
@@ -384,9 +389,10 @@
                                                     <constraint firstAttribute="width" constant="48" id="cjA-m8-dnU"/>
                                                     <constraint firstAttribute="height" constant="48" id="l1Q-BV-xQv"/>
                                                 </constraints>
+                                                <color key="tintColor" name="SubTitleLblColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="settings_black_icon" title=" " titleAlignment="center">
-                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="medium"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="camera.rotate" catalog="system" title=" " titleAlignment="center">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -394,7 +400,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="settingsAction:" destination="DtX-W7-9ht" eventType="touchUpInside" id="pBp-Qy-3ID"/>
+                                                    <action selector="cameraRotationAction:" destination="DtX-W7-9ht" eventType="touchUpInside" id="hm9-h0-Brc"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -456,7 +462,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title=" "/>
                                         <connections>
-                                            <action selector="backAction:" destination="43b-6e-0hj" eventType="touchUpInside" id="h9g-iv-Ro6"/>
+                                            <action selector="cameraAction:" destination="43b-6e-0hj" eventType="touchUpInside" id="fWT-Jd-JQW"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -524,9 +530,6 @@
                                                         <integer key="value" value="21"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="settingsAction:" destination="43b-6e-0hj" eventType="touchUpInside" id="4jX-RG-nIz"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -567,6 +570,7 @@
     <resources>
         <image name="Shutter" width="60" height="60"/>
         <image name="bolt.slash.fill" catalog="system" width="100" height="128"/>
+        <image name="camera.rotate" catalog="system" width="128" height="93"/>
         <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="delete_black_icon" width="22" height="22"/>
         <image name="draw_black_icon" width="28" height="28"/>
@@ -581,6 +585,9 @@
         </namedColor>
         <namedColor name="PrimaryColor">
             <color red="0.075000002980232239" green="0.48600000143051147" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SubTitleLblColor">
+            <color red="0.13300000131130219" green="0.13300000131130219" blue="0.15299999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="blackOpaque">
             <color red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>

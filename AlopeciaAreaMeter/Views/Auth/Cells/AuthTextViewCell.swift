@@ -23,10 +23,21 @@ class AuthTextViewCell: UITableViewCell {
         super.layoutSubviews()
         
         // Set border color of the view
-        InputView.layer.borderColor = ColorConstants.primary.cgColor
+       // InputView.layer.borderColor = ColorConstants.primary.cgColor
         InputView.layer.borderWidth = 1.0 // You can adjust the width as needed
         InputView.layer.cornerRadius = 6.0 // You can adjust the corner radius as needed
     }
+    
+    func setBorderColor(isPrimaryColor: Bool) {
+        if isPrimaryColor {
+            InputView.layer.borderColor = ColorConstants.primary.cgColor
+        } else {
+            InputView.layer.borderColor = ColorConstants.borderColor.cgColor
+        }
+    }
+    
+
+    
     func setData(data: ListModel) {
         inputTextField.placeholder = data.hint
         titleLbl.text = data.title

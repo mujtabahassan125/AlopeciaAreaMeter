@@ -73,6 +73,10 @@ class SideMenuVC: UIViewController {
         }
         
     }
+    
+    func logout() {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
 
 
 }
@@ -102,6 +106,8 @@ extension SideMenuVC: UITableViewDelegate, UITableViewDataSource {
             navigateToCamera()
         case 3:
             navigateToSettings()
+        case 4:
+            logout() 
         default:
             break
         }

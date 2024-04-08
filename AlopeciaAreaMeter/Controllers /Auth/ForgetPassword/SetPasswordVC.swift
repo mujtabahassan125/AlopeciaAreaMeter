@@ -64,7 +64,7 @@ extension SetPasswordVC: UITableViewDelegate, UITableViewDataSource {
             return cell
         case 4:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ConfirmBtnCellView.self)) as? ConfirmBtnCellView else { return UITableViewCell() }
-            cell.setCellBtnTitle(title: AppConstants.verifyOtpBtnTitle)
+            cell.setCellBtnTitle(title: AppConstants.updatePasswordBtnTitle)
             cell.confirmActionDelegate = self
             return cell
         default:

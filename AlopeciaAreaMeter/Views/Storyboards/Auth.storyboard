@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Khg-OX-l17">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Khg-OX-l17">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
 <<<<<<< HEAD
         <deployment identifier="iOS"/>
-=======
->>>>>>> 4b86785 (Add files via upload)
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFPRODISPLAYMEDIUM.OTF">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SFPRODISPLAYREGULAR.OTF">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--LoginVC-->
         <scene sceneID="s0d-6b-0kx">
@@ -148,10 +155,10 @@
             </objects>
             <point key="canvasLocation" x="2313.740458015267" y="3.5211267605633805"/>
         </scene>
-        <!--VerifyOTPVC-->
+        <!--Verify OtpVC-->
         <scene sceneID="hGj-ew-S9n">
             <objects>
-                <viewController storyboardIdentifier="VerifyOTPVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ki0-3I-r45" customClass="VerifyOTPVC" customModule="AlopeciaAreaMeter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VerifyOtpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ki0-3I-r45" customClass="VerifyOtpVC" customModule="AlopeciaAreaMeter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8ZS-az-CUD">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,13 +189,154 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0d0-qj-8BC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3036" y="4"/>
-=======
-            <point key="canvasLocation" x="1724" y="-11"/>
->>>>>>> 4b86785 (Add files via upload)
+        </scene>
+        <!--Password ResetVC-->
+        <scene sceneID="dkZ-Ax-Puw">
+            <objects>
+                <viewController storyboardIdentifier="PasswordResetVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BVK-fo-Pp9" customClass="PasswordResetVC" customModule="AlopeciaAreaMeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lel-lf-ShU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dfE-el-Fws">
+                                <rect key="frame" x="0.0" y="79" width="393" height="739"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BVK-fo-Pp9" id="hhR-Oi-J1P"/>
+                                    <outlet property="delegate" destination="BVK-fo-Pp9" id="5UU-U4-mIG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sXS-K9-eE5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dfE-el-Fws" firstAttribute="trailing" secondItem="sXS-K9-eE5" secondAttribute="trailing" id="PU4-r3-m2r"/>
+                            <constraint firstItem="sXS-K9-eE5" firstAttribute="bottom" secondItem="dfE-el-Fws" secondAttribute="bottom" id="agF-7V-k1Z"/>
+                            <constraint firstItem="dfE-el-Fws" firstAttribute="leading" secondItem="sXS-K9-eE5" secondAttribute="leading" id="g4d-Qq-SSV"/>
+                            <constraint firstItem="dfE-el-Fws" firstAttribute="top" secondItem="sXS-K9-eE5" secondAttribute="top" constant="20" id="x0I-Cz-uwm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JDJ-Fe-OSi"/>
+                    <connections>
+                        <outlet property="tableView" destination="dfE-el-Fws" id="x12-k5-L1S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yra-FA-3jN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3721" y="4"/>
+        </scene>
+        <!--Set PasswordVC-->
+        <scene sceneID="J6f-gZ-H0i">
+            <objects>
+                <viewController storyboardIdentifier="SetPasswordVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8YV-5v-QqI" customClass="SetPasswordVC" customModule="AlopeciaAreaMeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W1U-gx-b7T">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Fgo-ta-Uid">
+                                <rect key="frame" x="0.0" y="79" width="393" height="739"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8YV-5v-QqI" id="9yE-kg-lyd"/>
+                                    <outlet property="delegate" destination="8YV-5v-QqI" id="IyV-hq-gUG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="997-Ak-YgL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fgo-ta-Uid" firstAttribute="trailing" secondItem="997-Ak-YgL" secondAttribute="trailing" id="E7X-Bt-Xrx"/>
+                            <constraint firstItem="Fgo-ta-Uid" firstAttribute="leading" secondItem="997-Ak-YgL" secondAttribute="leading" id="GMW-Vf-VB3"/>
+                            <constraint firstItem="Fgo-ta-Uid" firstAttribute="top" secondItem="997-Ak-YgL" secondAttribute="top" constant="20" id="Lvh-9B-6jG"/>
+                            <constraint firstItem="997-Ak-YgL" firstAttribute="bottom" secondItem="Fgo-ta-Uid" secondAttribute="bottom" id="baS-mN-yXw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EWQ-E7-Ebb"/>
+                    <connections>
+                        <outlet property="tableView" destination="Fgo-ta-Uid" id="ano-k5-t9G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FC0-2V-cMZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4445" y="4"/>
+        </scene>
+        <!--Password Reset Successful-->
+        <scene sceneID="KFT-fm-Y3K">
+            <objects>
+                <viewController storyboardIdentifier="PasswordResetSuccessful" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H4I-aw-p0f" customClass="PasswordResetSuccessful" customModule="AlopeciaAreaMeter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ieg-WY-M7c">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="fkq-CI-L5q">
+                                <rect key="frame" x="30" y="276" width="333" height="237"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="9mn-rM-fcd">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="115.66666666666667"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Successmark_icon" translatesAutoresizingMaskIntoConstraints="NO" id="OXw-Db-cya">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="62"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successful" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fo-co-8q1">
+                                                <rect key="frame" x="0.0" y="94" width="333" height="21.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndY-y3-VrB">
+                                        <rect key="frame" x="0.0" y="139.66666666666669" width="333" height="38.333333333333343"/>
+                                        <string key="text">Congratulations! Your password has
+been changed. Click continue to login</string>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                        <color key="textColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V71-xL-RUT">
+                                        <rect key="frame" x="0.0" y="202" width="333" height="35"/>
+                                        <color key="backgroundColor" name="PrimaryColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="iEg-LS-DBj"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Update Password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="updatePasswordAction:" destination="H4I-aw-p0f" eventType="touchUpInside" id="V1E-0j-68N"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qMD-dA-Gdt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qMD-dA-Gdt" firstAttribute="trailing" secondItem="fkq-CI-L5q" secondAttribute="trailing" constant="30" id="SiR-QO-Qp8"/>
+                            <constraint firstItem="fkq-CI-L5q" firstAttribute="leading" secondItem="qMD-dA-Gdt" secondAttribute="leading" constant="30" id="gbh-9U-Lz3"/>
+                            <constraint firstItem="fkq-CI-L5q" firstAttribute="centerX" secondItem="qMD-dA-Gdt" secondAttribute="centerX" id="phZ-o5-Klp"/>
+                            <constraint firstItem="fkq-CI-L5q" firstAttribute="centerY" secondItem="qMD-dA-Gdt" secondAttribute="centerY" multiplier="0.9" id="ugh-hW-9OA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cgl-Ph-CZN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ha-H0-uGc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5127" y="4"/>
         </scene>
     </scenes>
     <resources>
         <image name="Logo" width="80" height="80"/>
+        <image name="Successmark_icon" width="62" height="62"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.075000002980232239" green="0.48600000143051147" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

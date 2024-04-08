@@ -28,11 +28,19 @@ struct AppConstants {
     static let authPhoneLbl = "Phone"
     static let authEmailLbl = "Email"
     static let authPasswordLbl = "Password"
+    static let authConfirmPasswordLbl = "Confirm Password"
     
     static let resetPasswordBtnTitle = "Reset Password"
     static let verifyOtpBtnTitle = "Verify Code"
     static let updatePasswordBtnTitle = "Update Password"
-    static let confirmPasswordBtnTitle = "Update Password"
+    static let confirmPasswordBtnTitle = "Confirm"
+    static let passwordResetTitle = "Password reset"
+    static let passwordResetSubTitle = "Your password has been successfully reset. click confirm to set a new password"
+    static let newPasswordTitle = "Set a new password"
+    static let newPasswordSubTitle = "Create a new password. Ensure it differs from previous ones for security"
+   
+    
+    
     
     
     

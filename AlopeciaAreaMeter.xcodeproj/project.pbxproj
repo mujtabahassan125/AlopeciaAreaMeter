@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5B2538A9262A9399C7D4338C /* Pods_AlopeciaAreaMeterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA6AAC740992BB894059524 /* Pods_AlopeciaAreaMeterTests.framework */; };
-		5F0D0B322BB26A300074DD07 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B312BB26A300074DD07 /* DrawingView.swift */; };
-		5F0D0B342BB26A470074DD07 /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B332BB26A470074DD07 /* PhotoVC.swift */; };
 		5F0D0B3C2BB341A60074DD07 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0D0B3B2BB341A60074DD07 /* Auth.storyboard */; };
 		5F0D0B3F2BB341D00074DD07 /* AuthBtnsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F0D0B3D2BB341CF0074DD07 /* AuthBtnsViewCell.xib */; };
 		5F0D0B402BB341D00074DD07 /* AuthBtnsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B3E2BB341D00074DD07 /* AuthBtnsViewCell.swift */; };
@@ -54,9 +52,9 @@
 		5F0D0B8D2BC136490074DD07 /* ForgetLblViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F0D0B892BC136490074DD07 /* ForgetLblViewCell.xib */; };
 		5F0D0B8E2BC136490074DD07 /* ForgetLblViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F0D0B892BC136490074DD07 /* ForgetLblViewCell.xib */; };
 		5F0D0B8F2BC136490074DD07 /* ForgetLblViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F0D0B892BC136490074DD07 /* ForgetLblViewCell.xib */; };
-		5F0D0B912BC2213F0074DD07 /* VerifyOTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B902BC2213F0074DD07 /* VerifyOTPVC.swift */; };
-		5F0D0B922BC2213F0074DD07 /* VerifyOTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B902BC2213F0074DD07 /* VerifyOTPVC.swift */; };
-		5F0D0B932BC2213F0074DD07 /* VerifyOTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B902BC2213F0074DD07 /* VerifyOTPVC.swift */; };
+		5F0D0B912BC2213F0074DD07 /* VerifyOtpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B902BC2213F0074DD07 /* VerifyOtpVC.swift */; };
+		5F0D0B922BC2213F0074DD07 /* VerifyOtpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B902BC2213F0074DD07 /* VerifyOtpVC.swift */; };
+		5F0D0B932BC2213F0074DD07 /* VerifyOtpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D0B902BC2213F0074DD07 /* VerifyOtpVC.swift */; };
 		5F7113C92BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
 		5F7113CA2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
 		5F7113CB2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */; };
@@ -70,9 +68,6 @@
 		5F7113F12BAA3D940006C667 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113F02BAA3D940006C667 /* LoginViewModel.swift */; };
 		5F7113F22BAA3D940006C667 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113F02BAA3D940006C667 /* LoginViewModel.swift */; };
 		5F7113F32BAA3D940006C667 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113F02BAA3D940006C667 /* LoginViewModel.swift */; };
-		5F7113FA2BAA4F1B0006C667 /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7113F92BAA4F1B0006C667 /* Patient.storyboard */; };
-		5F7113FB2BAA4F1B0006C667 /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7113F92BAA4F1B0006C667 /* Patient.storyboard */; };
-		5F7113FC2BAA4F1B0006C667 /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7113F92BAA4F1B0006C667 /* Patient.storyboard */; };
 		5F7114012BAA532D0006C667 /* HomePatientListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113FF2BAA532D0006C667 /* HomePatientListViewCell.swift */; };
 		5F7114022BAA532D0006C667 /* HomePatientListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113FF2BAA532D0006C667 /* HomePatientListViewCell.swift */; };
 		5F7114032BAA532D0006C667 /* HomePatientListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7113FF2BAA532D0006C667 /* HomePatientListViewCell.swift */; };
@@ -155,6 +150,12 @@
 		5FDF5F6E2BB08D6B00AA665D /* SlideInPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDF5F6C2BB08D6B00AA665D /* SlideInPresentationAnimator.swift */; };
 		5FDF5F6F2BB08D6B00AA665D /* SlideInPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDF5F6C2BB08D6B00AA665D /* SlideInPresentationAnimator.swift */; };
 		7D2BF95808C1F799D162AB78 /* Pods_AlopeciaAreaMeter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72ECCAACB1729374ADD6AA5 /* Pods_AlopeciaAreaMeter.framework */; };
+		8542EABE2BC3B9D7009EAAAC /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8542EABD2BC3B9D7009EAAAC /* Patient.storyboard */; };
+		8542EAC12BC3BA4F009EAAAC /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EABF2BC3BA4F009EAAAC /* PhotoVC.swift */; };
+		8542EAC22BC3BA4F009EAAAC /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EAC02BC3BA4F009EAAAC /* DrawingView.swift */; };
+		8542EAC42BC3BB36009EAAAC /* PasswordResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EAC32BC3BB36009EAAAC /* PasswordResetVC.swift */; };
+		8542EAC62BC3BD1F009EAAAC /* SetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EAC52BC3BD1E009EAAAC /* SetPasswordVC.swift */; };
+		8542EAC82BC3BECA009EAAAC /* PasswordResetSuccessful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EAC72BC3BECA009EAAAC /* PasswordResetSuccessful.swift */; };
 		85E0A53B2BB28210005BDA7C /* sf-pro-display-cufonfonts in Resources */ = {isa = PBXBuildFile; fileRef = 85E0A53A2BB28210005BDA7C /* sf-pro-display-cufonfonts */; };
 		85E0A53D2BB28E9C005BDA7C /* Records.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85E0A53C2BB28E9C005BDA7C /* Records.storyboard */; };
 		85E0A53E2BB28E9C005BDA7C /* Records.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85E0A53C2BB28E9C005BDA7C /* Records.storyboard */; };
@@ -197,8 +198,6 @@
 /* Begin PBXFileReference section */
 		0EF2FF10F89D568DC3BAB6AA /* Pods_AlopeciaAreaMeter_AlopeciaAreaMeterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlopeciaAreaMeter_AlopeciaAreaMeterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C7658E14B61D33F8258909B /* Pods-AlopeciaAreaMeterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlopeciaAreaMeterTests.release.xcconfig"; path = "Target Support Files/Pods-AlopeciaAreaMeterTests/Pods-AlopeciaAreaMeterTests.release.xcconfig"; sourceTree = "<group>"; };
-		5F0D0B312BB26A300074DD07 /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
-		5F0D0B332BB26A470074DD07 /* PhotoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
 		5F0D0B3B2BB341A60074DD07 /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		5F0D0B3D2BB341CF0074DD07 /* AuthBtnsViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthBtnsViewCell.xib; sourceTree = "<group>"; };
 		5F0D0B3E2BB341D00074DD07 /* AuthBtnsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthBtnsViewCell.swift; sourceTree = "<group>"; };
@@ -221,13 +220,12 @@
 		5F0D0B842BC132110074DD07 /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVC.swift; sourceTree = "<group>"; };
 		5F0D0B882BC136490074DD07 /* ForgetLblViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetLblViewCell.swift; sourceTree = "<group>"; };
 		5F0D0B892BC136490074DD07 /* ForgetLblViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetLblViewCell.xib; sourceTree = "<group>"; };
-		5F0D0B902BC2213F0074DD07 /* VerifyOTPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOTPVC.swift; sourceTree = "<group>"; };
+		5F0D0B902BC2213F0074DD07 /* VerifyOtpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOtpVC.swift; sourceTree = "<group>"; };
 		5F7113C82BA8520D0006C667 /* UiViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewControllerExtension.swift; sourceTree = "<group>"; };
 		5F7113E62BAA3BBF0006C667 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		5F7113E82BAA3C030006C667 /* SignUpVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVM.swift; sourceTree = "<group>"; };
 		5F7113EC2BAA3D860006C667 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		5F7113F02BAA3D940006C667 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		5F7113F92BAA4F1B0006C667 /* Patient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Patient.storyboard; sourceTree = "<group>"; };
 		5F7113FF2BAA532D0006C667 /* HomePatientListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePatientListViewCell.swift; sourceTree = "<group>"; };
 		5F7114002BAA532D0006C667 /* HomePatientListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePatientListViewCell.xib; sourceTree = "<group>"; };
 		5F7114072BAA56E50006C667 /* RecordViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewCell.swift; sourceTree = "<group>"; };
@@ -269,6 +267,12 @@
 		5FDF5F642BB040D000AA665D /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		5FDF5F682BB08D1100AA665D /* SideMenuPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuPresentationController.swift; sourceTree = "<group>"; };
 		5FDF5F6C2BB08D6B00AA665D /* SlideInPresentationAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInPresentationAnimator.swift; sourceTree = "<group>"; };
+		8542EABD2BC3B9D7009EAAAC /* Patient.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Patient.storyboard; sourceTree = "<group>"; };
+		8542EABF2BC3BA4F009EAAAC /* PhotoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
+		8542EAC02BC3BA4F009EAAAC /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		8542EAC32BC3BB36009EAAAC /* PasswordResetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetVC.swift; sourceTree = "<group>"; };
+		8542EAC52BC3BD1E009EAAAC /* SetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordVC.swift; sourceTree = "<group>"; };
+		8542EAC72BC3BECA009EAAAC /* PasswordResetSuccessful.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetSuccessful.swift; sourceTree = "<group>"; };
 		85E0A53A2BB28210005BDA7C /* sf-pro-display-cufonfonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "sf-pro-display-cufonfonts"; sourceTree = "<group>"; };
 		85E0A53C2BB28E9C005BDA7C /* Records.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Records.storyboard; sourceTree = "<group>"; };
 		85E0A5402BB28ED4005BDA7C /* NavBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavBarView.xib; sourceTree = "<group>"; };
@@ -329,9 +333,9 @@
 		5F0D0B302BB26A180074DD07 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				5F0D0B312BB26A300074DD07 /* DrawingView.swift */,
+				8542EAC02BC3BA4F009EAAAC /* DrawingView.swift */,
+				8542EABF2BC3BA4F009EAAAC /* PhotoVC.swift */,
 				5FA27D922BAF5E4F00C459C1 /* CameraVC.swift */,
-				5F0D0B332BB26A470074DD07 /* PhotoVC.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -390,7 +394,10 @@
 			isa = PBXGroup;
 			children = (
 				5F0D0B842BC132110074DD07 /* ForgetPasswordVC.swift */,
-				5F0D0B902BC2213F0074DD07 /* VerifyOTPVC.swift */,
+				5F0D0B902BC2213F0074DD07 /* VerifyOtpVC.swift */,
+				8542EAC32BC3BB36009EAAAC /* PasswordResetVC.swift */,
+				8542EAC52BC3BD1E009EAAAC /* SetPasswordVC.swift */,
+				8542EAC72BC3BECA009EAAAC /* PasswordResetSuccessful.swift */,
 			);
 			path = ForgetPassword;
 			sourceTree = "<group>";
@@ -561,9 +568,9 @@
 		5F99782B2BA7180B0085309B /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				8542EABD2BC3B9D7009EAAAC /* Patient.storyboard */,
 				5F9977F02BA560840085309B /* Main.storyboard */,
 				5F0D0B3B2BB341A60074DD07 /* Auth.storyboard */,
-				5F7113F92BAA4F1B0006C667 /* Patient.storyboard */,
 				5F7114102BAA5C550006C667 /* CustomAlerts.storyboard */,
 				85E0A53C2BB28E9C005BDA7C /* Records.storyboard */,
 			);
@@ -791,6 +798,7 @@
 				5F0D0B3C2BB341A60074DD07 /* Auth.storyboard in Resources */,
 				5F9978412BA720300085309B /* AuthTextViewCell.xib in Resources */,
 				85E0A5522BB29B65005BDA7C /* GraphViewCell.xib in Resources */,
+				8542EABE2BC3B9D7009EAAAC /* Patient.storyboard in Resources */,
 				5F7114042BAA532D0006C667 /* HomePatientListViewCell.xib in Resources */,
 				5F0D0B702BC12D3C0074DD07 /* ConfirmBtnCellView.xib in Resources */,
 				5F0D0B8D2BC136490074DD07 /* ForgetLblViewCell.xib in Resources */,
@@ -798,7 +806,6 @@
 				5F7114112BAA5C550006C667 /* CustomAlerts.storyboard in Resources */,
 				5FDF5F5A2BB03C7B00AA665D /* SideMenuHeaderViewCell.xib in Resources */,
 				85E0A53B2BB28210005BDA7C /* sf-pro-display-cufonfonts in Resources */,
-				5F7113FA2BAA4F1B0006C667 /* Patient.storyboard in Resources */,
 				5F0D0B802BC1300E0074DD07 /* VerifyTextViewCell.xib in Resources */,
 				5F9977FA2BA560860085309B /* LaunchScreen.storyboard in Resources */,
 				5F0D0B6A2BC129CF0074DD07 /* BackBtnViewCell.xib in Resources */,
@@ -821,7 +828,6 @@
 				5F0D0B812BC1300E0074DD07 /* VerifyTextViewCell.xib in Resources */,
 				5F0D0B792BC12E410074DD07 /* VerifyOTPViewCell.xib in Resources */,
 				85E0A5422BB28ED4005BDA7C /* NavBarView.xib in Resources */,
-				5F7113FB2BAA4F1B0006C667 /* Patient.storyboard in Resources */,
 				5F7114052BAA532D0006C667 /* HomePatientListViewCell.xib in Resources */,
 				5FDF5F612BB03DFF00AA665D /* SideMenuListViewCell.xib in Resources */,
 				5F0D0B712BC12D3C0074DD07 /* ConfirmBtnCellView.xib in Resources */,
@@ -843,7 +849,6 @@
 				5F0D0B822BC1300E0074DD07 /* VerifyTextViewCell.xib in Resources */,
 				5F0D0B7A2BC12E410074DD07 /* VerifyOTPViewCell.xib in Resources */,
 				85E0A5432BB28ED4005BDA7C /* NavBarView.xib in Resources */,
-				5F7113FC2BAA4F1B0006C667 /* Patient.storyboard in Resources */,
 				5F7114062BAA532D0006C667 /* HomePatientListViewCell.xib in Resources */,
 				5FDF5F622BB03DFF00AA665D /* SideMenuListViewCell.xib in Resources */,
 				5F0D0B722BC12D3C0074DD07 /* ConfirmBtnCellView.xib in Resources */,
@@ -975,13 +980,14 @@
 				5F7113E72BAA3BBF0006C667 /* LoginVM.swift in Sources */,
 				5F0D0B6D2BC12D3C0074DD07 /* ConfirmBtnCellView.swift in Sources */,
 				5F9978472BA8195D0085309B /* AuthHeaderViewCell.swift in Sources */,
+				8542EAC22BC3BA4F009EAAAC /* DrawingView.swift in Sources */,
 				5F99783E2BA720300085309B /* AuthTextViewCell.swift in Sources */,
 				5FB594032BAF5BE6009D59FB /* PatientHomeVC.swift in Sources */,
 				5F71141E2BAEC63F0006C667 /* AppConstants.swift in Sources */,
 				5FA27D912BAF5E4100C459C1 /* UiImageExtension.swift in Sources */,
+				8542EAC12BC3BA4F009EAAAC /* PhotoVC.swift in Sources */,
 				5F0D0B452BB3420C0074DD07 /* LoginVC.swift in Sources */,
 				5F7114012BAA532D0006C667 /* HomePatientListViewCell.swift in Sources */,
-				5F0D0B322BB26A300074DD07 /* DrawingView.swift in Sources */,
 				5F7114092BAA56E50006C667 /* RecordViewCell.swift in Sources */,
 				5F7113F12BAA3D940006C667 /* LoginViewModel.swift in Sources */,
 				5FDF5F5D2BB03DFF00AA665D /* SideMenuListViewCell.swift in Sources */,
@@ -990,13 +996,15 @@
 				5FDF5F592BB03C7B00AA665D /* SideMenuHeaderViewCell.swift in Sources */,
 				5F7113E92BAA3C030006C667 /* SignUpVM.swift in Sources */,
 				5FDF5F6D2BB08D6B00AA665D /* SlideInPresentationAnimator.swift in Sources */,
+				8542EAC62BC3BD1F009EAAAC /* SetPasswordVC.swift in Sources */,
+				8542EAC82BC3BECA009EAAAC /* PasswordResetSuccessful.swift in Sources */,
+				8542EAC42BC3BB36009EAAAC /* PasswordResetVC.swift in Sources */,
 				5F0D0B4C2BB683900074DD07 /* PatientCustomModel.swift in Sources */,
 				5F71142C2BAEE79A0006C667 /* UiColorExtension.swift in Sources */,
-				5F0D0B912BC2213F0074DD07 /* VerifyOTPVC.swift in Sources */,
+				5F0D0B912BC2213F0074DD07 /* VerifyOtpVC.swift in Sources */,
 				5F0D0B7D2BC1300E0074DD07 /* VerifyTextViewCell.swift in Sources */,
 				5F7113C92BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */,
 				5F0D0B512BB690D70074DD07 /* PatientHomeAlertVC.swift in Sources */,
-				5F0D0B342BB26A470074DD07 /* PhotoVC.swift in Sources */,
 				5F7114272BAEE4650006C667 /* ColorConstants.swift in Sources */,
 				5FA27D932BAF5E4F00C459C1 /* CameraVC.swift in Sources */,
 				5F0D0B8A2BC136490074DD07 /* ForgetLblViewCell.swift in Sources */,
@@ -1030,7 +1038,7 @@
 				5F0D0B862BC132110074DD07 /* ForgetPasswordVC.swift in Sources */,
 				5F9978252BA6F7ED0085309B /* Utilities.swift in Sources */,
 				85E0A5502BB29B65005BDA7C /* GraphViewCell.swift in Sources */,
-				5F0D0B922BC2213F0074DD07 /* VerifyOTPVC.swift in Sources */,
+				5F0D0B922BC2213F0074DD07 /* VerifyOtpVC.swift in Sources */,
 				5F0D0B8B2BC136490074DD07 /* ForgetLblViewCell.swift in Sources */,
 				5FDF5F6A2BB08D1100AA665D /* SideMenuPresentationController.swift in Sources */,
 				5F7114282BAEE4650006C667 /* ColorConstants.swift in Sources */,
@@ -1075,7 +1083,7 @@
 				5F71140B2BAA56E50006C667 /* RecordViewCell.swift in Sources */,
 				5FDF5F6B2BB08D1100AA665D /* SideMenuPresentationController.swift in Sources */,
 				5F0D0B592BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */,
-				5F0D0B932BC2213F0074DD07 /* VerifyOTPVC.swift in Sources */,
+				5F0D0B932BC2213F0074DD07 /* VerifyOtpVC.swift in Sources */,
 				5F0D0B772BC12E410074DD07 /* VerifyOTPViewCell.swift in Sources */,
 				5FDF5F5F2BB03DFF00AA665D /* SideMenuListViewCell.swift in Sources */,
 				85E0A5512BB29B65005BDA7C /* GraphViewCell.swift in Sources */,
@@ -1255,7 +1263,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 9X9W7CM639;
+				DEVELOPMENT_TEAM = BU6K3V6JJG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AlopeciaAreaMeter/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Alopecia Area Meter";
@@ -1293,7 +1301,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 9X9W7CM639;
+				DEVELOPMENT_TEAM = BU6K3V6JJG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AlopeciaAreaMeter/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Alopecia Area Meter";

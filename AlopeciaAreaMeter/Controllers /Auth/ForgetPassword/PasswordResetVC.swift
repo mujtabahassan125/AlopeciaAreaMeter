@@ -1,13 +1,13 @@
 //
-//  ForgetPasswordVC.swift
+//  PasswordResetVC.swift
 //  AlopeciaAreaMeter
 //
-//  Created by Syed Mujtaba Hassan on 06/04/2024.
+//  Created by Mujtaba Hassan on 08/04/2024.
 //
 
 import UIKit
 
-class ForgetPasswordVC: UIViewController {
+class PasswordResetVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -17,24 +17,23 @@ class ForgetPasswordVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+
     private func registerNibs() {
-        tableView.register(UINib(nibName: String(describing: AuthTextViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: AuthTextViewCell.self))
+       
         tableView.register(UINib(nibName: String(describing: AuthHeaderViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: AuthHeaderViewCell.self))
-        tableView.register(UINib(nibName: String(describing: AuthBtnsViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: AuthBtnsViewCell.self))
         tableView.register(UINib(nibName: String(describing: BackBtnViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: BackBtnViewCell.self))
         tableView.register(UINib(nibName: String(describing: ConfirmBtnCellView.self), bundle: nil), forCellReuseIdentifier: String(describing: ConfirmBtnCellView.self))
+        
     }
-    
-
 
 }
 
-extension ForgetPasswordVC: UITableViewDelegate, UITableViewDataSource {
+extension PasswordResetVC: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return 4
+       return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,16 +45,12 @@ extension ForgetPasswordVC: UITableViewDelegate, UITableViewDataSource {
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthHeaderViewCell.self)) as? AuthHeaderViewCell else { return UITableViewCell() }
-            cell.titleLbl.text = AppConstants.forgetPassTitleText
-            cell.subtilteLbl.text = AppConstants.forgetPassSubTitleText
+            cell.titleLbl.text = AppConstants.passwordResetTitle
+            cell.subtilteLbl.text = AppConstants.passwordResetSubTitle
             return cell
         case 2:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthTextViewCell.self)) as? AuthTextViewCell else { return UITableViewCell() }
-            cell.setBorderColor(isPrimaryColor: false)
-            cell.setData(data: ListModel(title: "Your \(AppConstants.authEmailLbl)", image: IconName.email, hint: "Ex: abc@example.com"))
-            return cell
-        case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ConfirmBtnCellView.self)) as? ConfirmBtnCellView else { return UITableViewCell() }
+            cell.setCellBtnTitle(title: AppConstants.confirmPasswordBtnTitle)
             cell.confirmActionDelegate = self
             return cell
         default:
@@ -67,13 +62,14 @@ extension ForgetPasswordVC: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension ForgetPasswordVC: ConfirmActionProtocol, BackBtnProtocol {
+
+extension PasswordResetVC: ConfirmActionProtocol, BackBtnProtocol {
     func popViewContoller() {
         self.navigationController?.popViewController(animated: true)
     }
     
     func navigateToNextScreen() {
-        self.navigateToViewController(storyboardName: Storyboard.auth.rawValue, viewControllerIdentifier: String(describing: VerifyOtpVC.self), viewModel: BaseViewModel()) { (vc: VerifyOtpVC, nil) in
+        self.navigateToViewController(storyboardName: Storyboard.auth.rawValue, viewControllerIdentifier: String(describing: SetPasswordVC.self), viewModel: BaseViewModel()) { (vc: SetPasswordVC, nil) in
             return vc
         }
     }

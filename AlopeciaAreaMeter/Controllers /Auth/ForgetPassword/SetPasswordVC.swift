@@ -1,13 +1,13 @@
 //
-//  VerifyOTPVC.swift
+//  SetPasswordVC.swift
 //  AlopeciaAreaMeter
 //
-//  Created by Syed Mujtaba Hassan on 07/04/2024.
+//  Created by Mujtaba Hassan on 08/04/2024.
 //
 
 import UIKit
 
-class VerifyOTPVC: UIViewController {
+class SetPasswordVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -17,21 +17,20 @@ class VerifyOTPVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
     private func registerNibs() {
         tableView.register(UINib(nibName: String(describing: AuthTextViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: AuthTextViewCell.self))
         tableView.register(UINib(nibName: String(describing: AuthHeaderViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: AuthHeaderViewCell.self))
-        tableView.register(UINib(nibName: String(describing: AuthBtnsViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: AuthBtnsViewCell.self))
         tableView.register(UINib(nibName: String(describing: BackBtnViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: BackBtnViewCell.self))
         tableView.register(UINib(nibName: String(describing: ConfirmBtnCellView.self), bundle: nil), forCellReuseIdentifier: String(describing: ConfirmBtnCellView.self))
-        tableView.register(UINib(nibName: String(describing: VerifyOTPViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: VerifyOTPViewCell.self))
-        tableView.register(UINib(nibName: String(describing: VerifyTextViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: VerifyTextViewCell.self))
-        
+    
     }
+    
+
+
 
 }
 
-extension VerifyOTPVC: UITableViewDelegate, UITableViewDataSource {
+extension SetPasswordVC: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -48,20 +47,25 @@ extension VerifyOTPVC: UITableViewDelegate, UITableViewDataSource {
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthHeaderViewCell.self)) as? AuthHeaderViewCell else { return UITableViewCell() }
-            cell.titleLbl.text = AppConstants.forgetPassTitleText
-            cell.subtilteLbl.text = AppConstants.forgetPassSubTitleText
+            cell.titleLbl.text = AppConstants.newPasswordTitle
+            cell.subtilteLbl.text = AppConstants.newPasswordSubTitle
             return cell
         case 2:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VerifyOTPViewCell.self)) as? VerifyOTPViewCell else { return UITableViewCell() }
-            cell.viewStyling(view: cell.viewOne)
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthTextViewCell.self)) as? AuthTextViewCell else { return UITableViewCell() }
+            cell.setBorderColor(isPrimaryColor: false)
+            cell.inputTextField.isSecureTextEntry = true
+            cell.setData(data: ListModel(title: "Your \(AppConstants.authPasswordLbl)", image: IconName.password, hint: "Enter your new password"))
             return cell
         case 3:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AuthTextViewCell.self)) as? AuthTextViewCell else { return UITableViewCell() }
+            cell.setBorderColor(isPrimaryColor: false)
+            cell.inputTextField.isSecureTextEntry = true
+            cell.setData(data: ListModel(title: "Your \(AppConstants.authConfirmPasswordLbl)", image: IconName.password, hint: "Re-enter password"))
+            return cell
+        case 4:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ConfirmBtnCellView.self)) as? ConfirmBtnCellView else { return UITableViewCell() }
             cell.setCellBtnTitle(title: AppConstants.verifyOtpBtnTitle)
             cell.confirmActionDelegate = self
-            return cell
-        case 4:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: VerifyTextViewCell.self)) as? VerifyTextViewCell else { return UITableViewCell() }
             return cell
         default:
             return UITableViewCell()
@@ -73,15 +77,15 @@ extension VerifyOTPVC: UITableViewDelegate, UITableViewDataSource {
 }
 
 
-extension VerifyOTPVC: ConfirmActionProtocol, BackBtnProtocol {
+extension SetPasswordVC: ConfirmActionProtocol, BackBtnProtocol {
     func popViewContoller() {
         self.navigationController?.popViewController(animated: true)
     }
     
     func navigateToNextScreen() {
-//        self.navigateToViewController(storyboardName: Storyboard.auth.rawValue, viewControllerIdentifier: String(describing: VerifyOTPVC.self), viewModel: BaseViewModel()) { (vc: VerifyOTPVC, nil) in
-//            return vc
-//        }
+        self.navigateToViewController(storyboardName: Storyboard.auth.rawValue, viewControllerIdentifier: String(describing: PasswordResetSuccessful.self), viewModel: BaseViewModel()) { (vc: PasswordResetSuccessful, nil) in
+            return vc
+        }
     }
     
 }

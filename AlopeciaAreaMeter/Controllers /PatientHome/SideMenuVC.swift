@@ -66,6 +66,13 @@ class SideMenuVC: UIViewController {
             return vc
         }
     }
+    
+    func navigateToSettings() {
+        self.navigateToViewController(storyboardName: Storyboard.settings.rawValue, viewControllerIdentifier: String(describing: SettingsVC.self), viewModel: BaseViewModel()) { (vc: SettingsVC, nil) in
+            return vc
+        }
+        
+    }
 
 
 }
@@ -93,6 +100,8 @@ extension SideMenuVC: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
         case 2:
             navigateToCamera()
+        case 3:
+            navigateToSettings()
         default:
             break
         }

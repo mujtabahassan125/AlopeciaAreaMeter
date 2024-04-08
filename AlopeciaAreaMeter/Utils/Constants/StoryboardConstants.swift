@@ -11,6 +11,7 @@ import UIKit
 enum Storyboard: String {
     case auth = "Auth"
     case patient = "Patient"
+    case settings = "Settings"
     case home = "Main"
     case records = "Records"
     case customAlerts = "CustomAlerts"

@@ -156,6 +156,30 @@
 		8542EAC42BC3BB36009EAAAC /* PasswordResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EAC32BC3BB36009EAAAC /* PasswordResetVC.swift */; };
 		8542EAC62BC3BD1F009EAAAC /* SetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EAC52BC3BD1E009EAAAC /* SetPasswordVC.swift */; };
 		8542EAC82BC3BECA009EAAAC /* PasswordResetSuccessful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EAC72BC3BECA009EAAAC /* PasswordResetSuccessful.swift */; };
+		8542EACA2BC3D72A009EAAAC /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8542EAC92BC3D72A009EAAAC /* Settings.storyboard */; };
+		8542EACB2BC3D72A009EAAAC /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8542EAC92BC3D72A009EAAAC /* Settings.storyboard */; };
+		8542EACC2BC3D72A009EAAAC /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8542EAC92BC3D72A009EAAAC /* Settings.storyboard */; };
+		8542EAD42BC3D85A009EAAAC /* TopNavTitleBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EAD22BC3D85A009EAAAC /* TopNavTitleBarViewCell.swift */; };
+		8542EAD52BC3D85A009EAAAC /* TopNavTitleBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EAD22BC3D85A009EAAAC /* TopNavTitleBarViewCell.swift */; };
+		8542EAD62BC3D85A009EAAAC /* TopNavTitleBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EAD22BC3D85A009EAAAC /* TopNavTitleBarViewCell.swift */; };
+		8542EAD72BC3D85A009EAAAC /* TopNavTitleBarViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8542EAD32BC3D85A009EAAAC /* TopNavTitleBarViewCell.xib */; };
+		8542EAD82BC3D85A009EAAAC /* TopNavTitleBarViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8542EAD32BC3D85A009EAAAC /* TopNavTitleBarViewCell.xib */; };
+		8542EAD92BC3D85A009EAAAC /* TopNavTitleBarViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8542EAD32BC3D85A009EAAAC /* TopNavTitleBarViewCell.xib */; };
+		8542EADC2BC3DA0A009EAAAC /* NameFormatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EADA2BC3DA0A009EAAAC /* NameFormatViewCell.swift */; };
+		8542EADD2BC3DA0A009EAAAC /* NameFormatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EADA2BC3DA0A009EAAAC /* NameFormatViewCell.swift */; };
+		8542EADE2BC3DA0A009EAAAC /* NameFormatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EADA2BC3DA0A009EAAAC /* NameFormatViewCell.swift */; };
+		8542EADF2BC3DA0A009EAAAC /* NameFormatViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8542EADB2BC3DA0A009EAAAC /* NameFormatViewCell.xib */; };
+		8542EAE02BC3DA0A009EAAAC /* NameFormatViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8542EADB2BC3DA0A009EAAAC /* NameFormatViewCell.xib */; };
+		8542EAE12BC3DA0A009EAAAC /* NameFormatViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8542EADB2BC3DA0A009EAAAC /* NameFormatViewCell.xib */; };
+		8542EAE42BC3DE39009EAAAC /* DropboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EAE22BC3DE39009EAAAC /* DropboxViewCell.swift */; };
+		8542EAE52BC3DE39009EAAAC /* DropboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EAE22BC3DE39009EAAAC /* DropboxViewCell.swift */; };
+		8542EAE62BC3DE39009EAAAC /* DropboxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EAE22BC3DE39009EAAAC /* DropboxViewCell.swift */; };
+		8542EAE72BC3DE39009EAAAC /* DropboxViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8542EAE32BC3DE39009EAAAC /* DropboxViewCell.xib */; };
+		8542EAE82BC3DE39009EAAAC /* DropboxViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8542EAE32BC3DE39009EAAAC /* DropboxViewCell.xib */; };
+		8542EAE92BC3DE39009EAAAC /* DropboxViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8542EAE32BC3DE39009EAAAC /* DropboxViewCell.xib */; };
+		8542EAEC2BC3E08D009EAAAC /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EAEB2BC3E08D009EAAAC /* SettingsVC.swift */; };
+		8542EAED2BC3E08D009EAAAC /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EAEB2BC3E08D009EAAAC /* SettingsVC.swift */; };
+		8542EAEE2BC3E08D009EAAAC /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542EAEB2BC3E08D009EAAAC /* SettingsVC.swift */; };
 		85E0A53B2BB28210005BDA7C /* sf-pro-display-cufonfonts in Resources */ = {isa = PBXBuildFile; fileRef = 85E0A53A2BB28210005BDA7C /* sf-pro-display-cufonfonts */; };
 		85E0A53D2BB28E9C005BDA7C /* Records.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85E0A53C2BB28E9C005BDA7C /* Records.storyboard */; };
 		85E0A53E2BB28E9C005BDA7C /* Records.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85E0A53C2BB28E9C005BDA7C /* Records.storyboard */; };
@@ -273,6 +297,14 @@
 		8542EAC32BC3BB36009EAAAC /* PasswordResetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetVC.swift; sourceTree = "<group>"; };
 		8542EAC52BC3BD1E009EAAAC /* SetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordVC.swift; sourceTree = "<group>"; };
 		8542EAC72BC3BECA009EAAAC /* PasswordResetSuccessful.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetSuccessful.swift; sourceTree = "<group>"; };
+		8542EAC92BC3D72A009EAAAC /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		8542EAD22BC3D85A009EAAAC /* TopNavTitleBarViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavTitleBarViewCell.swift; sourceTree = "<group>"; };
+		8542EAD32BC3D85A009EAAAC /* TopNavTitleBarViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopNavTitleBarViewCell.xib; sourceTree = "<group>"; };
+		8542EADA2BC3DA0A009EAAAC /* NameFormatViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameFormatViewCell.swift; sourceTree = "<group>"; };
+		8542EADB2BC3DA0A009EAAAC /* NameFormatViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NameFormatViewCell.xib; sourceTree = "<group>"; };
+		8542EAE22BC3DE39009EAAAC /* DropboxViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxViewCell.swift; sourceTree = "<group>"; };
+		8542EAE32BC3DE39009EAAAC /* DropboxViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropboxViewCell.xib; sourceTree = "<group>"; };
+		8542EAEB2BC3E08D009EAAAC /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		85E0A53A2BB28210005BDA7C /* sf-pro-display-cufonfonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "sf-pro-display-cufonfonts"; sourceTree = "<group>"; };
 		85E0A53C2BB28E9C005BDA7C /* Records.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Records.storyboard; sourceTree = "<group>"; };
 		85E0A5402BB28ED4005BDA7C /* NavBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavBarView.xib; sourceTree = "<group>"; };
@@ -525,6 +557,7 @@
 		5F99781F2BA6F6990085309B /* Controllers  */ = {
 			isa = PBXGroup;
 			children = (
+				8542EAEA2BC3E074009EAAAC /* Settings */,
 				5F0D0B4F2BB690940074DD07 /* Alerts */,
 				5F0D0B472BB342210074DD07 /* Auth */,
 				85E0A5482BB29197005BDA7C /* Records */,
@@ -556,6 +589,7 @@
 		5F9978222BA6F7350085309B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8542EACD2BC3D80F009EAAAC /* Settings */,
 				5F71140F2BAA5B850006C667 /* CustomAlerts */,
 				5F99782D2BA719090085309B /* Common */,
 				5F99782C2BA718F50085309B /* Auth */,
@@ -573,6 +607,7 @@
 				5F0D0B3B2BB341A60074DD07 /* Auth.storyboard */,
 				5F7114102BAA5C550006C667 /* CustomAlerts.storyboard */,
 				85E0A53C2BB28E9C005BDA7C /* Records.storyboard */,
+				8542EAC92BC3D72A009EAAAC /* Settings.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -590,6 +625,8 @@
 			children = (
 				85E0A5402BB28ED4005BDA7C /* NavBarView.xib */,
 				85E0A5442BB290C2005BDA7C /* NavBarView.swift */,
+				8542EAD22BC3D85A009EAAAC /* TopNavTitleBarViewCell.swift */,
+				8542EAD32BC3D85A009EAAAC /* TopNavTitleBarViewCell.xib */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -676,6 +713,25 @@
 				EAA6AAC740992BB894059524 /* Pods_AlopeciaAreaMeterTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8542EACD2BC3D80F009EAAAC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8542EADA2BC3DA0A009EAAAC /* NameFormatViewCell.swift */,
+				8542EADB2BC3DA0A009EAAAC /* NameFormatViewCell.xib */,
+				8542EAE22BC3DE39009EAAAC /* DropboxViewCell.swift */,
+				8542EAE32BC3DE39009EAAAC /* DropboxViewCell.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8542EAEA2BC3E074009EAAAC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8542EAEB2BC3E08D009EAAAC /* SettingsVC.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		85E0A5482BB29197005BDA7C /* Records */ = {
@@ -798,9 +854,11 @@
 				5F0D0B3C2BB341A60074DD07 /* Auth.storyboard in Resources */,
 				5F9978412BA720300085309B /* AuthTextViewCell.xib in Resources */,
 				85E0A5522BB29B65005BDA7C /* GraphViewCell.xib in Resources */,
+				8542EACA2BC3D72A009EAAAC /* Settings.storyboard in Resources */,
 				8542EABE2BC3B9D7009EAAAC /* Patient.storyboard in Resources */,
 				5F7114042BAA532D0006C667 /* HomePatientListViewCell.xib in Resources */,
 				5F0D0B702BC12D3C0074DD07 /* ConfirmBtnCellView.xib in Resources */,
+				8542EAE72BC3DE39009EAAAC /* DropboxViewCell.xib in Resources */,
 				5F0D0B8D2BC136490074DD07 /* ForgetLblViewCell.xib in Resources */,
 				5FDF5F602BB03DFF00AA665D /* SideMenuListViewCell.xib in Resources */,
 				5F7114112BAA5C550006C667 /* CustomAlerts.storyboard in Resources */,
@@ -812,10 +870,12 @@
 				5F9977F72BA560850085309B /* Assets.xcassets in Resources */,
 				85E0A5412BB28ED4005BDA7C /* NavBarView.xib in Resources */,
 				5F71140C2BAA56E50006C667 /* RecordViewCell.xib in Resources */,
+				8542EADF2BC3DA0A009EAAAC /* NameFormatViewCell.xib in Resources */,
 				85E0A53D2BB28E9C005BDA7C /* Records.storyboard in Resources */,
 				5F99784A2BA8195D0085309B /* AuthHeaderViewCell.xib in Resources */,
 				5F9978392BA71CB00085309B /* SF Pro Text in Resources */,
 				5F9977F22BA560840085309B /* Main.storyboard in Resources */,
+				8542EAD72BC3D85A009EAAAC /* TopNavTitleBarViewCell.xib in Resources */,
 				5F0D0B3F2BB341D00074DD07 /* AuthBtnsViewCell.xib in Resources */,
 				5F0D0B782BC12E410074DD07 /* VerifyOTPViewCell.xib in Resources */,
 			);
@@ -830,10 +890,14 @@
 				85E0A5422BB28ED4005BDA7C /* NavBarView.xib in Resources */,
 				5F7114052BAA532D0006C667 /* HomePatientListViewCell.xib in Resources */,
 				5FDF5F612BB03DFF00AA665D /* SideMenuListViewCell.xib in Resources */,
+				8542EAD82BC3D85A009EAAAC /* TopNavTitleBarViewCell.xib in Resources */,
 				5F0D0B712BC12D3C0074DD07 /* ConfirmBtnCellView.xib in Resources */,
+				8542EAE82BC3DE39009EAAAC /* DropboxViewCell.xib in Resources */,
 				85E0A5532BB29B65005BDA7C /* GraphViewCell.xib in Resources */,
 				5F99784B2BA8195D0085309B /* AuthHeaderViewCell.xib in Resources */,
+				8542EAE02BC3DA0A009EAAAC /* NameFormatViewCell.xib in Resources */,
 				5F0D0B8E2BC136490074DD07 /* ForgetLblViewCell.xib in Resources */,
+				8542EACB2BC3D72A009EAAAC /* Settings.storyboard in Resources */,
 				85E0A53E2BB28E9C005BDA7C /* Records.storyboard in Resources */,
 				5F7114122BAA5C550006C667 /* CustomAlerts.storyboard in Resources */,
 				5F71140D2BAA56E50006C667 /* RecordViewCell.xib in Resources */,
@@ -851,10 +915,14 @@
 				85E0A5432BB28ED4005BDA7C /* NavBarView.xib in Resources */,
 				5F7114062BAA532D0006C667 /* HomePatientListViewCell.xib in Resources */,
 				5FDF5F622BB03DFF00AA665D /* SideMenuListViewCell.xib in Resources */,
+				8542EAD92BC3D85A009EAAAC /* TopNavTitleBarViewCell.xib in Resources */,
 				5F0D0B722BC12D3C0074DD07 /* ConfirmBtnCellView.xib in Resources */,
+				8542EAE92BC3DE39009EAAAC /* DropboxViewCell.xib in Resources */,
 				85E0A5542BB29B65005BDA7C /* GraphViewCell.xib in Resources */,
 				5F99784C2BA8195D0085309B /* AuthHeaderViewCell.xib in Resources */,
+				8542EAE12BC3DA0A009EAAAC /* NameFormatViewCell.xib in Resources */,
 				5F0D0B8F2BC136490074DD07 /* ForgetLblViewCell.xib in Resources */,
+				8542EACC2BC3D72A009EAAAC /* Settings.storyboard in Resources */,
 				85E0A53F2BB28E9C005BDA7C /* Records.storyboard in Resources */,
 				5F7114132BAA5C550006C667 /* CustomAlerts.storyboard in Resources */,
 				5F71140E2BAA56E50006C667 /* RecordViewCell.xib in Resources */,
@@ -977,13 +1045,16 @@
 				5F9977EF2BA560840085309B /* ViewController.swift in Sources */,
 				5F71141A2BAA6AC20006C667 /* StoryboardConstants.swift in Sources */,
 				85E0A5452BB290C2005BDA7C /* NavBarView.swift in Sources */,
+				8542EAD42BC3D85A009EAAAC /* TopNavTitleBarViewCell.swift in Sources */,
 				5F7113E72BAA3BBF0006C667 /* LoginVM.swift in Sources */,
 				5F0D0B6D2BC12D3C0074DD07 /* ConfirmBtnCellView.swift in Sources */,
 				5F9978472BA8195D0085309B /* AuthHeaderViewCell.swift in Sources */,
 				8542EAC22BC3BA4F009EAAAC /* DrawingView.swift in Sources */,
+				8542EAE42BC3DE39009EAAAC /* DropboxViewCell.swift in Sources */,
 				5F99783E2BA720300085309B /* AuthTextViewCell.swift in Sources */,
 				5FB594032BAF5BE6009D59FB /* PatientHomeVC.swift in Sources */,
 				5F71141E2BAEC63F0006C667 /* AppConstants.swift in Sources */,
+				8542EAEC2BC3E08D009EAAAC /* SettingsVC.swift in Sources */,
 				5FA27D912BAF5E4100C459C1 /* UiImageExtension.swift in Sources */,
 				8542EAC12BC3BA4F009EAAAC /* PhotoVC.swift in Sources */,
 				5F0D0B452BB3420C0074DD07 /* LoginVC.swift in Sources */,
@@ -996,6 +1067,7 @@
 				5FDF5F592BB03C7B00AA665D /* SideMenuHeaderViewCell.swift in Sources */,
 				5F7113E92BAA3C030006C667 /* SignUpVM.swift in Sources */,
 				5FDF5F6D2BB08D6B00AA665D /* SlideInPresentationAnimator.swift in Sources */,
+				8542EADC2BC3DA0A009EAAAC /* NameFormatViewCell.swift in Sources */,
 				8542EAC62BC3BD1F009EAAAC /* SetPasswordVC.swift in Sources */,
 				8542EAC82BC3BECA009EAAAC /* PasswordResetSuccessful.swift in Sources */,
 				8542EAC42BC3BB36009EAAAC /* PasswordResetVC.swift in Sources */,
@@ -1033,6 +1105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F0D0B7E2BC1300E0074DD07 /* VerifyTextViewCell.swift in Sources */,
+				8542EAD52BC3D85A009EAAAC /* TopNavTitleBarViewCell.swift in Sources */,
 				5F71141F2BAEC63F0006C667 /* AppConstants.swift in Sources */,
 				5F0D0B5C2BB6D83C0074DD07 /* CalculatedAreaAlertVC.swift in Sources */,
 				5F0D0B862BC132110074DD07 /* ForgetPasswordVC.swift in Sources */,
@@ -1043,12 +1116,14 @@
 				5FDF5F6A2BB08D1100AA665D /* SideMenuPresentationController.swift in Sources */,
 				5F7114282BAEE4650006C667 /* ColorConstants.swift in Sources */,
 				5F7114022BAA532D0006C667 /* HomePatientListViewCell.swift in Sources */,
+				8542EADD2BC3DA0A009EAAAC /* NameFormatViewCell.swift in Sources */,
 				5FDF5F6E2BB08D6B00AA665D /* SlideInPresentationAnimator.swift in Sources */,
 				5F0D0B6E2BC12D3C0074DD07 /* ConfirmBtnCellView.swift in Sources */,
 				5F0D0B762BC12E410074DD07 /* VerifyOTPViewCell.swift in Sources */,
 				5F7113EE2BAA3D860006C667 /* BaseViewModel.swift in Sources */,
 				85E0A5462BB290C2005BDA7C /* NavBarView.swift in Sources */,
 				5F7114242BAEDD570006C667 /* IconConstants.swift in Sources */,
+				8542EAE52BC3DE39009EAAAC /* DropboxViewCell.swift in Sources */,
 				5FDF5F5E2BB03DFF00AA665D /* SideMenuListViewCell.swift in Sources */,
 				5F7113F22BAA3D940006C667 /* LoginViewModel.swift in Sources */,
 				5F7113EA2BAA3C030006C667 /* SignUpVM.swift in Sources */,
@@ -1063,6 +1138,7 @@
 				85E0A54B2BB291B5005BDA7C /* RecordsVC.swift in Sources */,
 				5F0D0B582BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */,
 				5F99783F2BA720300085309B /* AuthTextViewCell.swift in Sources */,
+				8542EAED2BC3E08D009EAAAC /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1074,16 +1150,20 @@
 				5F71142E2BAEE79A0006C667 /* UiColorExtension.swift in Sources */,
 				5F71141C2BAA6AC20006C667 /* StoryboardConstants.swift in Sources */,
 				5FDF5F672BB040D000AA665D /* SideMenuVC.swift in Sources */,
+				8542EAE62BC3DE39009EAAAC /* DropboxViewCell.swift in Sources */,
 				5F9978552BA824D20085309B /* Observable.swift in Sources */,
 				5F7113EF2BAA3D860006C667 /* BaseViewModel.swift in Sources */,
 				5F7114252BAEDD570006C667 /* IconConstants.swift in Sources */,
 				5F9978262BA6F7ED0085309B /* Utilities.swift in Sources */,
 				5F0D0B6F2BC12D3C0074DD07 /* ConfirmBtnCellView.swift in Sources */,
 				5F7113CB2BA8520D0006C667 /* UiViewControllerExtension.swift in Sources */,
+				8542EAD62BC3D85A009EAAAC /* TopNavTitleBarViewCell.swift in Sources */,
 				5F71140B2BAA56E50006C667 /* RecordViewCell.swift in Sources */,
+				8542EADE2BC3DA0A009EAAAC /* NameFormatViewCell.swift in Sources */,
 				5FDF5F6B2BB08D1100AA665D /* SideMenuPresentationController.swift in Sources */,
 				5F0D0B592BB69E3E0074DD07 /* PatientDeleteAlertVC.swift in Sources */,
 				5F0D0B932BC2213F0074DD07 /* VerifyOtpVC.swift in Sources */,
+				8542EAEE2BC3E08D009EAAAC /* SettingsVC.swift in Sources */,
 				5F0D0B772BC12E410074DD07 /* VerifyOTPViewCell.swift in Sources */,
 				5FDF5F5F2BB03DFF00AA665D /* SideMenuListViewCell.swift in Sources */,
 				85E0A5512BB29B65005BDA7C /* GraphViewCell.swift in Sources */,

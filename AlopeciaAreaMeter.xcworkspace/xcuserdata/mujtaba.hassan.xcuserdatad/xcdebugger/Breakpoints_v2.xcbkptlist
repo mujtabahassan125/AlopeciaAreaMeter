@@ -81,6 +81,36 @@
                   endingLineNumber = "86"
                   offsetFromSymbolStart = "36">
                </Location>
+               <Location
+                  uuid = "622F0269-AADB-4E90-868D-2E715C0D22C0 - 8525bd74e236752b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AlopeciaAreaMeter.SetPasswordVC.navigateToNextScreen() -&gt; ()"
+                  moduleName = "AlopeciaAreaMeter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mujtaba.hassan/Desktop/Alopecia/Dev/AlopeciaAreaMeter/Controllers%20/Auth/ForgetPassword/SetPasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "622F0269-AADB-4E90-868D-2E715C0D22C0 - 471d0f9cbab37001"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (AlopeciaAreaMeter.PasswordResetSuccessful, AlopeciaAreaMeter.BaseViewModel) -&gt; Swift.Optional&lt;AlopeciaAreaMeter.PasswordResetSuccessful&gt; in AlopeciaAreaMeter.SetPasswordVC.navigateToNextScreen() -&gt; ()"
+                  moduleName = "AlopeciaAreaMeter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mujtaba.hassan/Desktop/Alopecia/Dev/AlopeciaAreaMeter/Controllers%20/Auth/ForgetPassword/SetPasswordVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "36">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>

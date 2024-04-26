@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFPRODISPLAYREGULAR.OTF">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="149" id="KGk-i7-Jjw" customClass="NameFormatViewCell" customModule="AlopeciaAreaMeter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ak-xh-Wsy">
+                        <rect key="frame" x="24" y="24" width="272" height="125"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carbon_name_icon" translatesAutoresizingMaskIntoConstraints="NO" id="1yB-uY-QuY">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="g05-hB-D0L"/>
+                                    <constraint firstAttribute="width" constant="20" id="yjT-2W-n8c"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="KUl-OM-lP9">
+                                <rect key="frame" x="40" y="0.0" width="220" height="77.333333333333329"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name format:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRs-FF-Mjp">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="19.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                        <color key="textColor" name="PrimaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="JMI-Ph-uwS">
+                                        <rect key="frame" x="0.0" y="37.333333333333336" width="220" height="40.000000000000007"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nos-s6-p8J">
+                                                <rect key="frame" x="0.0" y="0.0" width="220" height="14"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First name | Last name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlf-IF-YPB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="206" height="14"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLv-fk-UAL">
+                                                        <rect key="frame" x="206" y="0.0" width="14" height="14"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="14" id="ODX-va-2hm"/>
+                                                            <constraint firstAttribute="width" constant="14" id="qvt-PQ-14h"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="circle_uncheck_icon"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4W-Ke-nOW">
+                                                <rect key="frame" x="0.0" y="25.999999999999993" width="220" height="14"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last name | First name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLY-kT-y0n">
+                                                        <rect key="frame" x="0.0" y="0.0" width="206" height="14"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY0-rj-9Nw">
+                                                        <rect key="frame" x="206" y="0.0" width="14" height="14"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="14" id="O1Z-xJ-thF"/>
+                                                            <constraint firstAttribute="height" constant="14" id="cz7-ns-C2U"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="circle_uncheck_icon"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JMI-Ph-uwS" firstAttribute="leading" secondItem="KUl-OM-lP9" secondAttribute="leading" id="Kjp-aH-5Pw"/>
+                                    <constraint firstAttribute="bottom" secondItem="JMI-Ph-uwS" secondAttribute="bottom" id="euE-V7-OA5"/>
+                                    <constraint firstAttribute="trailing" secondItem="JMI-Ph-uwS" secondAttribute="trailing" id="xMl-VR-lgS"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vtq-PP-0Jc">
+                                <rect key="frame" x="0.0" y="124" width="272" height="1"/>
+                                <color key="backgroundColor" name="sepratorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ODg-M7-mGZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vtq-PP-0Jc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KUl-OM-lP9" secondAttribute="bottom" constant="24" id="2RY-jm-OF5"/>
+                            <constraint firstItem="Vtq-PP-0Jc" firstAttribute="leading" secondItem="7ak-xh-Wsy" secondAttribute="leading" id="CP3-Lz-YAA"/>
+                            <constraint firstAttribute="bottom" secondItem="Vtq-PP-0Jc" secondAttribute="bottom" id="JhE-PM-0i1"/>
+                            <constraint firstItem="Vtq-PP-0Jc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="1yB-uY-QuY" secondAttribute="bottom" constant="103" id="MNh-e2-zRD"/>
+                            <constraint firstItem="KUl-OM-lP9" firstAttribute="top" secondItem="7ak-xh-Wsy" secondAttribute="top" id="QIA-RG-GB8"/>
+                            <constraint firstAttribute="trailing" secondItem="Vtq-PP-0Jc" secondAttribute="trailing" id="SW1-Hs-rdN"/>
+                            <constraint firstItem="1yB-uY-QuY" firstAttribute="top" secondItem="7ak-xh-Wsy" secondAttribute="top" id="TJq-3p-FVY"/>
+                            <constraint firstAttribute="trailing" secondItem="KUl-OM-lP9" secondAttribute="trailing" constant="12" id="kAi-Ha-3gW"/>
+                            <constraint firstItem="1yB-uY-QuY" firstAttribute="leading" secondItem="7ak-xh-Wsy" secondAttribute="leading" id="n6f-iR-ONn"/>
+                            <constraint firstItem="KUl-OM-lP9" firstAttribute="leading" secondItem="1yB-uY-QuY" secondAttribute="trailing" constant="20" id="vxF-4i-qgu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7ak-xh-Wsy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="BvD-UJ-Q4Z"/>
+                    <constraint firstItem="7ak-xh-Wsy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="Tcr-8I-cRq"/>
+                    <constraint firstAttribute="trailing" secondItem="7ak-xh-Wsy" secondAttribute="trailing" constant="24" id="e0x-cs-SQ5"/>
+                    <constraint firstAttribute="bottom" secondItem="7ak-xh-Wsy" secondAttribute="bottom" id="t5z-Hz-Gq9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="138.93129770992365" y="43.309859154929576"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="carbon_name_icon" width="20" height="20"/>
+        <image name="circle_uncheck_icon" width="14" height="14"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.075000002980232239" green="0.48600000143051147" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="sepratorColor">
+            <color red="0.86299997568130493" green="0.86299997568130493" blue="0.86299997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

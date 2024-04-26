@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFPRODISPLAYREGULAR.OTF">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="DropboxViewCell" customModule="AlopeciaAreaMeter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="372" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Gi-Z9-gOi">
+                        <rect key="frame" x="24" y="24" width="324" height="96"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropbox_icon" translatesAutoresizingMaskIntoConstraints="NO" id="v9H-cp-gdv">
+                                <rect key="frame" x="0.0" y="36" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="23O-bJ-Dsu"/>
+                                    <constraint firstAttribute="height" constant="24" id="rer-9v-pDL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link drop-box" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaJ-Ga-9Zo">
+                                <rect key="frame" x="42.000000000000007" y="38.333333333333336" width="93.666666666666686" height="19.333333333333336"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" name="PrimaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KN-Sv-Jbf">
+                                <rect key="frame" x="298" y="41" width="14" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="RAV-XA-EN7"/>
+                                    <constraint firstAttribute="width" constant="14" id="Vxj-1u-t0J"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Rectangle_uncheck_icon" title=" "/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytv-Zf-hYq">
+                                <rect key="frame" x="0.0" y="95" width="324" height="1"/>
+                                <color key="backgroundColor" name="sepratorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Zcp-4D-9tV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WaJ-Ga-9Zo" firstAttribute="leading" secondItem="v9H-cp-gdv" secondAttribute="trailing" constant="18" id="4iu-zj-e3M"/>
+                            <constraint firstItem="WaJ-Ga-9Zo" firstAttribute="centerY" secondItem="v9H-cp-gdv" secondAttribute="centerY" id="9qi-Ud-C8J"/>
+                            <constraint firstItem="v9H-cp-gdv" firstAttribute="leading" secondItem="7Gi-Z9-gOi" secondAttribute="leading" id="JyD-uK-4PZ"/>
+                            <constraint firstItem="WaJ-Ga-9Zo" firstAttribute="centerY" secondItem="v9H-cp-gdv" secondAttribute="centerY" id="Kjg-JZ-kdg"/>
+                            <constraint firstItem="ytv-Zf-hYq" firstAttribute="leading" secondItem="7Gi-Z9-gOi" secondAttribute="leading" id="Nik-se-gJp"/>
+                            <constraint firstAttribute="bottom" secondItem="ytv-Zf-hYq" secondAttribute="bottom" id="PR6-OQ-XG8"/>
+                            <constraint firstAttribute="trailing" secondItem="ytv-Zf-hYq" secondAttribute="trailing" id="boW-sR-r23"/>
+                            <constraint firstItem="v9H-cp-gdv" firstAttribute="centerY" secondItem="7Gi-Z9-gOi" secondAttribute="centerY" id="gSm-GU-Le9"/>
+                            <constraint firstItem="ytv-Zf-hYq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="v9H-cp-gdv" secondAttribute="bottom" constant="24" id="ltc-gy-fR8"/>
+                            <constraint firstAttribute="trailing" secondItem="0KN-Sv-Jbf" secondAttribute="trailing" constant="12" id="sr1-MC-1nk"/>
+                            <constraint firstItem="0KN-Sv-Jbf" firstAttribute="centerY" secondItem="WaJ-Ga-9Zo" secondAttribute="centerY" id="txK-LR-ueH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7Gi-Z9-gOi" secondAttribute="trailing" constant="24" id="Crq-iY-Hvt"/>
+                    <constraint firstItem="7Gi-Z9-gOi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="Zfs-uZ-vaR"/>
+                    <constraint firstAttribute="bottom" secondItem="7Gi-Z9-gOi" secondAttribute="bottom" id="ffi-qC-wct"/>
+                    <constraint firstItem="7Gi-Z9-gOi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="jDk-S9-U1M"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkIcon" destination="0KN-Sv-Jbf" id="SX1-Uo-pIH"/>
+                <outlet property="settingsIcon" destination="v9H-cp-gdv" id="fmL-Hs-fSb"/>
+                <outlet property="settingsLbl" destination="WaJ-Ga-9Zo" id="mFT-p2-6uD"/>
+            </connections>
+            <point key="canvasLocation" x="172.51908396946564" y="38.732394366197184"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle_uncheck_icon" width="14" height="14"/>
+        <image name="dropbox_icon" width="24" height="24"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.075000002980232239" green="0.48600000143051147" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="sepratorColor">
+            <color red="0.86299997568130493" green="0.86299997568130493" blue="0.86299997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

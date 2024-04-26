@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Camera swap-2.png",
+      "filename" : "alert-circle.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Camera swap@2x-2.png",
+      "filename" : "alert-circle@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Camera swap@3x-2.png",
+      "filename" : "alert-circle@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

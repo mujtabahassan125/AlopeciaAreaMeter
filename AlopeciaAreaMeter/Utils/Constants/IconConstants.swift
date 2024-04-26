@@ -32,6 +32,7 @@ struct IconName {
     static let settings = "settings_icon"
     static let userProfile = "user_profile_icon"
     static let userIcon = "user_icon"
-    
     static let value = "value_icon"
+    static let dropBoxIcon = "dropbox_icon"
+    static let aboutUsIcon = "alert_circle_icon"
 }

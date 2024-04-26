@@ -118,9 +118,6 @@ class PatientHomeVC: UIViewController, UIViewControllerTransitioningDelegate {
            }
        }
     
-    
-    
-
     @IBAction func tappedOnSideSideMenuBg(_ sender: Any) {
         self.hideView()
     }

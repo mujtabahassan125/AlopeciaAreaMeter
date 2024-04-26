@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Khg-OX-l17">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-<<<<<<< HEAD
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -61,11 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="760" y="4"/>
-=======
-            <point key="canvasLocation" x="847" y="-11"/>
->>>>>>> 4b86785 (Add files via upload)
         </scene>
         <!--AuthNavigationController-->
         <scene sceneID="qQB-li-EQW">
@@ -117,7 +112,6 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kt0-O7-Fzz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="1482" y="4"/>
         </scene>
         <!--Forget PasswordVC-->
